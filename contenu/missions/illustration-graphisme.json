@@ -4,18 +4,36 @@
   "categorie": "illustration",
   "image": {
     "image": "projets/potager-du-roi/plan-vue-oiseau.jpg",
-    "alt": { "fr": "Plan à vue d’oiseau en noir et blanc du Potager du Roi à Versailles", "en": "Black-and-white bird’s-eye map of the Potager du Roi in Versailles" }
+    "alt": {
+      "fr": "Plan à vue d’oiseau en noir et blanc du Potager du Roi à Versailles",
+      "en": "Black-and-white bird’s-eye map of the Potager du Roi in Versailles"
+    }
   },
   "images": [
-    { "image": "pages/valorisation-de-site.jpg", "alt": { "fr": "Panneau pédagogique illustré installé au pied d’un mur du Potager du Roi", "en": "Illustrated information panel installed at the foot of a wall in the Potager du Roi" } },
-    { "image": "pages/dessin-jardin-silhouette.jpg", "alt": { "fr": "Illustration : une femme en robe fleurie et chapeau de paille dans un jardin", "en": "Illustration: a woman in a floral dress and straw hat in a garden" } }
+    {
+      "image": "pages/valorisation-de-site.jpg",
+      "alt": {
+        "fr": "Panneau pédagogique illustré installé au pied d’un mur du Potager du Roi",
+        "en": "Illustrated information panel installed at the foot of a wall in the Potager du Roi"
+      }
+    },
+    {
+      "image": "pages/dessin-jardin-silhouette.jpg",
+      "alt": {
+        "fr": "Illustration : une femme en robe fleurie et chapeau de paille dans un jardin",
+        "en": "Illustration: a woman in a floral dress and straw hat in a garden"
+      }
+    }
   ],
   "anciennesAdresses": [],
   "fr": {
-    "seo": { "titre": "Illustration et graphisme · SAJE – Art & Paysage", "description": "Plans illustrés, signalétique paysagère, panneaux pédagogiques, bande dessinée, affiches : l’illustration au service des lieux et des projets, par Alice Stevens." },
+    "seo": {
+      "titre": "Illustration et graphisme · SAJE – Art & Paysage",
+      "description": "Plans illustrés, signalétique paysagère, panneaux pédagogiques, bande dessinée, affiches : l’illustration au service des lieux et des projets, par Alice Stevens."
+    },
     "titre": "Illustration et graphisme",
     "accroche": "Plans illustrés, signalétique, bande dessinée et images pour raconter un lieu ou un projet.",
-    "texte": "Pour Alice Stevens, le dessin n’est pas seulement un outil de représentation, c’est un mode de conception. L’illustration facilite la compréhension des projets par les élus et les habitants, et donne envie de découvrir un lieu.\n\nPlans à vue d’oiseau, panneaux pédagogiques, livrets de visite, bande dessinée, affiches et cartes postales : ses images mêlent encre de Chine, aquarelle et infographie.\n\nDepuis 2023, elle est aussi illustratrice et artiste au sein du [CoCoom](https://lecocoom.fr/lagence/), agence de communication collaborative créée à Laval par des entrepreneurs de la coopérative Coodémarrage 53. Elle y travaille sur la signalétique paysagère, la scénographie, les événements et les stratégies de communication, en illustration et en graphisme, pour des acteurs publics et privés du développement local et de l’économie sociale et solidaire.",
+    "texte": "Pour Alice Stevens, le dessin n’est pas seulement un outil de représentation, c’est un **mode de conception**. L’illustration facilite la compréhension des projets par les élus et les habitants, et donne envie de découvrir un lieu.\n\nPlans à vue d’oiseau, panneaux pédagogiques, livrets de visite, bande dessinée, affiches et cartes postales : ses images mêlent encre de Chine, aquarelle et paysages...\n\nDepuis 2023, elle est aussi illustratrice et artiste au sein du [CoCoom](https://lecocoom.fr/lagence/), agence de communication collaborative créée à Laval par des entrepreneurs de la coopérative **Coodémarrage 53**.\n\nElle y travaille sur la signalétique paysagère, la scénographie, les événements et les stratégies de communication, en illustration et en graphisme, pour des acteurs publics et privés du développement local et de l’économie sociale et solidaire.",
     "titreComprend": "Ce que la mission comprend",
     "comprend": [
       "Plans illustrés et plans à vue d’oiseau",
@@ -26,7 +44,10 @@
     ]
   },
   "en": {
-    "seo": { "titre": "Illustration and graphic design · SAJE – Art & Landscape", "description": "Illustrated maps, landscape signage, information panels, comics and posters: illustration that brings places and projects to life, by Alice Stevens." },
+    "seo": {
+      "titre": "Illustration and graphic design · SAJE – Art & Landscape",
+      "description": "Illustrated maps, landscape signage, information panels, comics and posters: illustration that brings places and projects to life, by Alice Stevens."
+    },
     "titre": "Illustration and graphic design",
     "accroche": "Illustrated maps, signage, comics and images to tell the story of a place or a project.",
     "texte": "For Alice Stevens, drawing is not just a way of representing ideas but a way of designing. Illustration helps elected officials and residents understand projects, and makes people want to discover a place.\n\nBird’s-eye maps, information panels, visitor booklets, comics, posters and postcards: her images combine Indian ink, watercolour and digital work.\n\nSince 2023 she has also been an illustrator and artist at [Le CoCoom](https://lecocoom.fr/lagence/), a collaborative communication agency set up in Laval by entrepreneurs of the Coodémarrage 53 cooperative. There she works on landscape signage, scenography, events and communication strategies, in illustration and graphic design, for public and private players in local development and the social economy.",
