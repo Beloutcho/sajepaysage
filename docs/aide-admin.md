@@ -1,5 +1,7 @@
 # Modifier le site : mode d'emploi
 
+> **Version illustrée à envoyer à Alice** : `docs/guide-alice.pdf` (ou `docs/guide-alice.html`, un seul fichier lisible dans tout navigateur). Elle est générée par `node outils/guide-alice.mjs` à partir de `docs/guide-alice/index.html` ; ce fichier Markdown reste la référence du dépôt.
+
 Ce guide explique comment corriger un texte, changer une photo ou ajouter un projet sur sajepaysage.fr, depuis un ordinateur ou un téléphone. Aucune connaissance technique n'est nécessaire.
 
 Chaque enregistrement est mis en ligne automatiquement en 1 à 2 minutes. Rien n'est jamais perdu : toutes les versions précédentes restent dans l'historique.

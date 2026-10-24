@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modifier le site SAJE – Guide d’Alice</title>
+<style>
+@font-face { font-family: "Fraunces"; src: url("../../src/polices/fraunces-opsz.woff2") format("woff2"); font-weight: 100 900; }
+@font-face { font-family: "Source Sans 3"; src: url("../../src/polices/source-sans-3-400-normal.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Source Sans 3"; src: url("../../src/polices/source-sans-3-600-normal.woff2") format("woff2"); font-weight: 600 700; }
+
+:root {
+  --creme: #F3EEE3; --carte: #FBF8F2; --filet: #D8D0BF; --anthracite: #2A2C2E; --texte-2: #4A4C4E;
+  --violet: #74508F; --citron: #CDDC4B;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--creme); color: var(--anthracite); font: 400 17px/1.6 "Source Sans 3", system-ui, sans-serif; }
+.page { max-width: 880px; margin: 0 auto; padding: 40px 24px 80px; }
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 400; line-height: 1.15; margin: 0; }
+h1 { font-size: 40px; }
+h2 { font-size: 30px; margin: 56px 0 8px; display: flex; align-items: center; gap: 14px; }
+h2 .num { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: var(--violet); color: #fff; font: 600 22px "Source Sans 3", sans-serif; }
+h3 { font-size: 21px; margin: 28px 0 8px; }
+p { margin: 0 0 12px; }
+a { color: var(--violet); }
+strong { font-weight: 600; }
+.surtitre { font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--violet); margin-bottom: 10px; }
+.chapo { font-size: 20px; color: var(--texte-2); max-width: 60ch; margin-top: 14px; }
+.cartouche { background: var(--violet); color: #fff; border-radius: 16px; padding: 36px 40px; margin-bottom: 28px; }
+.cartouche .surtitre { color: var(--creme); }
+.cartouche .chapo { color: #fff; }
+.trait { display: block; width: 40px; height: 4px; border-radius: 2px; background: var(--citron); margin-bottom: 14px; }
+
+.bref { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 24px 0 8px; }
+.bref div { background: var(--carte); border: 1px solid var(--filet); border-radius: 12px; padding: 18px 20px; }
+.bref b { display: block; font-family: "Fraunces", serif; font-weight: 400; font-size: 21px; margin-bottom: 4px; }
+.bref span { font-size: 15px; color: var(--texte-2); }
+@media (max-width: 700px) { .bref { grid-template-columns: 1fr; } }
+
+.etapes { list-style: none; counter-reset: etape; padding: 0; margin: 18px 0; }
+.etapes > li { counter-increment: etape; position: relative; padding: 4px 0 18px 54px; }
+.etapes > li::before { content: counter(etape); position: absolute; left: 0; top: 2px; width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--violet); color: var(--violet); display: flex; align-items: center; justify-content: center; font-weight: 700; }
+.etapes > li > p:last-child { margin-bottom: 0; }
+
+figure { margin: 14px 0 22px; }
+figure img { display: block; max-width: 100%; height: auto; border: 1px solid var(--filet); border-radius: 10px; background: #fff; }
+figure.petite img { max-width: 420px; }
+figure.moyenne img { max-width: 560px; }
+figcaption { font-size: 14px; color: var(--texte-2); margin-top: 6px; }
+.deux { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+@media (max-width: 700px) { .deux { grid-template-columns: 1fr; } }
+
+.astuce, .attention { border-radius: 12px; padding: 14px 18px; margin: 16px 0; font-size: 16px; }
+.astuce { background: #EEF3C9; border-left: 5px solid #8FA21B; }
+.attention { background: #FFF1D6; border-left: 5px solid #C77700; }
+.astuce > :last-child, .attention > :last-child { margin-bottom: 0; }
+.titre-note { font-weight: 700; display: block; margin-bottom: 2px; }
+
+table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; font-size: 16px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--filet); }
+th { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--violet); }
+td:first-child { white-space: nowrap; font-weight: 600; }
+.bouton { display: inline-block; padding: 1px 12px; border-radius: 999px; background: var(--anthracite); color: var(--creme); font-weight: 600; font-size: 14px; white-space: nowrap; }
+.bouton.v { background: var(--violet); color: #fff; }
+.bouton.c { background: var(--citron); color: var(--anthracite); }
+.bouton.r { background: #A3262A; color: #fff; }
+kbd { font: 600 14px "Source Sans 3", sans-serif; background: #fff; border: 1px solid var(--filet); border-bottom-width: 2px; border-radius: 5px; padding: 0 6px; }
+.pied { margin-top: 64px; padding-top: 18px; border-top: 1px solid var(--filet); font-size: 14px; color: var(--texte-2); }
+.annexe { background: var(--carte); border: 1px solid var(--filet); border-radius: 12px; padding: 4px 28px 18px; margin-top: 56px; }
+.annexe h2 { margin-top: 24px; font-size: 24px; }
+
+@page { size: A4; margin: 15mm 14mm; }
+@media print {
+  body { background: #fff; font-size: 14.5px; line-height: 1.5; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { max-width: none; padding: 0; }
+  .saut { break-before: page; }
+  h2 { margin-top: 0; break-after: avoid; }
+  h3 { break-after: avoid; }
+  .etapes > li, figure, table, .astuce, .attention, .bref div { break-inside: avoid; }
+  figure img { max-height: 120mm; width: auto; }
+  .cartouche { padding: 28px 30px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="cartouche">
+  <span class="trait" aria-hidden="true"></span>
+  <p class="surtitre">SAJE – Art &amp; Paysage</p>
+  <h1>Modifier le site, pas à pas</h1>
+  <p class="chapo">Corriger un texte, changer une photo, ajouter un projet : tout se fait depuis votre navigateur, sur ordinateur comme sur téléphone. Aucun code, aucun logiciel.</p>
+</header>
+
+<div class="bref">
+  <div><b>Un texte ?</b><span>Cliquez dessus, écrivez, puis « Enregistrer ».</span></div>
+  <div><b>Une photo ?</b><span>Des boutons apparaissent sur l’image : Remplacer, Texte, Supprimer…</span></div>
+  <div><b>Un projet ?</b><span>« Nouveau projet » dans le tableau de bord.</span></div>
+</div>
+<p>Après chaque « Enregistrer », la modification est <strong>en ligne au bout de 1 à 2 minutes</strong>. Rien n’est jamais perdu : toutes les versions précédentes sont conservées (voir <a href="#retour">« Revenir en arrière »</a>).</p>
+
+<!-- ============ 1 ============ -->
+<h2 id="connexion"><span class="num">1</span> Se connecter</h2>
+<p>À faire <strong>une seule fois par appareil</strong> : le navigateur s’en souvient ensuite.</p>
+<ol class="etapes">
+  <li><p>Ouvrez <strong>sajepaysage.fr/admin/</strong> dans votre navigateur.</p></li>
+  <li><p>Collez votre <strong>clé d’accès</strong> (un long code commençant par <em>github_pat_</em>, remis avec ce guide) dans le champ, puis cliquez sur <span class="bouton v">Se connecter</span>.</p></li>
+</ol>
+<figure class="moyenne"><img src="images/connexion.jpg" alt="Page de connexion avec le champ Clé d’accès"><figcaption>La page de connexion.</figcaption></figure>
+<div class="attention"><span class="titre-note">Sur un ordinateur partagé</span>Cliquez sur <span class="bouton">Se déconnecter</span> (en haut à droite) en partant : cela efface la clé de l’appareil.</div>
+
+<h3>Le tableau de bord</h3>
+<p>C’est la page d’accueil de l’administration. Elle liste tous les contenus du site avec, pour chacun, un bouton <span class="bouton">Modifier sur la page</span> (et <span class="bouton">EN</span> pour la version anglaise). Les étiquettes indiquent si un projet est <em>Publié</em> ou <em>Masqué</em>, et si l’anglais est complet.</p>
+<figure><img src="images/tableau.jpg" alt="Tableau de bord : état de la mise en ligne, liste des pages, des missions et des projets"><figcaption>Le tableau de bord. En haut, la pastille verte « En ligne » signale que le site est à jour ; orange, une mise en ligne est en cours.</figcaption></figure>
+
+<!-- ============ 2 ============ -->
+<h2 id="texte" class="saut"><span class="num">2</span> Modifier un texte</h2>
+<p>Le principe : on modifie le texte <em>directement sur la page</em>, comme dans un traitement de texte.</p>
+<ol class="etapes">
+  <li><p>Dans le tableau de bord, cliquez sur <span class="bouton">Modifier sur la page</span> à côté de la page voulue.</p>
+  <p>Vous pouvez aussi parcourir le site normalement : tant que vous êtes connectée, un bouton <span class="bouton">Modifier cette page</span> apparaît en bas à droite de chaque page.</p></li>
+  <li><p>Une <strong>barre noire</strong> s’affiche en haut de la page. Passez la souris sur un texte : il s’entoure d’un <strong>pointillé violet</strong>. <strong>Cliquez dedans et écrivez.</strong></p></li>
+  <li><p>Quand vous avez fini, cliquez sur <span class="bouton c">Enregistrer</span> dans la barre noire. Le bouton indique combien de modifications attendent d’être envoyées, par exemple « Enregistrer (3) ».</p></li>
+  <li><p>Le message <em>« Enregistré. En ligne dans environ 2 minutes »</em> confirme l’envoi. Rechargez la page un peu plus tard pour voir le résultat.</p></li>
+</ol>
+<figure><img src="images/page-edition.jpg" alt="Page projet en mode édition, avec la barre noire en haut et un texte entouré de pointillés"><figcaption>La page en mode édition. La barre noire contient <em>Enregistrer</em>, <em>Annuler</em> et <em>Quitter</em> ; le texte sous la souris est entouré d’un pointillé.</figcaption></figure>
+
+<h3>Mettre en forme un descriptif</h3>
+<p>Quand vous cliquez dans un descriptif (le grand texte d’un projet, d’une mission, de la Démarche…), une petite barre apparaît au-dessus : <strong>G</strong> (gras), <em>I</em> (italique), <strong>Lien</strong> et <strong>Sans lien</strong>. Sélectionnez d’abord les mots concernés, puis cliquez sur le bouton.</p>
+<ul>
+  <li>Pour un <strong>lien</strong> : sélectionnez les mots, cliquez sur « Lien », collez l’adresse complète (elle doit commencer par <em>https://</em>).</li>
+  <li>Pour un <strong>nouveau paragraphe</strong> : touche <kbd>Entrée</kbd>.</li>
+</ul>
+<figure class="moyenne"><img src="images/texte-barre.jpg" alt="Barre de mise en forme au-dessus d’un descriptif en cours de modification"><figcaption>La barre de mise en forme (gras, italique, lien) au-dessus d’un descriptif.</figcaption></figure>
+
+<h3>Les champs de la fiche projet</h3>
+<p>Sous chaque projet, la fiche affiche le <em>lieu</em>, la <em>date</em>, le <em>commanditaire</em>, les <em>partenaires</em> et votre <em>intervention</em>. Un champ resté vide <strong>n’apparaît pas sur le site</strong> ; en mode édition, il s’affiche avec « À compléter ». Cliquez dessus pour le remplir.</p>
+
+<div class="astuce"><span class="titre-note">Bon à savoir</span>
+<ul style="margin:0;padding-left:20px">
+  <li>Pour un titre ou un champ court, <kbd>Entrée</kbd> valide la saisie. <kbd>Échap</kbd> sort du champ.</li>
+  <li>Quand vous collez un texte copié ailleurs (Word, un e-mail…), seul le texte est gardé, sans sa mise en forme.</li>
+  <li><span class="bouton">Annuler</span> abandonne tout ce qui n’est pas enregistré ; <span class="bouton">Quitter</span> sort du mode édition.</li>
+</ul></div>
+
+<h3>La version anglaise</h3>
+<p>Dans la barre noire, <span class="bouton">Passer en EN</span> ouvre la même page en anglais, avec les mêmes outils. Les textes entourés d’un <strong>pointillé orange</strong> ne sont pas encore traduits : le site affiche alors le français à leur place. Cliquez dessus et écrivez la traduction.</p>
+
+<!-- ============ 3 ============ -->
+<h2 id="photos" class="saut"><span class="num">3</span> Changer, ajouter ou retirer des photos</h2>
+<p>En mode édition, chaque image d’un projet porte une rangée de boutons.</p>
+<figure class="petite"><img src="images/image-boutons.jpg" alt="Une image de projet avec ses boutons : Couverture, flèches, Texte, Remplacer, Supprimer"><figcaption>Les boutons d’une image dans la galerie d’un projet.</figcaption></figure>
+<table>
+  <tr><th>Bouton</th><th>Ce qu’il fait</th></tr>
+  <tr><td><span class="bouton">Couverture</span></td><td>Choisit l’image qui représente le projet : vignette dans la liste des projets, à l’accueil, et aperçu quand le lien est partagé.</td></tr>
+  <tr><td><span class="bouton">←</span> <span class="bouton">→</span></td><td>Déplace l’image avant ou après sa voisine. La première image est la grande image en haut de la page.</td></tr>
+  <tr><td><span class="bouton">Texte</span></td><td>Modifie la description de l’image (texte alternatif) et sa légende, en français et en anglais.</td></tr>
+  <tr><td><span class="bouton">Remplacer</span></td><td>Remplace la photo par une autre, en gardant sa place.</td></tr>
+  <tr><td><span class="bouton r">Supprimer</span></td><td>Retire l’image du projet (après confirmation). Elle reste récupérable dans l’historique.</td></tr>
+</table>
+
+<h3>Ajouter des photos</h3>
+<ol class="etapes">
+  <li><p>Tout en bas de la page du projet, cliquez sur <strong>« + Ajouter des images »</strong>.</p></li>
+  <li><p>Choisissez une ou <strong>plusieurs photos</strong> à la fois. Sur téléphone, vous pouvez prendre une photo ou piocher dans la photothèque.</p></li>
+  <li><p>Pour chaque photo, une fenêtre demande sa <strong>description</strong> (voir ci-dessous). Remplissez-la, puis <span class="bouton v">Valider</span>.</p></li>
+  <li><p>Cliquez sur <span class="bouton c">Enregistrer</span> : les photos sont envoyées avec le reste.</p></li>
+</ol>
+<figure><img src="images/image-ajout.jpg" alt="Bouton en pointillé « + Ajouter des images » en bas d’une page projet"><figcaption>Le bouton d’ajout, en bas de la page du projet.</figcaption></figure>
+<div class="astuce"><span class="titre-note">Aucun besoin de préparer vos photos</span>Elles sont automatiquement réduites à une taille adaptée au site (2 400 pixels au plus) et leurs informations cachées — dont la <strong>position GPS</strong> — sont effacées avant l’envoi.</div>
+
+<h3>La description d’une image : obligatoire</h3>
+<p>Le <strong>texte alternatif en français</strong> décrit l’image pour les personnes qui ne peuvent pas la voir (lecteur d’écran) ; il s’affiche aussi quand l’image ne se charge pas, et aide le référencement. Il est <strong>obligatoire</strong> : le bouton Enregistrer refuse tant qu’une image n’en a pas.</p>
+<p>Une phrase suffit, qui dit ce que l’on voit : <em>« Allée de sable bordée de graminées, menant à des panneaux blancs »</em>, plutôt que <em>« IMG_2043 »</em> ou <em>« photo du jardin »</em>. La version anglaise et la légende (affichée sous l’image agrandie) sont facultatives.</p>
+<figure class="moyenne"><img src="images/image-texte.jpg" alt="Fenêtre « Texte de l’image » avec les champs texte alternatif et légende"><figcaption>La fenêtre « Texte de l’image ».</figcaption></figure>
+<p>Sur les autres pages (accueil, Démarche, missions), les images n’ont que deux boutons : <span class="bouton">Texte</span> et <span class="bouton">Remplacer</span>.</p>
+
+<!-- ============ 4 ============ -->
+<h2 id="projet" class="saut"><span class="num">4</span> Ajouter un nouveau projet</h2>
+<p>Un nouveau projet est d’abord créé <strong>masqué</strong> : personne ne le voit tant que vous ne l’avez pas publié. Vous pouvez donc le préparer tranquillement.</p>
+<ol class="etapes">
+  <li><p>Dans le tableau de bord, cliquez sur <span class="bouton v">Nouveau projet</span>.</p></li>
+  <li><p>Saisissez le <strong>titre en français</strong> et cochez les <strong>catégories</strong> (ce sont les filtres de la page Projets : un projet peut en avoir plusieurs). Puis <span class="bouton v">Créer le projet</span>.</p>
+  <figure class="moyenne"><img src="images/nouveau-projet.jpg" alt="Fenêtre Nouveau projet : titre et catégories"><figcaption>La fenêtre « Nouveau projet ».</figcaption></figure></li>
+  <li><p><strong>Patientez environ 2 minutes.</strong> Le message « C’est en ligne. Ouverture de la page… » s’affiche, puis la page du projet s’ouvre toute seule en mode édition. (Si vous fermez l’onglet, retrouvez le projet dans la liste du tableau de bord.)</p></li>
+  <li><p><strong>Remplissez la page</strong>, comme au point 2 : accroche (la phrase d’introduction), descriptif, fiche (lieu, date…). Puis <strong>ajoutez les photos</strong>, comme au point 3. La première photo ajoutée devient la couverture ; vous pouvez en choisir une autre avec le bouton <span class="bouton">Couverture</span>.</p></li>
+  <li><p>Cliquez sur <span class="bouton">Réglages du projet</span> (barre noire en haut), cochez <strong>« Publié (visible sur le site) »</strong> puis <span class="bouton v">Appliquer</span>.</p>
+  <figure class="moyenne"><img src="images/reglages.jpg" alt="Fenêtre Réglages du projet : case Publié, catégories, missions liées, position"><figcaption>Les réglages d’un projet : publication, catégories, missions liées et position dans la liste.</figcaption></figure></li>
+  <li><p>Cliquez enfin sur <span class="bouton c">Enregistrer</span>. Environ 2 minutes plus tard, le projet apparaît dans la liste des projets du site.</p></li>
+</ol>
+<div class="attention"><span class="titre-note">Avant de publier</span>Ajoutez <strong>au moins une photo</strong> : elle sert de vignette dans la liste. Un projet publié sans image s’afficherait avec une case vide.</div>
+
+<h3>Et ensuite ?</h3>
+<ul>
+  <li><strong>Masquer un projet sans le supprimer</strong> : Réglages du projet, décochez « Publié », puis Enregistrer. Il disparaît des listes ; vous pourrez le republier plus tard.</li>
+  <li><strong>Les missions liées</strong> (dans les mêmes réglages) font apparaître le projet au bas de la page de chaque mission cochée.</li>
+  <li><strong>L’anglais</strong> : <span class="bouton">Passer en EN</span> dans la barre noire, puis traduisez le titre, l’accroche et le descriptif. Tant que ce n’est pas fait, la page anglaise affiche le français.</li>
+</ul>
+
+<!-- ============ 5 ============ -->
+<h2 id="accueil"><span class="num">5</span> Réorganiser les projets et l’accueil</h2>
+<p>Ces réglages se font dans le tableau de bord, plus bas que la liste des contenus.</p>
+<h3>L’ordre des projets</h3>
+<p>Dans « Ordre des projets », déplacez chaque projet avec les flèches <span class="bouton">↑</span> <span class="bouton">↓</span> (ou en le faisant glisser, sur ordinateur), puis cliquez sur <span class="bouton v">Enregistrer l’ordre</span>. Les projets masqués restent dans la liste, marqués « Masqué ».</p>
+<figure><img src="images/ordre.jpg" alt="Liste des projets avec flèches pour les monter ou les descendre"><figcaption>La liste de tri des projets.</figcaption></figure>
+<h3>Le diaporama et les projets « À la une »</h3>
+<p>Dans « Page d’accueil » :</p>
+<ul>
+  <li><strong>Diaporama</strong> : réordonnez les images ou retirez-en avec <span class="bouton">Retirer</span>. Pour en ajouter une, ouvrez « Ajouter une image au diaporama », choisissez un projet puis cliquez sur la photo voulue.</li>
+  <li><strong>À la une</strong> : choisissez dans les trois listes les projets mis en avant sous le diaporama.</li>
+  <li>Puis cliquez sur <span class="bouton v">Enregistrer l’accueil</span>.</li>
+</ul>
+<figure><img src="images/accueil.jpg" alt="Réglages de l’accueil : diaporama et trois projets à la une"><figcaption>Les réglages de la page d’accueil.</figcaption></figure>
+
+<!-- ============ retour ============ -->
+<h2 id="retour"><span class="num">6</span> Revenir en arrière</h2>
+<p>En bas du tableau de bord, l’<strong>historique</strong> liste les 20 dernières modifications. Ouvrez-en une : les fichiers concernés s’affichent, avec un bouton <span class="bouton">Revenir à cette version</span> qui rétablit le fichier tel qu’il était juste après cette modification. C’est aussi le moyen de récupérer une image ou un projet supprimé par erreur.</p>
+
+<!-- ============ dépannage ============ -->
+<h2 id="aide"><span class="num">7</span> Si quelque chose ne va pas</h2>
+<table>
+  <tr><th>Ce que vous voyez</th><th>Que faire</th></tr>
+  <tr><td>« La clé d’accès n’est plus valide »</td><td>La clé a expiré ou a été refusée. Demandez-en une nouvelle (voir l’annexe), puis reconnectez-vous sur <strong>sajepaysage.fr/admin/</strong>.</td></tr>
+  <tr><td>« …a été modifié ailleurs depuis l’ouverture de cette page »</td><td>La même page a été modifiée par quelqu’un d’autre, ou dans un autre onglet. Pour ne rien écraser, rien n’a été enregistré : copiez votre texte, rechargez la page, puis recommencez.</td></tr>
+  <tr><td>« Le texte alternatif est obligatoire »</td><td>Une image n’a pas de description. Cliquez sur son bouton <span class="bouton">Texte</span> et remplissez le champ français.</td></tr>
+  <tr><td>Ma modification n’apparaît pas</td><td>Attendez 2 minutes, puis rechargez la page (sur téléphone : fermez et rouvrez l’onglet). Vérifiez dans le tableau de bord que la pastille est verte.</td></tr>
+  <tr><td>Pastille rouge « Erreur lors de la mise en ligne »</td><td>Vos modifications sont enregistrées, mais le site n’a pas pu être reconstruit. Prévenez la personne qui gère le site.</td></tr>
+</table>
+
+<!-- ============ annexe ============ -->
+<section class="annexe saut">
+  <h2>Annexe · Créer ou renouveler la clé d’accès</h2>
+  <p><em>Pour la personne qui gère le site. La clé est valable un an ; le tableau de bord prévient Alice 30 jours avant son expiration.</em></p>
+  <ol class="etapes">
+    <li><p>Depuis le compte GitHub qui possède le dépôt du site, ouvrez <strong>github.com/settings/personal-access-tokens</strong> et cliquez sur <strong>Generate new token</strong>.</p></li>
+    <li><p>Renseignez :</p>
+    <ul>
+      <li><strong>Token name</strong> : <em>Site SAJE</em></li>
+      <li><strong>Expiration</strong> : 1 an</li>
+      <li><strong>Repository access</strong> : <em>Only select repositories</em>, puis le dépôt du site</li>
+      <li><strong>Repository permissions</strong> : <em>Contents</em> → <strong>Read and write</strong> ; <em>Actions</em> → <strong>Read-only</strong> (pour afficher l’état de la mise en ligne)</li>
+    </ul></li>
+    <li><p>Cliquez sur <strong>Generate token</strong>, copiez le code <em>github_pat_…</em> (GitHub ne le montrera plus) et transmettez-le à Alice par un moyen privé.</p></li>
+  </ol>
+  <div class="attention"><span class="titre-note">Cette clé donne le droit de modifier le dépôt du site.</span>Elle ne doit pas être publiée ni envoyée à d’autres personnes. En cas de doute, supprimez-la sur la même page GitHub : elle cesse aussitôt de fonctionner, et une nouvelle peut être créée.</div>
+</section>
+
+<p class="pied">Guide d’administration du site sajepaysage.fr · Les captures montrent le site avec des données d’exemple.</p>
+</div>
+</body>
+</html>
