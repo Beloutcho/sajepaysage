@@ -1,0 +1,130 @@
+{
+  "slug": "jardin-marjamin",
+  "publie": true,
+  "ordre": 15,
+  "categories": [
+    "jardins-prives"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Jardin Marjamin",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "Marjamin Garden",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "1732543666481.jpg",
+  "images": [
+    {
+      "fichier": "1732543666481.jpg",
+      "alt": {
+        "fr": "Jardin fleuri sous des guirlandes de fanions, allée et mur décoré en fond",
+        "en": "Flower garden under strings of bunting, a path and decorated wall behind"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543666475.jpg",
+      "alt": {
+        "fr": "Massif de rudbeckias jaunes et d’échinacées sous des fanions colorés",
+        "en": "Bed of yellow rudbeckias and coneflowers under colourful bunting"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543666490.jpg",
+      "alt": {
+        "fr": "Graminées et fleurs jaunes au premier plan, fanions au-dessus du jardin",
+        "en": "Grasses and yellow flowers in the foreground, bunting above the garden"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543666498.jpg",
+      "alt": {
+        "fr": "Massifs de rudbeckias et de vivaces le long d’une allée",
+        "en": "Beds of rudbeckias and perennials along a path"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543717575.jpg",
+      "alt": {
+        "fr": "Allée dallée entre des massifs de vivaces fleuries",
+        "en": "Paved path between beds of flowering perennials"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543717587.jpg",
+      "alt": {
+        "fr": "Échinacées roses et rudbeckias au bord d’une allée",
+        "en": "Pink coneflowers and rudbeckias beside a path"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543717601.jpg",
+      "alt": {
+        "fr": "Massif de rudbeckias et de fleurs bleues devant un mur décoré",
+        "en": "Bed of rudbeckias and blue flowers in front of a decorated wall"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543717616.jpg",
+      "alt": {
+        "fr": "Banc et massifs fleuris au pied d’un mur, fanions colorés",
+        "en": "Bench and flower beds at the foot of a wall, colourful bunting"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732543717628.jpg",
+      "alt": {
+        "fr": "Vue d’ensemble du jardin : allée, pelouse et massifs bordés d’acier",
+        "en": "Overall view of the garden: path, lawn and steel-edged beds"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/jardin-marjamin/"
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "ateliers-mediation",
+  "ordre": 4,
+  "categorie": "pedagogie",
+  "image": {
+    "image": "pages/demarche-03.jpg",
+    "alt": { "fr": "Des enfants dessinent sur un grand plan posé au sol lors d’un atelier", "en": "Children drawing on a large plan laid on the floor during a workshop" }
+  },
+  "images": [
+    { "image": "pages/accueil-prestations.jpg", "alt": { "fr": "Alice Stevens commente une visite de jardin devant un groupe", "en": "Alice Stevens leads a garden tour for a group" } },
+    { "image": "pages/mediation-atelier.jpg", "alt": { "fr": "Maquette en carton d’un quartier, avec une forme blanche en papier plié", "en": "Cardboard model of a neighbourhood with a white folded-paper shape" } }
+  ],
+  "anciennesAdresses": ["/mediation/"],
+  "fr": {
+    "seo": { "titre": "Ateliers de médiation · SAJE – Art & Paysage", "description": "Cartes sensibles, empreintes, collages, maquettes, dessin sur site : des ateliers de médiation autour du paysage pour les enfants, les habitants et les publics des lieux culturels." },
+    "titre": "Ateliers de médiation",
+    "accroche": "Cartes sensibles, empreintes, collages, maquettes : des ateliers pour regarder, dessiner et imaginer les paysages ensemble.",
+    "texte": "Les ateliers participatifs occupent une place centrale dans le travail d’Alice Stevens. Ils accompagnent les projets d’aménagement, comme le diagnostic partagé avec les enfants d’une école ou les rencontres avec les habitants, ou se suffisent à eux-mêmes, dans un parc, un château ou un festival.\n\nEn 2025, elle crée des ateliers de création et de médiation artistique en lien avec l’iconographie, l’histoire et les paysages du Château de Mayenne et du Château des Arcis : ateliers pour les enfants et les adultes, dessin en direct sur site. En Espagne, à Onda et à Villena, maquettes, jeux et grands dessins collectifs ont permis aux habitants de se réapproprier des lieux délaissés.",
+    "titreComprend": "Exemples d’ateliers",
+    "comprend": [
+      "Cartes sensibles : dessiner son territoire tel qu’on le vit",
+      "Empreintes et collages de matières et d’éléments végétaux",
+      "Maquettes et plans de la « cour rêvée » ou du quartier",
+      "Dessin en direct sur site, pour les enfants et les adultes",
+      "Concertation pédagogique dans les écoles"
+    ]
+  },
+  "en": {
+    "seo": { "titre": "Outreach workshops · SAJE – Art & Landscape", "description": "Sensory maps, prints, collages, models, on-site drawing: landscape workshops for children, residents and visitors to cultural sites." },
+    "titre": "Outreach workshops",
+    "accroche": "Sensory maps, prints, collages, models: workshops for looking at, drawing and imagining landscapes together.",
+    "texte": "Participatory workshops are central to Alice Stevens’s work. They can support design projects, such as a shared diagnosis with schoolchildren or meetings with residents, or stand on their own in a park, a château or a festival.\n\nIn 2025 she created art and outreach workshops drawing on the imagery, history and landscapes of the Château de Mayenne and the Château des Arcis: sessions for children and adults, and live drawing on site. In Spain, in Onda and Villena, models, games and large collective drawings helped residents reclaim neglected places.",
+    "titreComprend": "Examples of workshops",
+    "comprend": [
+      "Sensory maps: drawing your area as you experience it",
+      "Prints and collages of materials and plants",
+      "Models and plans of a “dream playground” or neighbourhood",
+      "Live drawing on site, for children and adults",
+      "Consultation workshops in schools"
+    ]
+  }
+}

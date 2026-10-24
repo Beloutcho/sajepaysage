@@ -1,0 +1,75 @@
+{
+  "slug": "cueillette-andrya",
+  "publie": true,
+  "ordre": 17,
+  "categories": [
+    "jardins-prives"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Cueillette Andrya",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "Andrya Farm",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "plan-1000-legendes.jpg",
+  "images": [
+    {
+      "fichier": "plan-1000-legendes.jpg",
+      "alt": {
+        "fr": "Plan coloré du site : terrasses, pergola, bacs potagers et terrasse du moulin",
+        "en": "Coloured site plan: terraces, pergola, vegetable beds and mill terrace"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "coupe-500-copie.jpg",
+      "alt": {
+        "fr": "Coupe longitudinale du site",
+        "en": "Long section through the site"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "p1100688.jpg",
+      "alt": {
+        "fr": "Ruine couverte de lierre au bord d’un champ",
+        "en": "Ivy-covered ruin at the edge of a field"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "terrasse-moulin.jpg",
+      "alt": {
+        "fr": "Croquis aquarellé : terrasse arborée et plantations",
+        "en": "Watercolour sketch: tree-lined terrace and planting"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/cueillette-andrya/"
+}

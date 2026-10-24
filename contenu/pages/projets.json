@@ -1,0 +1,12 @@
+{
+  "fr": {
+    "seo": { "titre": "Projets · SAJE – Art & Paysage", "description": "Jardins privés, espaces publics, installations, illustration et pédagogie : les projets d’Alice Stevens, paysagiste-conceptrice et artiste à Laval." },
+    "titre": "Projets",
+    "intro": "Des jardins privés intimistes aux espaces publics, chaque projet est pensé pour répondre aux enjeux locaux tout en portant une vision esthétique et durable. Les illustrations donnent vie aux idées et les rendent accessibles ; les projets artistiques abordent le paysage sous un angle plus poétique."
+  },
+  "en": {
+    "seo": { "titre": "Projects · SAJE – Art & Landscape", "description": "Private gardens, public spaces, installations, illustration and education: projects by Alice Stevens, landscape architect and artist in Laval, France." },
+    "titre": "Projects",
+    "intro": "From intimate private gardens to public spaces, each project responds to local issues while carrying an aesthetic, sustainable vision. Illustrations bring ideas to life and make them accessible; the art projects take a more poetic look at landscape."
+  }
+}

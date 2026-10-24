@@ -1,0 +1,141 @@
+{
+  "slug": "jardin-eve",
+  "publie": true,
+  "ordre": 7,
+  "categories": [
+    "jardins-prives"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Jardin Eve",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "Eve Garden",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "img-20240619-184107.jpg",
+  "images": [
+    {
+      "fichier": "img-20240619-184107.jpg",
+      "alt": {
+        "fr": "Grande pelouse bordée d’arbres et de haies, un château à tours rondes en arrière-plan",
+        "en": "Large lawn bordered by trees and hedges, a castle with round towers in the background"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "croquis-allee-dalle-sciees.jpg",
+      "alt": {
+        "fr": "Croquis au trait : allée en dalles sciées bordée de massifs",
+        "en": "Line sketch: path of sawn stone slabs lined with flower beds"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "croquis-terrasse-vue-pelouse.jpg",
+      "alt": {
+        "fr": "Croquis au trait : vue de la terrasse vers la pelouse et une pergola",
+        "en": "Line sketch: view from the terrace towards the lawn and a pergola"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20240503-143845.jpg",
+      "alt": {
+        "fr": "Pelouse et haies devant un château à tours rondes",
+        "en": "Lawn and hedges in front of a castle with round towers"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20240503-144101.jpg",
+      "alt": {
+        "fr": "Maison en pierre et pelouse avant les travaux",
+        "en": "Stone house and lawn before the works"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20240619-180301.jpg",
+      "alt": {
+        "fr": "Allée pavée entre pelouse et haie",
+        "en": "Paved path between lawn and hedge"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "massif.jpg",
+      "alt": {
+        "fr": "Croquis aquarellé : massif fleuri autour d’une pelouse ronde",
+        "en": "Watercolour sketch: flower bed around a round lawn"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "massif1.jpg",
+      "alt": {
+        "fr": "Croquis aquarellé : jardin vu depuis une terrasse dallée",
+        "en": "Watercolour sketch: garden seen from a paved terrace"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "massif2.jpg",
+      "alt": {
+        "fr": "Planche de plantation : massifs de vivaces dessinés et annotés",
+        "en": "Planting sheet: drawn and annotated perennial beds"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "massif3.jpg",
+      "alt": {
+        "fr": "Planche de plantation : massif de vivaces et de graminées annoté",
+        "en": "Planting sheet: annotated bed of perennials and grasses"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/jardin-eve/"
+}

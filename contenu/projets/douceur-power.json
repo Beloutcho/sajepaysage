@@ -1,0 +1,32 @@
+{
+  "slug": "douceur-power",
+  "publie": true,
+  "ordre": 12,
+  "categories": ["art-installations"],
+  "lieu": "La Roë, Lassay-les-Châteaux, Olivet et Meslay-du-Maine (53)",
+  "date": "2024 – 2025",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": ["installations-performances"],
+  "fr": {
+    "titre": "Douceur Power",
+    "accroche": "Une exposition d’encres et d’aquarelles sur la douceur et la simplicité d’un quotidien de femme, présentée dans plusieurs lieux mayennais.",
+    "intervention": "Création et montage de l’exposition",
+    "descriptif": "« Douceur Power » est la première exposition officielle d’Alice Stevens. Les sujets y sont plus personnels, plus intimes : ces aquarelles et ces encres capturent la douceur et la simplicité d’un quotidien de femme. Souvent négligée et associée à la faiblesse, la douceur demande pourtant une grande force pour être préservée et partagée avec ses proches.\n\nLa nature occupe une place importante dans ces œuvres. Arbres et bouquets de fleurs y sont fréquemment représentés, créés à partir de taches d’aquarelle puis retravaillés à l’encre de Chine et aux crayons de couleur. L’ensemble offre une interprétation à la fois douce et puissante des motifs végétaux, si présents dans le quotidien de l’artiste et paysagiste.\n\nLes dix-sept œuvres sur papier ont été exposées au musée Robert-d’Arbrissel de l’abbaye de La Roë (trois mois, été 2024), à « Sous l’Écorce », atelier d’artiste à Lassay-les-Châteaux (six mois), au Café du garage à Olivet (trois mois) puis au Château des Arcis, à Meslay-du-Maine (deux mois)."
+  },
+  "en": {
+    "titre": "Douceur Power",
+    "accroche": "An exhibition of inks and watercolours about the gentleness and simplicity of a woman’s everyday life, shown at several venues in Mayenne.",
+    "intervention": "Creation and staging of the exhibition",
+    "descriptif": "“Douceur Power” (the power of gentleness) is Alice Stevens’s first official exhibition. Its subjects are more personal and intimate: these watercolours and inks capture the gentleness and simplicity of a woman’s daily life. Often overlooked and equated with weakness, gentleness in fact takes great strength to preserve and to share with those close to us.\n\nNature plays a large part in these works. Trees and bunches of flowers appear often, built from watercolour blots and then reworked with Indian ink and coloured pencils. Together they offer a soft yet powerful take on plant motifs, so present in the daily life of an artist and landscape architect.\n\nThe seventeen works on paper were shown at the Robert-d’Arbrissel museum in the Abbey of La Roë (three months, summer 2024), at “Sous l’Écorce”, an artist’s studio in Lassay-les-Châteaux (six months), at the Café du garage in Olivet (three months) and then at the Château des Arcis in Meslay-du-Maine (two months)."
+  },
+  "couverture": "helianthus.jpg",
+  "images": [
+    { "fichier": "affiche.jpg", "alt": { "fr": "Affiche de l’exposition : « Douceur Power » en lettres roses sur des fleurs à l’aquarelle", "en": "Exhibition poster: “Douceur Power” in pink letters over watercolour flowers" }, "legende": { "fr": "Affiche de l’exposition, encres sur papier puis infographie", "en": "Exhibition poster, ink on paper and digital" } },
+    { "fichier": "helianthus.jpg", "alt": { "fr": "Aquarelle de grandes fleurs orangées et d’épis roses cernés d’encre", "en": "Watercolour of large orange flowers and pink spikes outlined in ink" }, "legende": { "fr": "« Helianthus », encres sur papier, 31 × 41 cm", "en": "“Helianthus”, ink on paper, 31 × 41 cm" } },
+    { "fichier": "delphinium.jpg", "alt": { "fr": "Aquarelle d’épis de fleurs bleus et violets entre des feuillages turquoise", "en": "Watercolour of blue and purple flower spikes among turquoise foliage" }, "legende": { "fr": "« Delphinium », encres et crayon sur papier, 31 × 41 cm", "en": "“Delphinium”, ink and pencil on paper, 31 × 41 cm" } },
+    { "fichier": "un-moment-entre-nous.jpg", "alt": { "fr": "Encre colorée : une femme lit dans un fauteuil, devant une bibliothèque", "en": "Coloured ink: a woman reading in an armchair in front of bookshelves" }, "legende": { "fr": "« Un moment entre nous », encres et crayon sur papier, 31 × 41 cm", "en": "“A moment between us”, ink and pencil on paper, 31 × 41 cm" } },
+    { "fichier": "pour-la-vie.jpg", "alt": { "fr": "Encre aux tons pourpres et dorés : une mère serre son enfant contre elle", "en": "Ink in purple and gold tones: a mother holds her child close" }, "legende": { "fr": "« Pour la vie », encres sur papier, 31 × 41 cm", "en": "“For life”, ink on paper, 31 × 41 cm" } },
+    { "fichier": "exposition-abbaye-la-roe.jpg", "alt": { "fr": "Œuvres encadrées accrochées à un mur de pierre, une sculpture noire au premier plan", "en": "Framed works hung on a stone wall, a black sculpture in the foreground" }, "legende": { "fr": "L’exposition à l’abbaye de La Roë", "en": "The exhibition at the Abbey of La Roë" } }
+  ]
+}

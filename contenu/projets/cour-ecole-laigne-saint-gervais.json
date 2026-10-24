@@ -1,0 +1,32 @@
+{
+  "slug": "cour-ecole-laigne-saint-gervais",
+  "publie": true,
+  "ordre": 3,
+  "categories": ["espaces-publics", "pedagogie"],
+  "lieu": "Laigné Saint-Gervais (53)",
+  "date": "2026",
+  "commanditaire": "Commune de Laigné Saint-Gervais",
+  "partenaires": "Odyssée Paysage, Amiens (mandataire)",
+  "missions": ["conception-espaces-exterieurs", "ateliers-mediation"],
+  "fr": {
+    "titre": "La cour-jardin de l’école Jean-Baptiste Galan",
+    "accroche": "La cour minérale d’une école primaire devient une école-jardin, imaginée avec les enfants de toutes les classes.",
+    "intervention": "Maîtrise d’œuvre paysagère en co-traitance, démarche participative",
+    "descriptif": "La commune de Laigné Saint-Gervais a confié à l’équipe Odyssée Paysage et Saje la maîtrise d’œuvre paysagère du réaménagement complet de la cour de l’école primaire Jean-Baptiste Galan, avec une démarche participative. Conçu selon les principes de l’urbanisme favorable à la santé, le projet place le bien-être et l’épanouissement des enfants au centre de la réflexion.\n\nL’aventure a débuté par une phase d’immersion et de concertation pédagogique avec l’ensemble des classes, pour établir un diagnostic partagé. Les enfants ont placé sur un plan les éléments « mal-aimés » de leur cour (espace clôturé, manque d’assises et de coins calmes, flaques au pied du préau, racines qui font trébucher, conflits autour du foot et du ping-pong), mais aussi leurs lieux favoris, afin de valoriser l’existant. À partir d’images de référence, ils ont ensuite construit en maquette et dessiné sur plan leur cour rêvée.\n\nCette concertation a directement mené au programme retenu et au plan d’esquisse : une cour-jardin réenchantée, ludique et poétique. En transformant un espace minéral en véritable école-jardin, le projet crée un écosystème propice à l’éveil à la biodiversité et à l’émerveillement. Entre zones de jeux actifs et recoins de calme (agora, butte, tunnel, cabanes-tipis, jardin olfactif, jardin des couleurs, verger, mare pédagogique, noue plantée, parcours d’équilibre), la cour offre des usages variés qui favorisent le partage et la reconnexion à la nature.\n\nStade : en cours, esquisse rendue début mars 2026. Budget global de l’opération : 200 000 €."
+  },
+  "en": {
+    "titre": "A garden schoolyard for the Jean-Baptiste Galan school",
+    "accroche": "The paved playground of a primary school becomes a garden school, imagined with the children of every class.",
+    "intervention": "Landscape design as co-contractor, participatory process",
+    "descriptif": "The town of Laigné Saint-Gervais commissioned the Odyssée Paysage and Saje team to redesign the entire playground of the Jean-Baptiste Galan primary school, with a participatory approach. Designed according to the principles of health-promoting urban planning, the project puts the children’s well-being and development at the heart of the process.\n\nIt began with an immersion and teaching-led consultation phase with every class to build a shared diagnosis. The children placed on a plan the “unloved” features of their playground (fenced-off areas, a lack of seating and quiet corners, puddles under the shelter, tripping roots, conflicts around football and table tennis) as well as their favourite spots, so that what already works could be kept. Using reference images, they then built models and drew their dream playground on the plan.\n\nThis consultation led directly to the brief and the sketch design: an enchanted, playful and poetic garden playground. By turning a paved area into a true garden school, the project creates an ecosystem that awakens curiosity about biodiversity and wonder. Between active play areas and quiet nooks (an agora, a mound, a tunnel, teepee huts, a scented garden, a garden of colours, an orchard, an educational pond, a planted swale, a balance trail), the playground offers a variety of uses that encourage sharing and reconnection with nature.\n\nStatus: ongoing, sketch design delivered in early March 2026. Overall budget: €200,000."
+  },
+  "couverture": "plan-esquisse.jpg",
+  "images": [
+    { "fichier": "plan-esquisse.jpg", "alt": { "fr": "Plan d’esquisse coloré de la cour : arbres, jardins, butte, aires de jeux et terrain multisport autour des bâtiments de l’école", "en": "Coloured sketch plan of the playground: trees, gardens, mound, play areas and multi-sport pitch around the school buildings" }, "legende": { "fr": "Plan d’esquisse, février 2026", "en": "Sketch plan, February 2026" } },
+    { "fichier": "diagnostic-conflits.jpg", "alt": { "fr": "Plan de la cour actuelle annoté en rouge : zones de conflit et problèmes repérés par les enfants", "en": "Plan of the current playground annotated in red: conflict areas and problems identified by the children" }, "legende": { "fr": "Plan schématique des conflits et désagréments de la cour actuelle, vus par les enfants", "en": "Diagram of the current playground’s conflicts and nuisances, as seen by the children" } },
+    { "fichier": "dessin-enfant.jpg", "alt": { "fr": "Dessin d’enfant aux feutres de couleur : plan de la cour rêvée, signé Izia", "en": "Child’s felt-tip drawing: plan of a dream playground, signed Izia" }, "legende": { "fr": "Dessin réalisé lors de la concertation par Izia, CM1", "en": "Drawing made during the consultation by Izia, aged 9" } },
+    { "fichier": "atelier-classe-01.jpg", "alt": { "fr": "Un enfant colle des étiquettes sur un plan projeté au tableau", "en": "A child sticks labels onto a plan projected on the board" }, "legende": { "fr": "Diagnostic des points positifs et négatifs de la cour", "en": "Listing what works and what doesn’t in the playground" } },
+    { "fichier": "atelier-classe-02.jpg", "alt": { "fr": "Des enfants posent des formes colorées sur un grand plan étalé sur une table", "en": "Children place coloured shapes on a large plan spread on a table" }, "legende": { "fr": "Maquette sur plan de la cour rêvée", "en": "Modelling the dream playground on a plan" } },
+    { "fichier": "atelier-classe-03.jpg", "alt": { "fr": "Deux élèves dessinent assises à une table, devant un plan projeté", "en": "Two pupils drawing at a table in front of a projected plan" }, "legende": { "fr": "Dessin sur plan", "en": "Drawing on the plan" } }
+  ]
+}

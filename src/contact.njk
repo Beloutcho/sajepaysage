@@ -1,0 +1,111 @@
+---
+pagination:
+  data: langues
+  size: 1
+  alias: lang
+langues: ["fr", "en"]
+cle: contact
+fichierContenu: pages/contact
+modules: ["contact"]
+permalink: "{{ 'contact' | lien(lang) }}"
+---
+{%- set C = contenu.contact -%}
+{%- set seo = C[lang].seo -%}
+{%- extends "layouts/base.njk" -%}
+{%- set F = "pages/contact" -%}
+
+{%- block contenu %}
+<div class="contact conteneur">
+  <header class="entete-page contact__entete">
+    <h1{{ F | champ("titre", lang, C) | safe }}>{{ C | loc(lang, "titre") }}</h1>
+    <p class="chapo"{{ F | champ("intro", lang, C) | safe }}>{{ C | loc(lang, "intro") }}</p>
+  </header>
+
+  <aside class="contact__coordonnees" aria-labelledby="titre-coordonnees">
+    <h2 id="titre-coordonnees"{{ F | champ("titreCoordonnees", lang, C) | safe }}>{{ C | loc(lang, "titreCoordonnees") }}</h2>
+    <dl class="fiche">
+      <div><dt>{{ t.email }}</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+      {%- if site.afficherTelephone %}
+      <div><dt>{{ t.telephone }}</dt><dd><a href="{{ site.telephone | telephoneLien }}">{{ site.telephoneAffiche }}</a></dd></div>
+      {%- endif %}
+      <div><dt>{{ t.lieu }}</dt><dd>{{ site.ville }}</dd></div>
+    </dl>
+    <h2{{ F | champ("titreReseaux", lang, C) | safe }}>{{ C | loc(lang, "titreReseaux") }}</h2>
+    <ul class="reseaux">
+      {%- for reseau in site.reseaux %}
+      <li><a href="{{ reseau.url }}" rel="me">{{ reseau.nom }}</a></li>
+      {%- endfor %}
+    </ul>
+  </aside>
+
+  <section class="contact__formulaire" aria-labelledby="titre-formulaire">
+    <h2 id="titre-formulaire"{{ F | champ("titreFormulaire", lang, C) | safe }}>{{ C | loc(lang, "titreFormulaire") }}</h2>
+    <p class="texte-secondaire"{{ F | champ("aideFormulaire", lang, C) | safe }}>{{ C | loc(lang, "aideFormulaire") }}</p>
+
+    <form class="formulaire" action="mailto:{{ site.email }}" method="post" enctype="text/plain" novalidate
+      data-email="{{ site.email }}" data-objet="{{ t.formObjet }}"
+      data-erreur-requis="{{ t.formErreurRequis }}" data-erreur-email="{{ t.formErreurEmail }}" data-copie="{{ t.formCopie }}">
+      <div class="formulaire__erreurs" role="alert" tabindex="-1" hidden>{{ t.formErreurs }}</div>
+
+      <div class="champ">
+        <label for="nom">{{ t.formNom }} <span class="champ__statut">({{ t.formObligatoire }})</span></label>
+        <input id="nom" name="nom" type="text" autocomplete="name" required aria-describedby="nom-erreur">
+        <p class="champ__erreur" id="nom-erreur" hidden></p>
+      </div>
+      <div class="champ">
+        <label for="email">{{ t.formEmail }} <span class="champ__statut">({{ t.formObligatoire }})</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-erreur">
+        <p class="champ__erreur" id="email-erreur" hidden></p>
+      </div>
+      <div class="champ">
+        <label for="telephone">{{ t.formTelephone }} <span class="champ__statut">({{ t.formFacultatif }})</span></label>
+        <input id="telephone" name="telephone" type="tel" autocomplete="tel">
+      </div>
+      <div class="champ">
+        <label for="type">{{ t.formType }} <span class="champ__statut">({{ t.formObligatoire }})</span></label>
+        <select id="type" name="type" required aria-describedby="type-erreur">
+          <option value="">{{ t.formChoisir }}</option>
+          {%- for o in C.typesProjet %}
+          <option value="{{ o[lang] or o.fr }}">{{ o[lang] or o.fr }}</option>
+          {%- endfor %}
+        </select>
+        <p class="champ__erreur" id="type-erreur" hidden></p>
+      </div>
+      <div class="champ">
+        <label for="commune">{{ t.formCommune }} <span class="champ__statut">({{ t.formFacultatif }})</span></label>
+        <input id="commune" name="commune" type="text" autocomplete="address-level2">
+      </div>
+      <div class="champ">
+        <label for="budget">{{ t.formBudget }} <span class="champ__statut">({{ t.formFacultatif }})</span></label>
+        <select id="budget" name="budget">
+          <option value="">{{ t.formChoisir }}</option>
+          {%- for o in C.budgets %}
+          <option value="{{ o[lang] or o.fr }}">{{ o[lang] or o.fr }}</option>
+          {%- endfor %}
+        </select>
+      </div>
+      <div class="champ champ--large">
+        <label for="echeance">{{ t.formEcheance }} <span class="champ__statut">({{ t.formFacultatif }})</span></label>
+        <input id="echeance" name="echeance" type="text" aria-describedby="echeance-aide">
+        <p class="champ__aide" id="echeance-aide">{{ t.formEcheanceAide }}</p>
+      </div>
+      <div class="champ champ--large">
+        <label for="message">{{ t.formMessage }} <span class="champ__statut">({{ t.formObligatoire }})</span></label>
+        <textarea id="message" name="message" rows="7" required aria-describedby="message-aide message-erreur"></textarea>
+        <p class="champ__aide" id="message-aide">{{ t.formMessageAide }}</p>
+        <p class="champ__erreur" id="message-erreur" hidden></p>
+      </div>
+      <div class="champ--large">
+        <button class="bouton bouton--violet" type="submit">{{ t.formEnvoyer }}</button>
+      </div>
+    </form>
+
+    <div class="formulaire__succes" role="status" tabindex="-1" hidden>
+      <p><strong>{{ t.formSucces }}</strong></p>
+      <p>{{ t.formSuccesAide }} <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+      <pre class="formulaire__apercu" tabindex="0"></pre>
+      <button class="bouton bouton--contour formulaire__copier" type="button">{{ t.formCopier }}</button>
+    </div>
+  </section>
+</div>
+{%- endblock %}

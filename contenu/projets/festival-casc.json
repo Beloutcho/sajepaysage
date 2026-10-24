@@ -1,0 +1,39 @@
+{
+  "slug": "festival-casc",
+  "publie": true,
+  "ordre": 11,
+  "categories": ["pedagogie", "art-installations"],
+  "lieu": "Villena (Espagne)",
+  "date": "",
+  "commanditaire": "Festival el CASC",
+  "partenaires": "Grupo Aranea, école d’architecture d’Alicante, habitants de Villena",
+  "missions": ["ateliers-mediation", "installations-performances"],
+  "fr": {
+    "titre": "Dibujad, malditos ! L’anneau de dessin",
+    "accroche": "Au festival el CASC, une installation en forme d’anneau invite habitants, enfants et artistes à dessiner ensemble leurs paysages quotidiens.",
+    "intervention": "Installation et ateliers de dessin",
+    "descriptif": "Organisé dans le centre historique dépeuplé de Villena, en Espagne, el CASC, festival d’architecture, d’art et de design, rassemble habitants, artistes, architectes, designers et étudiants. Avec Grupo Aranea et l’école d’architecture d’Alicante, Alice Stevens y a proposé « Dibujad, malditos! », une installation plastique en forme d’anneau.\n\nTrois sessions de dessin s’y sont succédé : le dessin de l’existant sur la face extérieure de l’anneau ; un dessin « à l’aveugle » à l’intérieur, pour tester une autre perception des paysages quotidiens ; enfin une session de dessin libre sur les deux faces. Cette dernière fut un moment de partage, de rassemblement festif et de découverte du dessin in situ pour tous les participants.\n\nLe projet proposait une appropriation créative des paysages quotidiens et a permis de reconnecter les habitants à une partie du village laissée à l’abandon. Les jeunes publics ont été particulièrement réceptifs, et c’est grâce à eux que des adultes ont rejoint le projet. Le festival el CASC a été reconduit plusieurs années et a eu un réel impact sur la perception de ces quartiers dépréciés."
+  },
+  "en": {
+    "titre": "Dibujad, malditos! The drawing ring",
+    "accroche": "At the el CASC festival, a ring-shaped installation invited residents, children and artists to draw their everyday landscapes together.",
+    "intervention": "Installation and drawing workshops",
+    "descriptif": "Held in the depopulated historic centre of Villena, Spain, el CASC, a festival of architecture, art and design, brings together residents, artists, architects, designers and students. With Grupo Aranea and the Alicante school of architecture, Alice Stevens proposed “Dibujad, malditos!”, a ring-shaped art installation.\n\nThree drawing sessions followed one another: drawing what was there on the outside of the ring; “blind” drawing on the inside, to try out a different perception of everyday landscapes; and finally free drawing on both sides. That last session was a moment of sharing, festive gathering and discovering on-site drawing for everyone taking part.\n\nThe project offered a creative way to take ownership of everyday landscapes and reconnected residents with an abandoned part of the town. Young people were especially enthusiastic, and it was thanks to them that adults joined in. El CASC has been held again for several years and has genuinely changed how these neglected neighbourhoods are seen."
+  },
+  "couverture": "installation.jpg",
+  "images": [
+    { "fichier": "installation.jpg", "alt": { "fr": "L’anneau de dessin installé sous les pins, entouré de participants", "en": "The drawing ring set up under the pine trees, surrounded by participants" }, "legende": { "fr": "L’anneau de dessin sensoriel", "en": "The sensory drawing ring" } },
+    { "fichier": "1-diagnostic-et-co-conception.jpg", "alt": { "fr": "Participants penchés sur une grande table couverte de plans et de notes", "en": "Participants leaning over a large table covered with plans and notes" }, "legende": { "fr": "Diagnostic et co-conception", "en": "Site analysis and co-design" } },
+    { "fichier": "1-construction-et-montage-des-pieces.jpg", "alt": { "fr": "Des jeunes portent un grand panneau courbe en haut d’un escalier", "en": "Young people carry a large curved panel up a flight of steps" }, "legende": { "fr": "Construction et montage des pièces", "en": "Building and assembling the pieces" } },
+    { "fichier": "15596-973508206002442-1964554745710782070-n.jpg", "alt": { "fr": "Un groupe dresse les panneaux de carton de l’anneau, montagnes en arrière-plan", "en": "A group raises the cardboard panels of the ring, mountains in the background" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "3-entrainement-et-dessin-exterieur.jpg", "alt": { "fr": "Une participante dessine à l’aquarelle, assise par terre, son matériel étalé autour d’elle", "en": "A participant paints in watercolour, sitting on the ground with her materials around her" }, "legende": { "fr": "Entraînement et dessin en extérieur", "en": "Practice and outdoor drawing" } },
+    { "fichier": "3-entrainement-et-dessin-exterieur-1.jpg", "alt": { "fr": "Un enfant allongé au sol peint à l’aquarelle sur une feuille", "en": "A child lying on the ground paints a watercolour on a sheet of paper" }, "legende": { "fr": "Entraînement et dessin en extérieur", "en": "Practice and outdoor drawing" } },
+    { "fichier": "4-inspiration-du-cadre-et-realisation.jpg", "alt": { "fr": "Une participante peint sur l’anneau face à une tour médiévale", "en": "A participant paints on the ring facing a medieval tower" }, "legende": { "fr": "S’inspirer du cadre et dessiner", "en": "Drawing inspiration from the setting" } },
+    { "fichier": "4-realisation-groupee.jpg", "alt": { "fr": "Plusieurs personnes peignent ensemble sur la paroi de l’anneau", "en": "Several people paint together on the wall of the ring" }, "legende": { "fr": "Réalisation à plusieurs", "en": "Painting together" } },
+    { "fichier": "4-realisation.jpg", "alt": { "fr": "Gros plan sur une participante qui peint de grandes formes rouges et vertes", "en": "Close-up of a participant painting large red and green shapes" }, "legende": { "fr": "Réalisation", "en": "Painting" } },
+    { "fichier": "5-lien-social.jpg", "alt": { "fr": "Participants souriants, visages et bras couverts de peinture", "en": "Smiling participants, faces and arms covered in paint" }, "legende": { "fr": "Lien social", "en": "Bringing people together" } },
+    { "fichier": "6-lien-social-et-restitution.jpg", "alt": { "fr": "Le public assis à l’ombre des pins écoute la restitution", "en": "The audience seated in the shade of the pines listens to the presentation" }, "legende": { "fr": "Lien social et restitution", "en": "Bringing people together and sharing the results" } },
+    { "fichier": "anneau-de-dessin.jpg", "alt": { "fr": "L’anneau de dessin vu de loin, sur une esplanade dominant la ville", "en": "The drawing ring seen from afar, on an esplanade overlooking the town" }, "legende": { "fr": "", "en": "" } }
+  ],
+  "ancienneAdresse": "/festival-casc/"
+}

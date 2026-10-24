@@ -1,0 +1,141 @@
+---
+pagination:
+  data: langues
+  size: 1
+  alias: lang
+langues: ["fr", "en"]
+cle: accueil
+fichierContenu: accueil
+modules: ["diaporama"]
+permalink: "{{ 'accueil' | lien(lang) }}"
+---
+{%- set accueil = contenu.accueil -%}
+{%- set A = accueil[lang] -%}
+{%- set premiere = accueil.diaporama[0] -%}
+{%- set sizesDiapo = "(min-width: 1344px) 1216px, calc(100vw - 32px)" -%}
+{%- set seo = A.seo -%}
+{%- set ogImage = premiere.image -%}
+{%- set preloadImage = { srcset: premiere.image | srcset("avif"), sizes: sizesDiapo } -%}
+{%- extends "layouts/base.njk" -%}
+
+{%- block tete %}
+<script type="application/ld+json">{{ contenu.site | localBusiness(lang, premiere.image | imageUrl(1600)) | safe }}</script>
+{%- endblock %}
+
+{%- block contenu %}
+<section class="diaporama conteneur" aria-roledescription="{{ 'carrousel' if lang == 'fr' else 'carousel' }}" aria-label="{{ t.diaporama }}">
+  <div class="diaporama__cadre">
+    <ul class="diaporama__liste" aria-live="off">
+      {%- for diapo in accueil.diaporama %}
+      {%- set p = contenu.projets | parSlug(diapo.projet) %}
+      <li class="diapo{% if loop.first %} est-active{% endif %}" aria-roledescription="{{ t.diapositive }}" aria-label="{{ loop.index }} {{ t.sur }} {{ accueil.diaporama | length }}"{% if not loop.first %} aria-hidden="true"{% endif %} data-champ-image="accueil:diaporama.{{ loop.index0 }}">
+        <a class="diapo__lien" href="{{ 'projet' | lien(lang, diapo.projet) if p and p.publie else 'projets' | lien(lang) }}"{% if not loop.first %} tabindex="-1"{% endif %}>
+          {%- if loop.first %}
+          {{ diapo.image | image(diapo.alt[lang] or diapo.alt.fr, sizesDiapo, { prioritaire: true, classe: "diapo__image" }) | safe }}
+          {%- else %}
+          {#- Les diapositives suivantes ne se chargent qu'après la page (js/diaporama.js) : sans JavaScript, seule la première s'affiche. #}
+          <template class="diapo__differee">{{ diapo.image | image(diapo.alt[lang] or diapo.alt.fr, sizesDiapo, { classe: "diapo__image" }) | safe }}</template>
+          {%- endif %}
+          <span class="diapo__legende"{{ "accueil" | champ("diaporama." ~ loop.index0 ~ ".legende." ~ lang) | safe }}>{{ diapo.legende[lang] or diapo.legende.fr }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+    <div class="encart">
+      <p class="surtitre"{{ "accueil" | champ("encart.surtitre", lang, accueil) | safe }}>{{ accueil | loc(lang, "encart.surtitre") }}</p>
+      <h1 class="encart__titre"{{ "accueil" | champ("encart.titre", lang, accueil) | safe }}>{{ accueil | loc(lang, "encart.titre") }}</h1>
+      <a class="lien-fleche" href="{{ 'projets' | lien(lang) }}"><span{{ "accueil" | champ("encart.lien", lang, accueil) | safe }}>{{ accueil | loc(lang, "encart.lien") }}</span> <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="diaporama__commandes" hidden>
+      <button class="diaporama__pause" type="button" aria-label="{{ t.diapoPause }}" data-libelle-pause="{{ t.diapoPause }}" data-libelle-lecture="{{ t.diapoLecture }}">
+        <svg class="icone-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="3" y="2" width="3" height="10" rx="1" fill="currentColor"/><rect x="8" y="2" width="3" height="10" rx="1" fill="currentColor"/></svg>
+        <svg class="icone-lecture" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 2.5v9l7.5-4.5z" fill="currentColor"/></svg>
+      </button>
+      <button class="diaporama__fleche" type="button" data-sens="-1" aria-label="{{ t.diapoPrecedente }}"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="diaporama__points">
+        {%- for diapo in accueil.diaporama %}
+        <button type="button" class="diaporama__point" data-index="{{ loop.index0 }}" aria-label="{{ t.diapoAller }} {{ loop.index }} {{ t.sur }} {{ accueil.diaporama | length }}"{% if loop.first %} aria-current="true"{% endif %}></button>
+        {%- endfor %}
+      </div>
+      <button class="diaporama__fleche" type="button" data-sens="1" aria-label="{{ t.diapoSuivante }}"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<section class="bandeau-violet">
+  <div class="bandeau-violet__contenu conteneur">
+    <div class="bandeau-violet__cote">
+      <span class="trait-citron" aria-hidden="true"></span>
+      <p class="surtitre surtitre--clair"{{ "accueil" | champ("bandeau.surtitre", lang, accueil) | safe }}>{{ accueil | loc(lang, "bandeau.surtitre") }}</p>
+    </div>
+    <div class="bandeau-violet__texte">
+      <p class="grand-texte"{{ "accueil" | champ("bandeau.texte", lang, accueil) | safe }}>{{ accueil | loc(lang, "bandeau.texte") }}</p>
+      <a class="bouton bouton--creme" href="{{ 'demarche' | lien(lang) }}"><span{{ "accueil" | champ("bandeau.bouton", lang, accueil) | safe }}>{{ accueil | loc(lang, "bandeau.bouton") }}</span> <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="une conteneur apparition" aria-labelledby="titre-une">
+  <div class="titre-section">
+    <h2 id="titre-une"{{ "accueil" | champ("une.titre", lang, accueil) | safe }}>{{ accueil | loc(lang, "une.titre") }}</h2>
+    <a class="lien-fleche" href="{{ 'projets' | lien(lang) }}"><span{{ "accueil" | champ("une.lien", lang, accueil) | safe }}>{{ accueil | loc(lang, "une.lien") }}</span> <span aria-hidden="true">→</span></a>
+  </div>
+  {%- for slugUne in accueil.aLaUne %}
+  {%- set p = contenu.projets | parSlug(slugUne) %}
+  {%- if p and p.publie %}
+  <article class="une__projet apparition">
+    <a class="une__image" href="{{ 'projet' | lien(lang, p.slug) }}" tabindex="-1" aria-hidden="true">
+      {{ ("projets/" ~ p.slug ~ "/" ~ p.couverture) | image("", "(min-width: 1000px) 680px, calc(100vw - 32px)") | safe }}
+    </a>
+    <div class="une__texte">
+      <p class="surtitre">{{ p.categories[0] | categorie(contenu.site, lang) }}{% if p.lieu %} · {{ p.lieu }}{% endif %}</p>
+      <h3 class="une__titre"><a href="{{ 'projet' | lien(lang, p.slug) }}">{{ p | loc(lang, "titre") }}</a></h3>
+      {%- if p | loc(lang, "accroche") %}
+      <p{% if p | repli(lang, "accroche") %} lang="fr"{% endif %}>{{ p | loc(lang, "accroche") }}</p>
+      {%- endif %}
+      <dl class="fiche fiche--compacte">
+        {%- if p.commanditaire %}<div><dt>{{ t.commanditaire }}</dt><dd>{{ p.commanditaire }}</dd></div>{% endif %}
+        {%- if p.partenaires %}<div><dt>{{ t.partenaires }}</dt><dd>{{ p.partenaires }}</dd></div>{% endif %}
+        {%- if p | loc(lang, "intervention") %}<div><dt>{{ t.intervention }}</dt><dd>{{ p | loc(lang, "intervention") }}</dd></div>{% endif %}
+        {%- if p.date %}<div><dt>{{ t.date }}</dt><dd>{{ p.date }}</dd></div>{% endif %}
+      </dl>
+      <a class="lien-fleche lien-fleche--sombre" href="{{ 'projet' | lien(lang, p.slug) }}" aria-label="{{ t.voirProjet }} : {{ p | loc(lang, 'titre') }}">{{ t.voirProjet }} <span aria-hidden="true">→</span></a>
+    </div>
+  </article>
+  {%- endif %}
+  {%- endfor %}
+</section>
+
+<section class="accueil-missions apparition" aria-labelledby="titre-missions">
+  <div class="conteneur">
+    <div class="titre-section">
+      <h2 id="titre-missions"{{ "accueil" | champ("missions.titre", lang, accueil) | safe }}>{{ accueil | loc(lang, "missions.titre") }}</h2>
+      <a class="lien-fleche" href="{{ 'missions' | lien(lang) }}"><span{{ "accueil" | champ("missions.lien", lang, accueil) | safe }}>{{ accueil | loc(lang, "missions.lien") }}</span> <span aria-hidden="true">→</span></a>
+    </div>
+    <ul class="missions-liste">
+      {%- for m in contenu.missions %}
+      <li class="mission-lien">
+        <a href="{{ 'mission' | lien(lang, m.slug) }}">
+          <span class="mission-lien__titre">{{ m | loc(lang, "titre") }}</span>
+          <span class="mission-lien__texte">{{ m | loc(lang, "accroche") }}</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="accueil-demarche conteneur apparition" aria-labelledby="titre-demarche">
+  <div class="accueil-demarche__image" data-champ-image="accueil:demarcheImage">
+    {{ accueil.demarcheImage.image | image(accueil.demarcheImage.alt[lang] or accueil.demarcheImage.alt.fr, "(min-width: 900px) 460px, calc(100vw - 32px)") | safe }}
+  </div>
+  <div class="accueil-demarche__texte">
+    <h2 class="surtitre" id="titre-demarche"{{ "accueil" | champ("demarche.surtitre", lang, accueil) | safe }}>{{ accueil | loc(lang, "demarche.surtitre") }}</h2>
+    <p class="citation"{{ "accueil" | champ("demarche.citation", lang, accueil) | safe }}>{{ accueil | loc(lang, "demarche.citation") }}</p>
+    <p class="texte-secondaire"{{ "accueil" | champ("demarche.texte", lang, accueil) | safe }}>{{ accueil | loc(lang, "demarche.texte") }}</p>
+    <a class="lien-fleche lien-fleche--sombre" href="{{ 'demarche' | lien(lang) }}"><span{{ "accueil" | champ("demarche.lien", lang, accueil) | safe }}>{{ accueil | loc(lang, "demarche.lien") }}</span> <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+{% include "partials/appel.njk" %}
+{%- endblock %}

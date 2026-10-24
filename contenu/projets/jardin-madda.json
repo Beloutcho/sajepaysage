@@ -1,0 +1,163 @@
+{
+  "slug": "jardin-madda",
+  "publie": true,
+  "ordre": 6,
+  "categories": [
+    "jardins-prives"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Jardin Madda",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "Madda Garden",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "img-2209-photoshop.jpg",
+  "images": [
+    {
+      "fichier": "img-2209-photoshop.jpg",
+      "alt": {
+        "fr": "Terrasse sur le toit au coucher du soleil : bacs en bois plantés de graminées, tours de bureaux à l’horizon",
+        "en": "Rooftop terrace at sunset: wooden planters with grasses, office towers on the horizon"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "adda.jpg",
+      "alt": {
+        "fr": "Croquis au trait : une femme accoudée à des bacs fleuris sur une terrasse",
+        "en": "Line sketch: a woman leaning on flower-filled planters on a terrace"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "adda-vue-large.jpg",
+      "alt": {
+        "fr": "Croquis au trait de la terrasse : bacs plantés et pergola",
+        "en": "Line sketch of the terrace: planters and pergola"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2212-photoshop.jpg",
+      "alt": {
+        "fr": "Terrasse en bois avec table et parasol, entourée de plantations",
+        "en": "Wooden deck with table and parasol, surrounded by planting"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2218-photoshop.jpg",
+      "alt": {
+        "fr": "Terrasse plantée devant une véranda vitrée, tours au loin dans un ciel rose",
+        "en": "Planted terrace in front of a glass room, towers in the distance against a pink sky"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2219-photoshop.jpg",
+      "alt": {
+        "fr": "Coin repas et bacs plantés sur la terrasse",
+        "en": "Dining area and planters on the terrace"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2223-photoshop.jpg",
+      "alt": {
+        "fr": "Graminées au premier plan devant un garde-corps",
+        "en": "Grasses in the foreground in front of a railing"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2233-photoshop.jpg",
+      "alt": {
+        "fr": "Bacs fleuris et lavandes face aux tours",
+        "en": "Flowering planters and lavender facing the towers"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2235-photoshop.jpg",
+      "alt": {
+        "fr": "Graminées dorées dans la lumière du soir",
+        "en": "Golden grasses in the evening light"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2236-photoshop.jpg",
+      "alt": {
+        "fr": "Graminées sur fond de ciel rose au crépuscule",
+        "en": "Grasses against a pink dusk sky"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2247-photoshop.jpg",
+      "alt": {
+        "fr": "Table en bois entre des poteaux et des graminées",
+        "en": "Wooden table between posts and grasses"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-2254-photoshop.jpg",
+      "alt": {
+        "fr": "Poteries et graminées sur la terrasse au crépuscule",
+        "en": "Pots and grasses on the terrace at dusk"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/jardin-madda/"
+}

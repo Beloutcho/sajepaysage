@@ -1,0 +1,82 @@
+{
+  "slug": "conception-espaces-exterieurs",
+  "ordre": 1,
+  "categorie": "espaces-publics",
+  "image": {
+    "image": "projets/cour-ecole-laigne-saint-gervais/plan-esquisse.jpg",
+    "alt": { "fr": "Plan d’esquisse coloré d’une cour d’école transformée en jardin", "en": "Coloured sketch plan of a school playground turned into a garden" }
+  },
+  "anciennesAdresses": ["/conception-de-jardin/", "/assistance-a-maitrise-douvrage/", "/valorisation-de-site/"],
+  "fr": {
+    "seo": { "titre": "Conception d’espaces extérieurs · SAJE – Art & Paysage", "description": "Jardins privés, espaces publics, cours d’école et parcs : conception, maîtrise d’œuvre et assistance à maîtrise d’ouvrage par Alice Stevens, paysagiste-conceptrice à Laval." },
+    "titre": "Conception d’espaces extérieurs",
+    "accroche": "Jardins privés, espaces publics, cours d’école, parcs : du conseil à la maîtrise d’œuvre, ou en appui d’une collectivité.",
+    "texte": "Alice Stevens conçoit des jardins et des espaces publics à partir d’une lecture attentive du site : ses sols, son eau, sa végétation, ses usages et son histoire. Le végétal y est pensé comme une matière vivante et évolutive, et l’entretien est intégré dès la conception, avec des choix adaptés aux personnes et aux moyens disponibles.\n\nPour les particuliers, l’accompagnement va du conseil, pour transformer son jardin soi-même, jusqu’à la conception sur mesure et l’assistance à la réalisation. Pour les collectivités, Saje intervient en maîtrise d’œuvre, seule ou en équipe, et en assistance à maîtrise d’ouvrage.\n\nPendant trois ans au CAUE de la Mayenne, Alice Stevens a accompagné les collectivités dans leurs projets d’aménagement ; cette expérience nourrit sa connaissance des contextes locaux et des enjeux des communes.",
+    "titreComprend": "Ce que la mission comprend",
+    "comprend": [
+      "Diagnostic et état des lieux : sols, eau, végétation, usages, histoire du site",
+      "Conception de jardins privés : plans, croquis d’ambiance, plans de plantation",
+      "Maîtrise d’œuvre d’espaces publics, parcs, cours d’école et abords d’équipements",
+      "Assistance à maîtrise d’ouvrage pour les collectivités",
+      "Valorisation de site, plans de gestion et d’entretien",
+      "Concertation avec les habitants, les usagers, les élus et les techniciens"
+    ],
+    "sections": [
+      {
+        "titre": "Le déroulé d’une maîtrise d’œuvre",
+        "texte": "Pour un espace public, la mission suit les étapes classiques de la maîtrise d’œuvre. Chacune se termine par une validation avec le maître d’ouvrage avant de passer à la suivante.",
+        "etapes": [
+          { "code": "EP", "nom": "Études préliminaires", "texte": "Relevé et analyse du site, premières orientations, vérification de la faisabilité." },
+          { "code": "ESQ", "nom": "Esquisse", "texte": "Une ou plusieurs propositions d’organisation générale, confrontées au programme et au budget." },
+          { "code": "AVP", "nom": "Avant-projet", "texte": "Le parti retenu est précisé : plans, matériaux, palette végétale, estimation détaillée." },
+          { "code": "PRO", "nom": "Projet", "texte": "Définition technique complète des ouvrages et des plantations." },
+          { "code": "DCE", "nom": "Dossier de consultation des entreprises", "texte": "Pièces écrites et graphiques pour consulter les entreprises." },
+          { "code": "ACT", "nom": "Assistance pour la passation des contrats de travaux", "texte": "Analyse des offres et aide au choix des entreprises." },
+          { "code": "VISA", "nom": "Visa des études d’exécution", "texte": "Vérification de la conformité des plans d’exécution des entreprises au projet." },
+          { "code": "DET", "nom": "Direction de l’exécution des travaux", "texte": "Suivi du chantier, réunions, contrôle de la qualité des travaux et des plantations." },
+          { "code": "AOR", "nom": "Assistance aux opérations de réception", "texte": "Réception des travaux, suivi des réserves et de la reprise des végétaux." }
+        ]
+      },
+      {
+        "titre": "Assistance à maîtrise d’ouvrage",
+        "texte": "En amont d’un projet, Alice Stevens aide les collectivités à y voir clair : diagnostic du site, définition des besoins et du programme, premiers scénarios d’aménagement, appui à la concertation. À Yzernay, elle est ainsi intervenue pour le bureau d’études Vic-Ouest, assistant à maîtrise d’ouvrage de la commune, sur le diagnostic et la conception du parc naturel des Îlots Changeants."
+      }
+    ]
+  },
+  "en": {
+    "seo": { "titre": "Outdoor space design · SAJE – Art & Landscape", "description": "Private gardens, public spaces, school playgrounds and parks: design, project management and client-side support by Alice Stevens, landscape architect in Laval, France." },
+    "titre": "Outdoor space design",
+    "accroche": "Private gardens, public spaces, school playgrounds, parks: from advice to full design and project management, or support for a local authority.",
+    "texte": "Alice Stevens designs gardens and public spaces from a careful reading of the site: its soils, water, vegetation, uses and history. Plants are treated as a living, evolving material, and maintenance is built in from the start, with choices suited to the people and resources available.\n\nFor private clients, support ranges from advice, for those who want to transform their garden themselves, to bespoke design and help during construction. For local authorities, Saje works as lead or team designer and as client-side adviser.\n\nDuring three years at the CAUE de la Mayenne, Alice Stevens supported local authorities with their development projects; this experience informs her knowledge of local contexts and of the issues towns and villages face.",
+    "titreComprend": "What the service includes",
+    "comprend": [
+      "Site survey and analysis: soils, water, vegetation, uses, history",
+      "Private garden design: plans, mood sketches, planting plans",
+      "Design and project management for public spaces, parks, school playgrounds and the grounds of public buildings",
+      "Client-side project support for local authorities",
+      "Site enhancement, management and maintenance plans",
+      "Consultation with residents, users, elected officials and technical staff"
+    ],
+    "sections": [
+      {
+        "titre": "How a design commission unfolds",
+        "texte": "For a public space, the commission follows the standard French project stages. Each one ends with the client’s approval before moving on to the next.",
+        "etapes": [
+          { "code": "EP", "nom": "Preliminary studies", "texte": "Site survey and analysis, initial directions, feasibility check." },
+          { "code": "ESQ", "nom": "Sketch design", "texte": "One or more overall layout proposals, tested against the brief and budget." },
+          { "code": "AVP", "nom": "Outline design", "texte": "The chosen scheme is developed: plans, materials, plant palette, detailed estimate." },
+          { "code": "PRO", "nom": "Detailed design", "texte": "Full technical definition of the works and planting." },
+          { "code": "DCE", "nom": "Tender documents", "texte": "Written and drawn documents for inviting contractors to tender." },
+          { "code": "ACT", "nom": "Contract award support", "texte": "Analysis of bids and help choosing contractors." },
+          { "code": "VISA", "nom": "Review of contractor drawings", "texte": "Checking that contractors’ construction drawings match the design." },
+          { "code": "DET", "nom": "Site supervision", "texte": "Site meetings and quality control of the works and planting." },
+          { "code": "AOR", "nom": "Handover", "texte": "Acceptance of the works, follow-up of snagging and plant establishment." }
+        ]
+      },
+      {
+        "titre": "Client-side project support",
+        "texte": "Before a project starts, Alice Stevens helps local authorities see clearly: site analysis, defining needs and the brief, initial layout options, support with consultation. In Yzernay, for example, she worked for the Vic-Ouest consultancy, the town’s project adviser, on the site analysis and design of the Shifting Islets Nature Park."
+      }
+    ]
+  }
+}

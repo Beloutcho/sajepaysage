@@ -1,0 +1,97 @@
+{
+  "slug": "prairie-ludique",
+  "publie": true,
+  "ordre": 9,
+  "categories": [
+    "espaces-publics"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Prairie ludique",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "Playful Meadow",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "dessin-ambiance.jpg",
+  "images": [
+    {
+      "fichier": "dessin-ambiance.jpg",
+      "alt": {
+        "fr": "Croquis aquarellé : prairie traversée d’un sentier, avec bancs et arbres, devant un bâtiment moderne",
+        "en": "Watercolour sketch: a meadow crossed by a path, with benches and trees, in front of a modern building"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "fond-de-plan-projet-20072021.jpg",
+      "alt": {
+        "fr": "Plan du projet dessiné sur une photographie aérienne",
+        "en": "Project plan drawn over an aerial photograph"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "fond-de-plan-projet-phases-20072021.jpg",
+      "alt": {
+        "fr": "Plan du projet par phases, zones colorées en jaune, bleu et brun",
+        "en": "Phased project plan with areas coloured yellow, blue and brown"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "panorama-entree-zone.jpg",
+      "alt": {
+        "fr": "Panorama de la prairie existante bordée d’arbres",
+        "en": "Panorama of the existing meadow lined with trees"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "schema-amenagement.jpg",
+      "alt": {
+        "fr": "Schéma d’aménagement en noir et blanc : arbres, cheminements et bâtiments",
+        "en": "Black-and-white layout diagram: trees, paths and buildings"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "schema-amenagement2.jpg",
+      "alt": {
+        "fr": "Schéma en noir : masses boisées et cheminements",
+        "en": "Black diagram: wooded areas and paths"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/amenagement-public/"
+}

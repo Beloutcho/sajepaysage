@@ -1,0 +1,44 @@
+---
+permalink: /admin/contenus.json
+eleventyExcludeFromCollections: true
+---
+{%- set C = contenu -%}
+{%- set pages = [
+  { fichier: "accueil", cle: "accueil", titre: "Accueil", objet: C.accueil },
+  { fichier: "pages/demarche", cle: "demarche", titre: "Démarche", objet: C.demarche },
+  { fichier: "pages/projets", cle: "projets", titre: "Projets (introduction)", objet: C.pageProjets },
+  { fichier: "pages/missions", cle: "missions", titre: "Missions (introduction)", objet: C.pageMissions },
+  { fichier: "pages/contact", cle: "contact", titre: "Contact", objet: C.contact },
+  { fichier: "pages/mentions-legales", cle: "mentions", titre: "Mentions légales", objet: C.mentions }
+] -%}
+{
+  "depot": {{ C.site.github.depot | json | safe }},
+  "branche": {{ (C.site.github.branche or "main") | json | safe }},
+  "categories": {{ C.site.categories | json | safe }},
+  "pages": [
+    {%- for p in pages %}
+    { "fichier": "{{ p.fichier }}", "titre": "{{ p.titre }}", "url": { "fr": "{{ p.cle | lien('fr') }}", "en": "{{ p.cle | lien('en') }}" }, "enComplet": {{ p.objet | enComplet | json | safe }} }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ],
+  "missions": [
+    {%- for m in C.missions %}
+    { "fichier": "missions/{{ m.slug }}", "slug": "{{ m.slug }}", "titre": {{ m.fr.titre | json | safe }}, "url": { "fr": "{{ 'mission' | lien('fr', m.slug) }}", "en": "{{ 'mission' | lien('en', m.slug) }}" }, "enComplet": {{ m | enComplet | json | safe }} }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ],
+  "projets": [
+    {%- for p in C.projets %}
+    {
+      "fichier": "projets/{{ p.slug }}", "slug": "{{ p.slug }}", "titre": {{ p.fr.titre | json | safe }},
+      "publie": {{ p.publie | json | safe }}, "ordre": {{ (p.ordre or 99) | json | safe }}, "categories": {{ p.categories | json | safe }},
+      "url": { "fr": "{{ 'projet' | lien('fr', p.slug) }}", "en": "{{ 'projet' | lien('en', p.slug) }}" },
+      "enComplet": {{ p | enComplet | json | safe }},
+      "vignette": {{ ("projets/" ~ p.slug ~ "/" ~ p.couverture) | imageUrl(480, "webp") | json | safe }},
+      "images": [{% for im in p.images %}{ "fichier": {{ im.fichier | json | safe }}, "alt": {{ im.alt.fr | json | safe }}, "vignette": {{ ("projets/" ~ p.slug ~ "/" ~ im.fichier) | imageUrl(480, "webp") | json | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ],
+  "accueil": {
+    "aLaUne": {{ C.accueil.aLaUne | json | safe }},
+    "diaporama": [{% for d in C.accueil.diaporama %}{ "image": {{ d.image | json | safe }}, "projet": {{ d.projet | json | safe }}, "legende": {{ d.legende.fr | json | safe }}, "vignette": {{ d.image | imageUrl(480, "webp") | json | safe }} }{% if not loop.last %},{% endif %}{% endfor %}]
+  }
+}

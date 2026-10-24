@@ -1,0 +1,36 @@
+---
+pagination:
+  data: langues
+  size: 1
+  alias: lang
+langues: ["fr", "en"]
+cle: missions
+fichierContenu: pages/missions
+permalink: "{{ 'missions' | lien(lang) }}"
+---
+{%- set P = contenu.pageMissions -%}
+{%- set seo = P[lang].seo -%}
+{%- set ogImage = contenu.missions[0].image.image -%}
+{%- extends "layouts/base.njk" -%}
+
+{%- block contenu %}
+<div class="conteneur">
+  <header class="entete-page">
+    <h1{{ "pages/missions" | champ("titre", lang, P) | safe }}>{{ P | loc(lang, "titre") }}</h1>
+    <p class="chapo"{{ "pages/missions" | champ("intro", lang, P) | safe }}>{{ P | loc(lang, "intro") }}</p>
+  </header>
+  <ul class="grille-missions">
+    {%- for m in contenu.missions %}
+    <li class="carte carte--mission apparition">
+      <a class="carte__lien" href="{{ 'mission' | lien(lang, m.slug) }}">
+        <span class="carte__image">{{ m.image.image | image("", "(min-width: 1100px) 400px, (min-width: 700px) calc(50vw - 40px), calc(100vw - 32px)") | safe }}</span>
+        <span class="carte__titre">{{ m | loc(lang, "titre") }}</span>
+        <span class="carte__texte">{{ m | loc(lang, "accroche") }}</span>
+        <span class="lien-fleche" aria-hidden="true">{{ t.decouvrirMission }} →</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+{% include "partials/appel.njk" %}
+{%- endblock %}

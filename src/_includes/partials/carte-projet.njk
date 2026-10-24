@@ -1,0 +1,7 @@
+<li class="carte" data-categories="{{ p.categories | join(' ') }}">
+  <a class="carte__lien" href="{{ 'projet' | lien(lang, p.slug) }}">
+    <span class="carte__image">{{ ("projets/" ~ p.slug ~ "/" ~ p.couverture) | image("", "(min-width: 1100px) 400px, (min-width: 700px) calc(50vw - 40px), calc(100vw - 32px)") | safe }}</span>
+    <span class="carte__meta">{{ p.categories[0] | categorie(contenu.site, lang) }}{% if p.lieu %} · {{ p.lieu }}{% endif %}</span>
+    <span class="carte__titre">{{ p | loc(lang, "titre") }}</span>
+  </a>
+</li>

@@ -1,0 +1,32 @@
+---
+permalink: /404.html
+cle: accueil
+lang: fr
+seo:
+  titre: "Page introuvable · Page not found · SAJE"
+  description: "Cette page n’existe pas ou a changé d’adresse. This page does not exist or has moved."
+noindex: true
+---
+{%- extends "layouts/base.njk" -%}
+{%- block contenu %}
+<div class="erreur conteneur conteneur--lecture">
+  <p class="erreur__code" aria-hidden="true">404</p>
+  <h1>{{ i18n.fr.erreurTitre }}</h1>
+  <p>{{ i18n.fr.erreurTexte }}</p>
+  <ul class="erreur__liens">
+    <li><a class="bouton bouton--violet" href="/">{{ i18n.fr.erreurRetour }}</a></li>
+    <li><a href="/projets/">{{ i18n.fr.projets }}</a></li>
+    <li><a href="/missions/">{{ i18n.fr.missions }}</a></li>
+    <li><a href="/contact/">{{ i18n.fr.contact }}</a></li>
+  </ul>
+  <div lang="en" class="erreur__en">
+    <h2>{{ i18n.en.erreurTitre }}</h2>
+    <p>{{ i18n.en.erreurTexte }}</p>
+    <ul class="erreur__liens">
+      <li><a href="/en/">{{ i18n.en.erreurRetour }}</a></li>
+      <li><a href="/en/projects/">{{ i18n.en.projets }}</a></li>
+      <li><a href="/en/contact/">{{ i18n.en.contact }}</a></li>
+    </ul>
+  </div>
+</div>
+{%- endblock %}

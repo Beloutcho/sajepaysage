@@ -1,0 +1,284 @@
+{
+  "slug": "siege-caddif",
+  "publie": true,
+  "ordre": 16,
+  "categories": [
+    "espaces-publics"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Siège CADDIF",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "CADDIF headquarters",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "img-20190507-154423.jpg",
+  "images": [
+    {
+      "fichier": "img-20190507-154423.jpg",
+      "alt": {
+        "fr": "Tables et bancs en bois parmi les massifs, au pied d’un immeuble de bureaux",
+        "en": "Wooden tables and benches among planted beds at the foot of an office building"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "coupe-ca-siege.jpg",
+      "alt": {
+        "fr": "Planche de coupes et de détails des massifs et du caillebotis",
+        "en": "Sheet of sections and details of the beds and the grating walkway"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20181102-094951.jpg",
+      "alt": {
+        "fr": "Massif nouvellement planté au pied d’un immeuble de bureaux",
+        "en": "Newly planted bed at the foot of an office building"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20181102-095145.jpg",
+      "alt": {
+        "fr": "Jeune arbre et paillage dans un massif récemment planté",
+        "en": "Young tree and mulch in a recently planted bed"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20181102-103629.jpg",
+      "alt": {
+        "fr": "Caillebotis rouge et jeunes plantations au pied des façades",
+        "en": "Red grating walkway and young plants at the foot of the facades"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20181105-075648.jpg",
+      "alt": {
+        "fr": "Massif éclairé au petit jour le long d’un bâtiment",
+        "en": "Bed lit at dawn alongside a building"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20181105-075836.jpg",
+      "alt": {
+        "fr": "Massif paillé ponctué de spots lumineux",
+        "en": "Mulched bed dotted with ground lights"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20190221-113030.jpg",
+      "alt": {
+        "fr": "Caillebotis métallique en zigzag entre les massifs",
+        "en": "Metal grating walkway zigzagging between the beds"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20190221-113041.jpg",
+      "alt": {
+        "fr": "Caillebotis et massifs au pied d’un grand immeuble",
+        "en": "Grating walkway and beds at the foot of a tall building"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20190404-101503.jpg",
+      "alt": {
+        "fr": "Jeune arbre dans un massif minéral, au printemps",
+        "en": "Young tree in a gravel bed in spring"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20190404-101853.jpg",
+      "alt": {
+        "fr": "Cognassier du Japon aux fleurs rouges",
+        "en": "Japanese quince with red flowers"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20190404-101905.jpg",
+      "alt": {
+        "fr": "Caillebotis entre massifs de graviers et de vivaces",
+        "en": "Grating walkway between gravel and perennial beds"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20190404-101920.jpg",
+      "alt": {
+        "fr": "Jeune arbre au-dessus du caillebotis",
+        "en": "Young tree above the grating walkway"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "p1130354.jpg",
+      "alt": {
+        "fr": "Massif luxuriant bordé d’acier corten, arbres d’alignement en fond",
+        "en": "Lush bed edged in corten steel, street trees behind"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "p1130355.jpg",
+      "alt": {
+        "fr": "Vivaces et feuillages denses dans un massif",
+        "en": "Dense perennials and foliage in a bed"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "p1130358.jpg",
+      "alt": {
+        "fr": "Caillebotis rouge entouré de graminées",
+        "en": "Red grating walkway surrounded by grasses"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "p1130360.jpg",
+      "alt": {
+        "fr": "Caillebotis traversant des massifs plantés, immeubles en fond",
+        "en": "Grating walkway crossing planted beds, buildings behind"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "p1130361.jpg",
+      "alt": {
+        "fr": "Caillebotis et graminées vus de près",
+        "en": "Grating walkway and grasses seen up close"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "p1130365.jpg",
+      "alt": {
+        "fr": "Massif bordé d’acier corten sous les arbres de l’esplanade",
+        "en": "Corten-edged bed under the trees of the forecourt"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "plan-ca-siege.jpg",
+      "alt": {
+        "fr": "Plan d’ensemble des abords du siège",
+        "en": "Overall plan of the headquarters grounds"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "plan-plantation-villot-2-massif-1-2019-cailebotis.jpg",
+      "alt": {
+        "fr": "Plan de plantation du massif 1 avec caillebotis et légende des végétaux",
+        "en": "Planting plan for bed 1 with grating walkway and plant key"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "plan-plantation-villot-2-massif-2-2019-caillebotis.jpg",
+      "alt": {
+        "fr": "Plan de plantation du massif 2 avec caillebotis et légende des végétaux",
+        "en": "Planting plan for bed 2 with grating walkway and plant key"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "thumbnail-1.jpg",
+      "alt": {
+        "fr": "Croquis : un homme assis sur une assise au bord du caillebotis rouge",
+        "en": "Sketch: a man sitting beside the red grating walkway"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/siege-caddif/"
+}

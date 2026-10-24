@@ -1,0 +1,34 @@
+<footer class="pied">
+  <div class="pied__colonnes conteneur">
+    <div class="pied__bloc">
+      <a class="pied__logo" href="{{ 'accueil' | lien(lang) }}" aria-label="SAJE – {{ site[lang].sousTitre }}, {{ t.accueil }}">{% set suffixe = "pied" %}{% include "partials/logo-mot.njk" %}</a>
+      <span>{{ site[lang].metier }}</span>
+      <span>{{ site.ville }}</span>
+    </div>
+    <div class="pied__bloc">
+      <h2 class="pied__titre">{{ t.contact }}</h2>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {%- if site.afficherTelephone %}
+      <a href="{{ site.telephone | telephoneLien }}">{{ site.telephoneAffiche }}</a>
+      {%- endif %}
+    </div>
+    <div class="pied__bloc">
+      <h2 class="pied__titre">{{ t.piedSite }}</h2>
+      <a href="{{ 'demarche' | lien(lang) }}">{{ t.demarche }}</a>
+      <a href="{{ 'projets' | lien(lang) }}">{{ t.projets }}</a>
+      <a href="{{ 'missions' | lien(lang) }}">{{ t.missions }}</a>
+      <a href="{{ 'contact' | lien(lang) }}">{{ t.contact }}</a>
+    </div>
+    <div class="pied__bloc">
+      <h2 class="pied__titre">{{ t.piedSuivre }}</h2>
+      {%- for reseau in site.reseaux %}
+      <a href="{{ reseau.url }}" rel="me">{{ reseau.nom }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+  <div class="pied__bas conteneur">
+    <a href="{{ 'mentions' | lien(lang) }}">{{ t.mentions }}</a>
+    <a href="{{ 'mentions' | lien(lang) }}#{{ 'accessibilite' if lang == 'fr' else 'accessibility' }}">{{ t.accessibilite }}</a>
+    <span>© SAJE – Alice Stevens</span>
+  </div>
+</footer>

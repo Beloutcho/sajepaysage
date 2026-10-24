@@ -1,0 +1,104 @@
+---
+pagination:
+  data: contenu.pagesProjets
+  size: 1
+  alias: page_
+  addAllPagesToCollections: true
+cle: projet
+modules: ["visionneuse"]
+permalink: "{{ 'projet' | lien(page_.lang, page_.projet.slug) }}"
+---
+{%- set lang = page_.lang -%}
+{%- set p = page_.projet -%}
+{%- set slug = p.slug -%}
+{%- set F = "projets/" ~ p.slug -%}
+{%- set fichierContenu = F -%}
+{%- set noindex = not p.publie -%}
+{%- set seo = { titre: (p | loc(lang, "titre")) ~ (" · SAJE – Art & Paysage" if lang == "fr" else " · SAJE – Art & Landscape"), description: (p | loc(lang, "accroche")) or contenu.site[lang].description } -%}
+{%- set ogImage = "projets/" ~ p.slug ~ "/" ~ p.couverture -%}
+{%- extends "layouts/base.njk" -%}
+
+{%- block contenu %}
+{%- set dossier = "projets/" ~ p.slug ~ "/" -%}
+{%- set images = p.images -%}
+<article class="projet conteneur" data-projet="{{ p.slug }}">
+  {%- if images.length %}
+  {%- set im = images[0] %}
+  <figure class="projet__premiere" data-champ-image="{{ F }}:images.0">
+    <a class="vignette" href="{{ (dossier ~ im.fichier) | imageUrl(2400) }}" data-index="0" data-legende="{{ im.legende[lang] or im.legende.fr }}" aria-label="{{ t.agrandir }}">
+      {{ (dossier ~ im.fichier) | image(im.alt[lang] or im.alt.fr, "(min-width: 1000px) 700px, calc(100vw - 32px)", { prioritaire: true }) | safe }}
+    </a>
+  </figure>
+  {%- endif %}
+
+  <div class="projet__texte">
+    <div class="projet__collant">
+      <p class="surtitre">
+        {%- for c in p.categories %}{{ c | categorie(contenu.site, lang) }}{% if not loop.last %} · {% endif %}{% endfor -%}
+      </p>
+      <h1 class="projet__titre"{{ F | champ("titre", lang, p) | safe }}>{{ p | loc(lang, "titre") }}</h1>
+      <p class="projet__accroche"{{ F | champ("accroche", lang, p) | safe }}{% if not (p | loc(lang, "accroche")) %} hidden{% endif %}>{{ p | loc(lang, "accroche") }}</p>
+      <div class="texte-riche projet__descriptif"{{ F | champ("descriptif", lang, p) | safe }} data-format="markdown"{% if not (p | loc(lang, "descriptif")) %} hidden{% endif %}>
+        {{ p | loc(lang, "descriptif") | md | safe }}
+      </div>
+      {%- if p | repli(lang, "descriptif") %}
+      <p class="repli" lang="en">{{ t.repli }}</p>
+      {%- endif %}
+      <dl class="fiche" aria-label="{{ t.fiche }}">
+        <div{% if not p.lieu %} hidden{% endif %}><dt>{{ t.lieu }}</dt><dd{{ F | champ("lieu") | safe }}>{{ p.lieu }}</dd></div>
+        <div{% if not p.date %} hidden{% endif %}><dt>{{ t.date }}</dt><dd{{ F | champ("date") | safe }}>{{ p.date }}</dd></div>
+        <div{% if not p.commanditaire %} hidden{% endif %}><dt>{{ t.commanditaire }}</dt><dd{{ F | champ("commanditaire") | safe }}>{{ p.commanditaire }}</dd></div>
+        <div{% if not p.partenaires %} hidden{% endif %}><dt>{{ t.partenaires }}</dt><dd{{ F | champ("partenaires") | safe }}>{{ p.partenaires }}</dd></div>
+        <div{% if not (p | loc(lang, "intervention")) %} hidden{% endif %}><dt>{{ t.intervention }}</dt><dd{{ F | champ("intervention", lang, p) | safe }}>{{ p | loc(lang, "intervention") }}</dd></div>
+        {%- if p.missions and p.missions.length %}
+        <div><dt>{{ t.missionsLiees }}</dt><dd>
+          {%- for ms in p.missions %}{% set m = contenu.missions | parSlug(ms) %}{% if m %}<a href="{{ 'mission' | lien(lang, m.slug) }}">{{ m | loc(lang, "titre") }}</a>{% if not loop.last %}, {% endif %}{% endif %}{% endfor -%}
+        </dd></div>
+        {%- endif %}
+      </dl>
+    </div>
+  </div>
+
+  {%- if images.length > 1 %}
+  <div class="projet__galerie">
+    <h2 class="visuellement-cache">{{ t.galerie }}</h2>
+    <ul class="galerie" data-admin-images="{{ F }}">
+      {%- for im in images %}
+      {%- if not loop.first %}
+      <li data-champ-image="{{ F }}:images.{{ loop.index0 }}">
+        <a class="vignette" href="{{ (dossier ~ im.fichier) | imageUrl(2400) }}" data-index="{{ loop.index0 }}" data-legende="{{ im.legende[lang] or im.legende.fr }}" aria-label="{{ t.agrandir }}{% if im.legende[lang] or im.legende.fr %} : {{ im.legende[lang] or im.legende.fr }}{% endif %}">
+          {{ (dossier ~ im.fichier) | image(im.alt[lang] or im.alt.fr, "(min-width: 1000px) 340px, calc(50vw - 24px)") | safe }}
+        </a>
+      </li>
+      {%- endif %}
+      {%- endfor %}
+    </ul>
+  </div>
+  {%- endif %}
+</article>
+
+{%- if p.publie %}
+<nav class="voisins conteneur" aria-label="{{ t.precedent }} / {{ t.suivant }}">
+  {%- if page_.precedent %}
+  <a class="voisins__lien voisins__lien--precedent" href="{{ 'projet' | lien(lang, page_.precedent.slug) }}"><span class="voisins__sens"><span aria-hidden="true">←</span> {{ t.precedent }}</span><span class="voisins__titre">{{ page_.precedent | loc(lang, "titre") }}</span></a>
+  {%- else %}<span></span>{%- endif %}
+  <a class="voisins__tous" href="{{ 'projets' | lien(lang) }}">{{ t.tousLesProjets }}</a>
+  {%- if page_.suivant %}
+  <a class="voisins__lien voisins__lien--suivant" href="{{ 'projet' | lien(lang, page_.suivant.slug) }}"><span class="voisins__sens">{{ t.suivant }} <span aria-hidden="true">→</span></span><span class="voisins__titre">{{ page_.suivant | loc(lang, "titre") }}</span></a>
+  {%- else %}<span></span>{%- endif %}
+</nav>
+{%- endif %}
+
+<dialog class="visionneuse" aria-label="{{ t.galerie }}">
+  <div class="visionneuse__scene">
+    <figure class="visionneuse__figure">
+      <div class="visionneuse__image"></div>
+      <figcaption class="visionneuse__legende"><span class="visionneuse__compteur"></span> <span class="visionneuse__texte"></span></figcaption>
+    </figure>
+  </div>
+  <button class="visionneuse__bouton visionneuse__fermer" type="button" aria-label="{{ t.fermer }}"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <button class="visionneuse__bouton visionneuse__precedent" type="button" aria-label="{{ t.imagePrecedente }}"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <button class="visionneuse__bouton visionneuse__suivant" type="button" aria-label="{{ t.imageSuivante }}"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</dialog>
+{% include "partials/appel.njk" %}
+{%- endblock %}

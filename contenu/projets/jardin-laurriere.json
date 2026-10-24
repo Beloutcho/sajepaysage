@@ -1,0 +1,52 @@
+{
+  "slug": "jardin-laurriere",
+  "publie": false,
+  "ordre": 19,
+  "categories": [
+    "jardins-prives"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Jardin Laurrière",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "Laurrière Garden",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "vue-jardin-large.jpg",
+  "images": [
+    {
+      "fichier": "vue-jardin-large.jpg",
+      "alt": {
+        "fr": "Croquis aquarellé : jardin fleuri devant une maison",
+        "en": "Watercolour sketch: flower garden in front of a house"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "vue-schema-global.jpg",
+      "alt": {
+        "fr": "Plan du jardin avec cheminements et plantations",
+        "en": "Garden plan with paths and planting"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ]
+}

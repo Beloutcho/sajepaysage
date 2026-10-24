@@ -1,0 +1,31 @@
+{
+  "slug": "bande-dessinee-paysage",
+  "publie": true,
+  "ordre": 14,
+  "categories": ["illustration"],
+  "lieu": "Versailles et Île-de-France",
+  "date": "2017",
+  "commanditaire": "Villa Le Nôtre, programme Yves Brunier",
+  "partenaires": "",
+  "missions": ["illustration-graphisme"],
+  "fr": {
+    "titre": "Bande dessinée paysage",
+    "accroche": "Une bande dessinée sur le rôle des paysagistes dans le Grand Paris, réalisée en résidence à la Villa Le Nôtre.",
+    "intervention": "Conception et réalisation de la bande dessinée",
+    "descriptif": "En 2017, Alice Stevens est lauréate du programme « Yves Brunier » de la Villa Le Nôtre, résidence internationale des paysagistes, à Versailles et en Île-de-France. Pendant ses six mois de résidence, elle conçoit et réalise un ouvrage de bande dessinée sur le rôle des paysagistes dans le Grand Paris."
+  },
+  "en": {
+    "titre": "Landscape comic",
+    "accroche": "A comic about the role of landscape architects in Greater Paris, created during a residency at the Villa Le Nôtre.",
+    "intervention": "Writing and drawing the comic",
+    "descriptif": "In 2017, Alice Stevens won the “Yves Brunier” award of the Villa Le Nôtre, an international residency for landscape architects in Versailles and the Île-de-France region. During her six-month residency, she wrote and drew a comic about the role of landscape architects in Greater Paris."
+  },
+  "couverture": "planche-1-couleur-bien-1-1.jpg",
+  "images": [
+    { "fichier": "planche-1-couleur-bien-1-1.jpg", "alt": { "fr": "Planche de bande dessinée en couleur : une paysagiste dessine, vues de jardins et de serres", "en": "Colour comic page: a landscape architect drawing, views of gardens and greenhouses" }, "legende": { "fr": "Planche 1", "en": "Page 1" } },
+    { "fichier": "planche-2-couleur.jpg", "alt": { "fr": "Planche de bande dessinée : cases montrant des personnages autour d’une table de travail et un plan", "en": "Comic page: panels showing characters around a work table and a plan" }, "legende": { "fr": "Planche 2", "en": "Page 2" } },
+    { "fichier": "planche-3-1.jpg", "alt": { "fr": "Planche de bande dessinée : une femme pensive, un échange au bureau, un plan sur une table", "en": "Comic page: a thoughtful woman, a conversation in an office, a plan on a table" }, "legende": { "fr": "Planche 3", "en": "Page 3" } },
+    { "fichier": "planche-4-bis.jpg", "alt": { "fr": "Planche de bande dessinée : une route bordée d’arbres, des voitures, un appareil photo", "en": "Comic page: a tree-lined road, cars and a camera" }, "legende": { "fr": "Planche 4", "en": "Page 4" } }
+  ],
+  "ancienneAdresse": "/bande-dessinee-paysage/"
+}

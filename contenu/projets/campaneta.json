@@ -1,0 +1,40 @@
+{
+  "slug": "campaneta",
+  "publie": true,
+  "ordre": 10,
+  "categories": ["pedagogie", "espaces-publics"],
+  "lieu": "Onda (Espagne)",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "Grupo Aranea (Paco Leiva, Agata Alcaraz), Laure Demellier",
+  "missions": ["ateliers-mediation"],
+  "fr": {
+    "titre": "Rencontres et céramique à la Campaneta",
+    "accroche": "Une usine de céramique désaffectée retrouve une seconde vie grâce à la photographie, au dessin, à la maquette et au jeu.",
+    "intervention": "Diagnostic et projet participatif, workshop",
+    "descriptif": "L’usine de céramique désaffectée de la Campaneta était restée emblématique pour le village d’Onda, en Espagne. Plutôt que de la démolir, l’agence Grupo Aranea a proposé aux habitants de se réapproprier le lieu en passant par la photographie, le dessin, les plans, les maquettes et même le jeu.\n\nAvant le début des travaux, le lieu a rouvert pour faire vivre au public une autre expérience du site : ateliers participatifs, installations artistiques, moments de jeu pour la jeunesse. Lors d’un workshop à Alicante encadré par Grupo Aranea, Paco Leiva et Agata Alcaraz, Alice Stevens et Laure Demellier ont créé une maquette interactive, un jeu de société inspiré des formes du lieu et des ateliers autour de la céramique. Ces rencontres avec les jeunes publics ont porté sur l’histoire du lieu, les projets à venir et la démarche de conception.\n\nL’ancienne usine est ainsi devenue un lieu de rencontre et d’amusement : la Campaneta a retrouvé une deuxième vie."
+  },
+  "en": {
+    "titre": "Encounters and ceramics at La Campaneta",
+    "accroche": "A disused ceramics factory gets a second life through photography, drawing, models and games.",
+    "intervention": "Site analysis and participatory project, workshop",
+    "descriptif": "The disused Campaneta ceramics factory had remained a symbol for the town of Onda, in Spain. Rather than demolish it, the Grupo Aranea practice invited residents to reclaim the place through photography, drawing, plans, models and even games.\n\nBefore construction began, the site reopened to give the public a different experience of it: participatory workshops, art installations and play sessions for young people. During a workshop in Alicante led by Grupo Aranea, Paco Leiva and Agata Alcaraz, Alice Stevens and Laure Demellier created an interactive model, a board game based on the shapes of the site and ceramics workshops. These sessions with young people covered the history of the place, the plans for its future and the design process.\n\nThe old factory became a place to meet and have fun: La Campaneta found a second life."
+  },
+  "couverture": "plano-juego.jpg",
+  "images": [
+    { "fichier": "plano-juego.jpg", "alt": { "fr": "Plateau de jeu dessiné d’après le plan de l’usine, avec des cases numérotées", "en": "Board game drawn from the factory plan, with numbered squares" }, "legende": { "fr": "Le jeu de société inspiré des formes du lieu", "en": "The board game based on the shapes of the site" } },
+    { "fichier": "cartas.jpg", "alt": { "fr": "Cartes à jouer dessinées à l’encre : des personnages-objets nommés Tinteta, Bosqueta, Higuereta…", "en": "Ink-drawn playing cards: object characters named Tinteta, Bosqueta, Higuereta…" }, "legende": { "fr": "Les cartes du jeu", "en": "The game cards" } },
+    { "fichier": "5copie.jpg", "alt": { "fr": "Croquis à l’encre d’un bâtiment de l’usine envahi par la végétation, un sol jaune et deux promeneurs", "en": "Ink sketch of a factory building overgrown with plants, a yellow floor and two walkers" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "p1190194.jpg", "alt": { "fr": "Deux hautes cheminées de briques au-dessus des bâtiments de l’usine, sous un ciel bleu", "en": "Two tall brick chimneys above the factory buildings, under a blue sky" }, "legende": { "fr": "L’usine de la Campaneta", "en": "The Campaneta factory" } },
+    { "fichier": "p1080698.jpg", "alt": { "fr": "Intérieur de l’usine en ruine : toiture effondrée, charpente métallique et gravats", "en": "Inside the ruined factory: collapsed roof, metal frame and rubble" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "p1080705.jpg", "alt": { "fr": "Vue depuis l’usine désaffectée, à travers de grandes ouvertures, sur les montagnes", "en": "View from the disused factory through large openings towards the mountains" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "p1080759.jpg", "alt": { "fr": "Bâtiments de l’usine et cour encombrée de débris", "en": "Factory buildings and a courtyard littered with debris" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "10904474-920662047983939-496031974144874531-o.jpg", "alt": { "fr": "Une participante dessine assise dans les ruines de l’usine", "en": "A participant sketches while sitting in the factory ruins" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "1920480-890692270980917-7804210191942524539-n.jpg", "alt": { "fr": "Mains qui dessinent au feutre sur un grand plan du site", "en": "Hands drawing with felt-tip pens on a large site plan" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "p1090884-copie.jpg", "alt": { "fr": "Maquette en carton des bâtiments de l’usine, avec une forme blanche en papier plié", "en": "Cardboard model of the factory buildings with a white folded-paper shape" }, "legende": { "fr": "La maquette interactive", "en": "The interactive model" } },
+    { "fichier": "dsc-0054.jpg", "alt": { "fr": "Façades de la maquette en carton éclairées dans la pénombre", "en": "Facades of the cardboard model lit in the half-light" }, "legende": { "fr": "", "en": "" } },
+    { "fichier": "10974540-937035853013225-5749288835623250578-o.jpg", "alt": { "fr": "Adultes et enfants accroupis autour d’un labyrinthe de petites pièces de bois", "en": "Adults and children crouching around a maze of small wooden pieces" }, "legende": { "fr": "Atelier avec les jeunes publics", "en": "Workshop with young people" } },
+    { "fichier": "p1190108.jpg", "alt": { "fr": "Gros plan sur des centaines de petites pièces de céramique", "en": "Close-up of hundreds of small ceramic pieces" }, "legende": { "fr": "", "en": "" } }
+  ],
+  "ancienneAdresse": "/campaneta/"
+}

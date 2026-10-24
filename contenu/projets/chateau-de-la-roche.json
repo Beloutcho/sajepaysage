@@ -1,0 +1,75 @@
+{
+  "slug": "chateau-de-la-roche",
+  "publie": true,
+  "ordre": 18,
+  "categories": [
+    "espaces-publics"
+  ],
+  "lieu": "",
+  "date": "",
+  "commanditaire": "",
+  "partenaires": "",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Château de la Roche",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "en": {
+    "titre": "Château de la Roche",
+    "accroche": "",
+    "intervention": "",
+    "descriptif": ""
+  },
+  "couverture": "jardin-public1-modif.jpg",
+  "images": [
+    {
+      "fichier": "jardin-public1-modif.jpg",
+      "alt": {
+        "fr": "Photomontage : massifs plantés et promeneurs devant un château, ciel rose",
+        "en": "Photomontage: planted beds and visitors in front of a château, pink sky"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "chateaudelaroche-25-1400702507.jpg",
+      "alt": {
+        "fr": "Château et vignes au premier plan",
+        "en": "Château with vines in the foreground"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "panorama-entree-travaille.jpg",
+      "alt": {
+        "fr": "Panorama retouché de l’entrée du site",
+        "en": "Edited panorama of the site entrance"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "silhouette-bw.jpg",
+      "alt": {
+        "fr": "Croquis en noir et blanc : silhouette du château au bout d’une allée",
+        "en": "Black-and-white sketch: outline of the château at the end of a drive"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/chateau-de-la-roche/"
+}

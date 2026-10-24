@@ -1,0 +1,65 @@
+---
+pagination:
+  data: langues
+  size: 1
+  alias: lang
+langues: ["fr", "en"]
+cle: demarche
+fichierContenu: pages/demarche
+permalink: "{{ 'demarche' | lien(lang) }}"
+---
+{%- set D = contenu.demarche -%}
+{%- set seo = D[lang].seo -%}
+{%- set ogImage = D.portrait.image -%}
+{%- extends "layouts/base.njk" -%}
+{%- set F = "pages/demarche" -%}
+
+{%- block contenu %}
+<article class="page-texte">
+  <header class="page-texte__entete conteneur conteneur--lecture">
+    <h1{{ F | champ("titre", lang, D) | safe }}>{{ D | loc(lang, "titre") }}</h1>
+    <p class="chapo"{{ F | champ("chapo", lang, D) | safe }}>{{ D | loc(lang, "chapo") }}</p>
+  </header>
+  <div class="conteneur conteneur--lecture texte-riche"{{ F | champ("texte", lang, D) | safe }} data-format="markdown">
+    {{ D | loc(lang, "texte") | md | safe }}
+  </div>
+
+  <section class="portrait conteneur apparition" aria-labelledby="titre-alice">
+    <div class="portrait__image" data-champ-image="pages/demarche:portrait">
+      {{ D.portrait.image | image(D.portrait.alt[lang] or D.portrait.alt.fr, "(min-width: 900px) 420px, calc(100vw - 32px)") | safe }}
+    </div>
+    <div class="portrait__texte">
+      <h2 id="titre-alice"{{ F | champ("alice.titre", lang, D) | safe }}>{{ D | loc(lang, "alice.titre") }}</h2>
+      <div class="texte-riche"{{ F | champ("alice.texte", lang, D) | safe }} data-format="markdown">{{ D | loc(lang, "alice.texte") | md | safe }}</div>
+    </div>
+  </section>
+
+  <section class="recit apparition" aria-labelledby="titre-recit">
+    <div class="conteneur conteneur--lecture">
+      <h2 id="titre-recit"{{ F | champ("recit.titre", lang, D) | safe }}>{{ D | loc(lang, "recit.titre") }}</h2>
+      <div class="texte-riche"{{ F | champ("recit.texte", lang, D) | safe }} data-format="markdown-page">{{ D | loc(lang, "recit.texte") | mdPage | safe }}</div>
+    </div>
+  </section>
+
+  {%- if D.images.length %}
+  <div class="images-pleine-largeur conteneur apparition">
+    {%- for im in D.images %}
+    <figure data-champ-image="pages/demarche:images.{{ loop.index0 }}">{{ im.image | image(im.alt[lang] or im.alt.fr, "(min-width: 1000px) 600px, calc(100vw - 32px)") | safe }}</figure>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  <section class="parcours conteneur conteneur--lecture apparition" aria-labelledby="titre-parcours">
+    <h2 id="titre-parcours"{{ F | champ("parcours.titre", lang, D) | safe }}>{{ D | loc(lang, "parcours.titre") }}</h2>
+    <ol class="parcours__liste">
+      {%- for item in D | loc(lang, "parcours.items") %}
+      <li>
+        <span class="parcours__annee"{{ F | champ("parcours.items." ~ loop.index0 ~ ".annee", lang, D) | safe }}>{{ item.annee }}</span>
+        <span{{ F | champ("parcours.items." ~ loop.index0 ~ ".texte", lang, D) | safe }}>{{ item.texte }}</span>
+      </li>
+      {%- endfor %}
+    </ol>
+  </section>
+</article>
+{% include "partials/appel.njk" %}
+{%- endblock %}

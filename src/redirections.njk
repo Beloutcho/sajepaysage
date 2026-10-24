@@ -1,0 +1,22 @@
+---
+pagination:
+  data: redirections
+  size: 1
+  alias: r
+permalink: "{{ r.ancienne }}index.html"
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>SAJE – Art & Paysage</title>
+<link rel="canonical" href="{{ r.nouvelle | absolu(contenu.site) }}">
+<meta http-equiv="refresh" content="0; url={{ r.nouvelle }}">
+</head>
+<body>
+<p>{{ i18n.fr.redirection }} <a href="{{ r.nouvelle }}">{{ r.nouvelle | absolu(contenu.site) }}</a></p>
+</body>
+</html>

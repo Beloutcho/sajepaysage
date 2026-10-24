@@ -1,0 +1,10 @@
+{%- set A = contenu.accueil -%}
+<section class="bandeau-citron">
+  <div class="bandeau-citron__contenu conteneur">
+    <div>
+      <h2 class="bandeau-citron__titre"{{ "accueil" | champ("appel.titre", lang, A) | safe }}>{{ A | loc(lang, "appel.titre") }}</h2>
+      <p{{ "accueil" | champ("appel.texte", lang, A) | safe }}>{{ A | loc(lang, "appel.texte") }}</p>
+    </div>
+    <a class="bouton bouton--anthracite" href="{{ 'contact' | lien(lang) }}"><span{{ "accueil" | champ("appel.bouton", lang, A) | safe }}>{{ A | loc(lang, "appel.bouton") }}</span></a>
+  </div>
+</section>

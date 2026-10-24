@@ -1,0 +1,61 @@
+# Reconstruit et publie le site sur GitHub Pages à chaque commit sur main
+# (y compris ceux faits depuis l'administration du site).
+name: Mise en ligne
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      # Les variantes d'images (AVIF, WebP, JPEG) sont longues à produire :
+      # on réutilise celles de la construction précédente.
+      - name: Cache des images
+        uses: actions/cache@v4
+        with:
+          path: _site/images
+          key: images-${{ hashFiles('medias/**', 'src/_lib/images.js') }}
+          restore-keys: images-
+
+      - name: Construction
+        run: npx eleventy
+        env:
+          PATH_PREFIX: ${{ steps.pages.outputs.base_path }}/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publier:
+    needs: construire
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - id: deploiement
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,31 @@
+{
+  "slug": "potager-du-roi",
+  "publie": true,
+  "ordre": 8,
+  "categories": ["illustration"],
+  "lieu": "Potager du Roi, Versailles (78)",
+  "date": "",
+  "commanditaire": "École nationale supérieure de paysage de Versailles, équipe Communication et Mécénat",
+  "partenaires": "",
+  "missions": ["illustration-graphisme"],
+  "fr": {
+    "titre": "Mon potager, c’est le Potager du Roi",
+    "accroche": "Plan à vue d’oiseau, livret et panneaux pédagogiques illustrés pour la nouvelle campagne de communication du Potager du Roi.",
+    "intervention": "Commande d’illustration",
+    "descriptif": "Dans le cadre d’un changement d’image, le Potager du Roi avait besoin de nombreux supports graphiques : livret pour les visiteurs, panneaux pédagogiques, bandeau pour le site internet. L’équipe Communication et Mécénat de l’École nationale supérieure de paysage de Versailles en a confié les illustrations à Alice Stevens.\n\nLes visuels du livret permettent aux visiteurs de se repérer sur le site grâce à un plan à vue d’oiseau, dessiné en technique mixte à l’encre de Chine et en infographie, ainsi qu’à des illustrations en noir et blanc des lieux phares de la visite. Des panneaux pédagogiques installés dans le potager signalent les lieux de travaux à venir, le rendu de ces travaux et l’histoire de chaque site. Les illustrations y apportent une vision de l’ancien, du présent et du futur des lieux choisis, de manière légère et colorée.\n\nCette signalétique originale a été très bien reçue par le public, et le Potager du Roi a commandé huit panneaux supplémentaires."
+  },
+  "en": {
+    "titre": "My kitchen garden is the King’s Kitchen Garden",
+    "accroche": "A bird’s-eye map, a visitor booklet and illustrated information panels for the Potager du Roi’s new communication campaign.",
+    "intervention": "Illustration commission",
+    "descriptif": "As part of a change of image, the Potager du Roi, the King’s Kitchen Garden at Versailles, needed a wide range of graphic material: a visitor booklet, information panels and a banner for its website. The Communication and Patronage team of the École nationale supérieure de paysage de Versailles commissioned Alice Stevens to illustrate them.\n\nThe booklet helps visitors find their way around with a bird’s-eye map, drawn in mixed media with Indian ink and digital colour, and with black-and-white illustrations of the main sights. Information panels installed in the garden point out upcoming works, show what they will look like and tell the history of each spot. The illustrations offer a light, colourful view of the past, present and future of each place.\n\nThe public responded so well to this original signage that the Potager du Roi ordered eight more panels."
+  },
+  "couverture": "plan-vue-oiseau.jpg",
+  "images": [
+    { "fichier": "plan-vue-oiseau.jpg", "alt": { "fr": "Plan à vue d’oiseau en noir et blanc du Potager du Roi : carrés potagers, murs et terrasses", "en": "Black-and-white bird’s-eye map of the Potager du Roi: vegetable plots, walls and terraces" }, "legende": { "fr": "Plan à vue d’oiseau, encre de Chine et infographie", "en": "Bird’s-eye map, Indian ink and digital" } },
+    { "fichier": "panneau-01.jpg", "alt": { "fr": "Illustration colorée : un grand oiseau blanc survole un verger, des enfants jardinent au premier plan", "en": "Colourful illustration: a large white bird flies over an orchard, children gardening in the foreground" }, "legende": { "fr": "Illustration d’un panneau pédagogique", "en": "Illustration for an information panel" } },
+    { "fichier": "panneau-02.jpg", "alt": { "fr": "Illustration : des personnages d’autrefois et un jardinier d’aujourd’hui plantent entre des arbres fruitiers", "en": "Illustration: figures from the past and a present-day gardener planting between fruit trees" }, "legende": { "fr": "Illustration d’un panneau pédagogique", "en": "Illustration for an information panel" } },
+    { "fichier": "panneau-03.jpg", "alt": { "fr": "Illustration : un ouvrier en tenue de chantier, dessiné au trait, devant un mur du potager", "en": "Illustration: a line-drawn construction worker in front of a garden wall" }, "legende": { "fr": "Illustration d’un panneau annonçant des travaux", "en": "Illustration for a panel announcing works" } },
+    { "fichier": "panneau-04.jpg", "alt": { "fr": "Illustration : un personnage en costume d’époque au-dessus de massifs fleuris, sur fond de rayons orangés", "en": "Illustration: a figure in period costume above flower beds, against orange rays" }, "legende": { "fr": "Illustration d’un panneau pédagogique", "en": "Illustration for an information panel" } }
+  ]
+}

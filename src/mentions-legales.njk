@@ -1,0 +1,24 @@
+---
+pagination:
+  data: langues
+  size: 1
+  alias: lang
+langues: ["fr", "en"]
+cle: mentions
+fichierContenu: pages/mentions-legales
+permalink: "{{ 'mentions' | lien(lang) }}"
+---
+{%- set M = contenu.mentions -%}
+{%- set seo = M[lang].seo -%}
+{%- extends "layouts/base.njk" -%}
+
+{%- block contenu %}
+<article class="page-texte">
+  <header class="page-texte__entete conteneur conteneur--lecture">
+    <h1{{ "pages/mentions-legales" | champ("titre", lang, M) | safe }}>{{ M | loc(lang, "titre") }}</h1>
+  </header>
+  <div class="conteneur conteneur--lecture texte-riche"{{ "pages/mentions-legales" | champ("texte", lang, M) | safe }} data-format="markdown-page">
+    {{ M | loc(lang, "texte") | mdPage | safe }}
+  </div>
+</article>
+{%- endblock %}

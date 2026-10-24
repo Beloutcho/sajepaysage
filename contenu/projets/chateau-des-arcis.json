@@ -1,0 +1,185 @@
+{
+  "slug": "chateau-des-arcis",
+  "publie": true,
+  "ordre": 4,
+  "categories": [
+    "art-installations"
+  ],
+  "lieu": "Parc du Château des Arcis, Meslay-du-Maine (53)",
+  "date": "2025",
+  "commanditaire": "Château des Arcis, appel à projets « Terr’Eau Fertile »",
+  "partenaires": "",
+  "missions": [
+    "installations-performances"
+  ],
+  "fr": {
+    "titre": "La Demeure des paysages",
+    "accroche": "Une tente de tissu peint, suspendue à un arbre du parc, qui ouvre deux fenêtres sur les paysages du Château des Arcis.",
+    "intervention": "Installation artistique",
+    "descriptif": "Pour le parcours artistique « Terr’Eau Fertile » de l’exposition Art’Six, dans le parc du Château des Arcis à Meslay-du-Maine, Alice Stevens imagine une installation qui place le paysage au centre de l’expérience des visiteurs.\n\nLe terme de « paysage » est d’abord né de la peinture. Dès ses premières définitions, il est lié à une perception sensible : l’expérience vécue par celui qui regarde est indissociable de la notion de paysage. Le paysage prend vie dans la perception de celui qui le contemple ; il naît à la fois dans l’œil et dans le cœur. À travers le thème Terr’Eau Fertile, explorer la création et l’interprétation des paysages revient à replacer le vivant dans une échelle qui va de l’intime, celle de la plante, jusqu’à l’ensemble harmonieux qu’est le paysage.\n\nL’installation est une tente en tissu peint qui permet une immersion dans les paysages du parc. Deux ouvertures découpées dans le tissu créent des fenêtres sur des endroits clés du lieu, comme autant de tableaux. Pensée pour qu’un adulte et un enfant s’y assoient face aux ouvertures, elle propose une lecture paysagère poétique et immersive du parc. Les motifs peints aux encres mêlent arbres et fleurs du parc, plans des jardins, topiaires et statues, au-dessus d’un sol vivant, en mouvement."
+  },
+  "en": {
+    "titre": "The Dwelling of Landscapes",
+    "accroche": "A painted fabric tent hanging from a tree in the park, opening two windows onto the landscapes of the Château des Arcis.",
+    "intervention": "Art installation",
+    "descriptif": "For the “Terr’Eau Fertile” art trail of the Art’Six exhibition in the park of the Château des Arcis at Meslay-du-Maine, Alice Stevens created an installation that places landscape at the heart of the visitor’s experience.\n\nThe word “landscape” was born in painting. From its earliest definitions it has been tied to sensory perception: the experience of the person looking cannot be separated from the idea of landscape. A landscape comes to life in the perception of whoever contemplates it; it is born both in the eye and in the heart. Through the theme of fertile earth and water, exploring how landscapes are created and interpreted means placing living things on a scale that runs from the intimate, that of the plant, to the harmonious whole that is the landscape.\n\nThe installation is a painted fabric tent offering immersion in the landscapes of the park. Two openings cut into the fabric frame key spots of the site like paintings. Designed for an adult and a child to sit side by side facing the openings, it offers a poetic, immersive reading of the park. The ink-painted motifs mix the park’s trees and flowers, garden plans, topiaries and statues above a living, moving ground."
+  },
+  "couverture": "1732544123041.jpg",
+  "images": [
+    {
+      "fichier": "1732544123041.jpg",
+      "alt": {
+        "fr": "Grand tissu peint aux encres de fleurs et de feuillages, suspendu à une branche au milieu d’une pelouse",
+        "en": "Large fabric painted in ink with flowers and foliage, hanging from a branch in the middle of a lawn"
+      },
+      "legende": {
+        "fr": "Essai du tissu peint dans le parc du château",
+        "en": "Testing the painted fabric in the château park"
+      }
+    },
+    {
+      "fichier": "tente-installee.jpg",
+      "alt": {
+        "fr": "La tente peinte installée sur l’herbe sous un grand arbre, au bord de l’eau",
+        "en": "The painted tent set up on the grass under a large tree, by the water"
+      },
+      "legende": {
+        "fr": "La Demeure des paysages installée dans le parc",
+        "en": "The Dwelling of Landscapes installed in the park"
+      }
+    },
+    {
+      "fichier": "sous-la-tente.jpg",
+      "alt": {
+        "fr": "Croquis à l’encre bleue : un adulte et un enfant assis sous la tente regardent par les ouvertures",
+        "en": "Blue ink sketch: an adult and a child sitting under the tent look out through the openings"
+      },
+      "legende": {
+        "fr": "Croquis d’intention : les visiteurs assis, les yeux face aux ouvertures, qui cadrent le paysage",
+        "en": "Concept sketch: visitors seated facing the openings, which frame the landscape"
+      }
+    },
+    {
+      "fichier": "tente-arbre-avec-drap.jpg",
+      "alt": {
+        "fr": "Croquis à l’encre bleue d’une tente peinte suspendue à un arbre, avec une assise cubique",
+        "en": "Blue ink sketch of a painted tent hanging from a tree, with a cube-shaped seat"
+      },
+      "legende": {
+        "fr": "Croquis de l’installation, une tente peinte suspendue à un arbre du site",
+        "en": "Sketch of the installation, a painted tent hanging from a tree on the site"
+      }
+    },
+    {
+      "fichier": "tente-dos.jpg",
+      "alt": {
+        "fr": "Croquis aquarellé de la tente vue de dos, ses motifs de fleurs et de jardins, sous une branche",
+        "en": "Watercolour sketch of the tent seen from behind, with its flower and garden motifs, under a branch"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "decoupe-tente.jpg",
+      "alt": {
+        "fr": "Tissu peint aux encres percé d’une ouverture rectangulaire qui laisse voir le parc",
+        "en": "Ink-painted fabric with a rectangular opening revealing the park"
+      },
+      "legende": {
+        "fr": "Une ouverture découpée dans le tissu, comme un tableau",
+        "en": "An opening cut in the fabric, like a painting"
+      }
+    },
+    {
+      "fichier": "motif-drap.jpg",
+      "alt": {
+        "fr": "Motif peint aux encres : grande fleur rose, statue dessinée et massifs colorés",
+        "en": "Ink-painted pattern: a large pink flower, a drawn statue and colourful flower beds"
+      },
+      "legende": {
+        "fr": "Recherche de motif sur tissu",
+        "en": "Pattern study on fabric"
+      }
+    },
+    {
+      "fichier": "1732544123053.jpg",
+      "alt": {
+        "fr": "Détail du tissu : silhouette de statue dessinée au-dessus de taches d’encre bleues et roses",
+        "en": "Fabric detail: outline of a statue drawn above blue and pink ink blots"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1732544123019.jpg",
+      "alt": {
+        "fr": "Allée de jardin bordée de buis et de massifs fleuris, une enfant au premier plan",
+        "en": "Garden path lined with box hedges and flower beds, a child in the foreground"
+      },
+      "legende": {
+        "fr": "Le parc du Château des Arcis",
+        "en": "The park of the Château des Arcis"
+      }
+    },
+    {
+      "fichier": "1732544123030.jpg",
+      "alt": {
+        "fr": "Ponton de bois sur un plan d’eau, face à des ifs taillés",
+        "en": "Wooden jetty over a pond, facing clipped yews"
+      },
+      "legende": {
+        "fr": "Le parc du Château des Arcis",
+        "en": "The park of the Château des Arcis"
+      }
+    },
+    {
+      "fichier": "tente-detail-01.jpg",
+      "alt": {
+        "fr": "Détail du tissu peint traversé par la lumière : fleurs rouges et visage dessiné",
+        "en": "Detail of the painted fabric with light shining through: red flowers and a drawn face"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "tente-detail-02.jpg",
+      "alt": {
+        "fr": "Détail du tissu peint : taches turquoise et rouges autour d’une ouverture",
+        "en": "Detail of the painted fabric: turquoise and red blots around an opening"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "tente-detail-03.jpg",
+      "alt": {
+        "fr": "Détail du tissu peint : statue dessinée au-dessus de montagnes colorées",
+        "en": "Detail of the painted fabric: a drawn statue above colourful mountains"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "tente-detail-04.jpg",
+      "alt": {
+        "fr": "Voile transparent soulevé par le vent au-dessus du tissu peint",
+        "en": "Sheer veil lifted by the wind above the painted fabric"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/chateau-des-arcis/"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "bestiaire-lasseen",
+  "publie": true,
+  "ordre": 13,
+  "categories": ["illustration", "art-installations"],
+  "lieu": "Lassay-les-Châteaux (53)",
+  "date": "2023 – 2025",
+  "commanditaire": "",
+  "partenaires": "Boutique de créateurs Sous nos mains",
+  "missions": ["illustration-graphisme"],
+  "fr": {
+    "titre": "Bestiaire des paysages lasséens",
+    "accroche": "Des créatures nées de l’histoire et de l’iconographie de Lassay-les-Châteaux, peintes à l’encre pour une exposition et une vente de reproductions.",
+    "intervention": "Créations originales, cartes postales et affiches",
+    "descriptif": "Quelles créatures se cachent dans le village médiéval de Lassay-les-Châteaux ? C’est à la suite de recherches approfondies sur l’histoire et l’iconographie locales que ces figures émergent. Blasons, peintures, lieux et animaux se mêlent pour former un ensemble unique, caractéristique des sites emblématiques du village.\n\nLe léopard mayennais croise le caducée de Lassay, brillant telle la lune. Pissaro se métamorphose en dragon, annonciateur du crépuscule au-dessus de l’étang, tandis que les bois dévoilent les ruines du château de Bois-Thibault, où résonne le chant d’un griffon. Les codes de représentation, inspirés des images médiévales, magnifient la végétation omniprésente à Lassay et offrent un écrin à ces chimères locales.\n\nCréées pour être exposées à la boutique de créateurs Sous nos mains, et déclinées en cartes postales et en affiches, ces œuvres invitent à poser sur les paysages locaux un regard teinté d’onirisme."
+  },
+  "en": {
+    "titre": "A Bestiary of Lassay Landscapes",
+    "accroche": "Creatures born from the history and imagery of Lassay-les-Châteaux, painted in ink for an exhibition and a sale of prints.",
+    "intervention": "Original works, postcards and posters",
+    "descriptif": "What creatures lurk in the medieval village of Lassay-les-Châteaux? These figures emerged from in-depth research into local history and imagery. Coats of arms, paintings, places and animals blend into a unique whole that captures the village’s landmark sites.\n\nThe Mayenne leopard meets the caduceus of Lassay, shining like the moon. Pissaro turns into a dragon, heralding dusk above the pond, while the woods reveal the ruins of the Château de Bois-Thibault, where a griffin’s song echoes. Drawing on medieval conventions, the images celebrate Lassay’s ever-present vegetation and give these local chimeras a fitting setting.\n\nCreated to be shown at the Sous nos mains designers’ shop, and reproduced as postcards and posters, these works invite a dreamlike new look at the local landscape."
+  },
+  "couverture": "le-leopard-selenien.jpg",
+  "images": [
+    { "fichier": "le-leopard-selenien.jpg", "alt": { "fr": "Encre colorée : un château entouré d’un cadre de feuillages bleus et dorés, à la manière d’une enluminure", "en": "Coloured ink: a castle within a border of blue and gold foliage, in the style of an illumination" }, "legende": { "fr": "« Le Léopard sélénien », encres sur papier, 32 × 42 cm", "en": "“The Selenian Leopard”, ink on paper, 32 × 42 cm" } },
+    { "fichier": "le-chant-de-bois-thibault.jpg", "alt": { "fr": "Encre colorée : une créature blanche sous un ciel étoilé et un soleil, au-dessus de maisons et d’un jardin", "en": "Coloured ink: a white creature under a starry sky and a sun, above houses and a garden" }, "legende": { "fr": "« Le chant de Bois Thibault », encres sur papier, 15 × 21 cm", "en": "“The Song of Bois Thibault”, ink on paper, 15 × 21 cm" } }
+  ]
+}

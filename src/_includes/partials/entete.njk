@@ -1,0 +1,39 @@
+<header class="entete">
+  <div class="entete__barre conteneur">
+    <a class="logo" href="{{ 'accueil' | lien(lang) }}" aria-label="SAJE – {{ site[lang].sousTitre }}, {{ t.accueil }}">
+      <img class="logo__serre" src="/img/serre.webp" srcset="/img/serre.webp 1x, /img/serre@2x.webp 2x" width="71" height="56" alt="">
+      <span class="logo__mot">{% set suffixe = "entete" %}{% include "partials/logo-mot.njk" %}</span>
+    </a>
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span class="menu-bouton__icone" aria-hidden="true"><span></span><span></span><span></span></span>
+      {{ t.ouvrirMenu }}
+    </button>
+    <div class="menu" id="menu-principal">
+      <nav class="nav" aria-label="{{ t.navPrincipale }}">
+        <ul class="nav__liste">
+          <li><a href="{{ 'demarche' | lien(lang) }}"{% if cle == 'demarche' %} aria-current="page"{% endif %}>{{ t.demarche }}</a></li>
+          <li><a href="{{ 'projets' | lien(lang) }}"{% if cle in ['projets', 'projet'] %} aria-current="{{ 'page' if cle == 'projets' else 'true' }}"{% endif %}>{{ t.projets }}</a></li>
+          <li class="nav__deroulant">
+            <a href="{{ 'missions' | lien(lang) }}"{% if cle in ['missions', 'mission'] %} aria-current="{{ 'page' if cle == 'missions' else 'true' }}"{% endif %}>{{ t.missions }}</a>
+            <button class="nav__ouvrir" type="button" aria-expanded="false" aria-controls="sous-menu-missions">
+              <span class="visuellement-cache">{{ t.sousMenuMissions }}</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul class="sous-menu" id="sous-menu-missions">
+              {%- for m in contenu.missions %}
+              <li><a href="{{ 'mission' | lien(lang, m.slug) }}"{% if cle == 'mission' and slug == m.slug %} aria-current="page"{% endif %}>{{ m | loc(lang, 'titre') }}</a></li>
+              {%- endfor %}
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="entete__actions">
+        <ul class="langues" aria-label="{{ t.choixLangue }}">
+          <li><a href="{{ urlFr }}" lang="fr" hreflang="fr"{% if lang == 'fr' %} aria-current="true"{% endif %}><abbr title="Français">FR</abbr></a></li>
+          <li><a href="{{ urlEn }}" lang="en" hreflang="en"{% if lang == 'en' %} aria-current="true"{% endif %}><abbr title="English">EN</abbr></a></li>
+        </ul>
+        <a class="bouton bouton--violet" href="{{ 'contact' | lien(lang) }}"{% if cle == 'contact' %} aria-current="page"{% endif %}>{{ t.contact }}</a>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,75 @@
+{
+  "diaporama": [
+    {
+      "image": "pages/banniere-chaumont.jpg",
+      "projet": "chaumont-sur-loire",
+      "alt": { "fr": "Allée fleurie d’alliums dans le parc du Domaine de Chaumont-sur-Loire, une tour du château en fond", "en": "Path lined with alliums in the park of the Domaine de Chaumont-sur-Loire, a château tower behind" },
+      "legende": { "fr": "L’Île de la Félicité · Chaumont-sur-Loire", "en": "The Island of Felicity · Chaumont-sur-Loire" }
+    },
+    {
+      "image": "projets/jardin-madda/img-2218-photoshop.jpg",
+      "projet": "jardin-madda",
+      "alt": { "fr": "Terrasse plantée sur un toit au coucher du soleil, tours au loin", "en": "Planted rooftop terrace at sunset, towers in the distance" },
+      "legende": { "fr": "Jardin Madda · terrasse sur le toit", "en": "Madda Garden · rooftop terrace" }
+    },
+    {
+      "image": "projets/prairie-ludique/dessin-ambiance.jpg",
+      "projet": "prairie-ludique",
+      "alt": { "fr": "Croquis aquarellé d’une prairie traversée d’un sentier, avec bancs et arbres", "en": "Watercolour sketch of a meadow crossed by a path, with benches and trees" },
+      "legende": { "fr": "Prairie ludique · dessin d’ambiance", "en": "Playful Meadow · mood drawing" }
+    },
+    {
+      "image": "projets/silice/1.jpg",
+      "projet": "silice",
+      "alt": { "fr": "Concert dessiné en plein air, le public rassemblé devant un grand dessin sur chevalet", "en": "Open-air drawn concert, the audience gathered in front of a large drawing on an easel" },
+      "legende": { "fr": "Silice · concert dessiné", "en": "Silice · drawn concert" }
+    },
+    {
+      "image": "projets/festival-casc/4-realisation-groupee.jpg",
+      "projet": "festival-casc",
+      "alt": { "fr": "Des participants peignent ensemble sur un grand anneau sous les pins", "en": "Participants painting together on a large ring under the pines" },
+      "legende": { "fr": "L’anneau de dessin · Villena, Espagne", "en": "The drawing ring · Villena, Spain" }
+    }
+  ],
+  "aLaUne": ["parc-ilots-changeants", "chaumont-sur-loire", "chateau-des-arcis"],
+  "demarcheImage": {
+    "image": "pages/ombres-feuillages.jpg",
+    "alt": { "fr": "Ombres de feuillages sur un mur clair au-dessus d’un massif", "en": "Leaf shadows on a pale wall above a planted bed" }
+  },
+  "fr": {
+    "seo": { "titre": "SAJE – Art & Paysage · Alice Stevens, paysagiste-conceptrice et artiste à Laval", "description": "Jardins privés, espaces publics, installations artistiques, ateliers de médiation et illustration : l’atelier d’Alice Stevens, paysagiste-conceptrice et artiste en Mayenne." },
+    "encart": { "surtitre": "Paysagiste-conceptrice et artiste", "titre": "Des paysages sobres, sensibles et ancrés dans leur territoire", "lien": "Voir les projets" },
+    "bandeau": {
+      "surtitre": "Paysagiste-conceptrice et artiste · Laval, Mayenne",
+      "texte": "Alice Stevens conçoit des paysages sobres, esthétiques et ancrés dans leur territoire, avec une approche écologique et pédagogique. Des jardins privés aux espaces publics, ses projets croisent la conception paysagère, l’illustration et la médiation.",
+      "bouton": "Découvrir la démarche"
+    },
+    "une": { "titre": "À la une", "lien": "Tous les projets" },
+    "demarche": {
+      "surtitre": "Démarche",
+      "citation": "Nous sommes convaincus que chaque projet débute par l’écoute attentive d’un lieu.",
+      "texte": "Le vivant est au cœur de la démarche. Le végétal est pensé comme une matière sensible et évolutive, et l’entretien est intégré dès la conception pour que les paysages s’inscrivent dans le temps.",
+      "lien": "Lire la démarche"
+    },
+    "missions": { "titre": "Missions", "lien": "Toutes les missions" },
+    "appel": { "titre": "Un projet en tête ?", "texte": "Jardin, espace public, atelier ou collaboration artistique : décrivez-le en quelques lignes.", "bouton": "Remplir le formulaire" }
+  },
+  "en": {
+    "seo": { "titre": "SAJE – Art & Landscape · Alice Stevens, landscape architect and artist in Laval, France", "description": "Private gardens, public spaces, art installations, outreach workshops and illustration: the studio of Alice Stevens, landscape architect and artist in Mayenne, France." },
+    "encart": { "surtitre": "Landscape architect and artist", "titre": "Restrained, sensitive landscapes rooted in their place", "lien": "See the projects" },
+    "bandeau": {
+      "surtitre": "Landscape architect and artist · Laval, Mayenne",
+      "texte": "Alice Stevens designs restrained, beautiful landscapes rooted in their surroundings, with an ecological and educational approach. From private gardens to public spaces, her projects bring together landscape design, illustration and outreach.",
+      "bouton": "Discover the approach"
+    },
+    "une": { "titre": "Featured", "lien": "All projects" },
+    "demarche": {
+      "surtitre": "Approach",
+      "citation": "We believe every project begins by listening carefully to a place.",
+      "texte": "Living things are at the heart of the approach. Plants are treated as a sensitive, evolving material, and maintenance is built in from the start so that landscapes can last.",
+      "lien": "Read about the approach"
+    },
+    "missions": { "titre": "Services", "lien": "All services" },
+    "appel": { "titre": "Have a project in mind?", "texte": "A garden, a public space, a workshop or an artistic collaboration: tell us about it in a few lines.", "bouton": "Fill in the form" }
+  }
+}

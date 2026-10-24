@@ -1,0 +1,45 @@
+{
+  "slug": "enseignement",
+  "ordre": 2,
+  "categorie": "pedagogie",
+  "image": {
+    "image": "pages/formation-02.jpg",
+    "alt": { "fr": "Des stagiaires plantent de jeunes végétaux dans un massif au pied d’un bâtiment", "en": "Trainees planting young plants in a bed at the foot of a building" }
+  },
+  "images": [
+    { "image": "pages/formation-01.jpg", "alt": { "fr": "Stagiaires en train de planter sur un talus", "en": "Trainees planting on a slope" } },
+    { "image": "pages/formation-03.jpg", "alt": { "fr": "Préparation de bacs de plantation en bois, caisses de jeunes plants au sol", "en": "Preparing wooden planters, crates of young plants on the ground" } },
+    { "image": "pages/formation-04.jpg", "alt": { "fr": "Groupe de stagiaires remplissant des bacs en bois", "en": "Group of trainees filling wooden planters" } },
+    { "image": "pages/formation-07.jpg", "alt": { "fr": "Chantier de plantation sur une berge", "en": "Planting work on a bank" } },
+    { "image": "pages/formation-08.jpg", "alt": { "fr": "Chemin aménagé le long d’un plan d’eau", "en": "Path laid out along a lake" } }
+  ],
+  "anciennesAdresses": ["/formation/"],
+  "fr": {
+    "seo": { "titre": "Enseignement · SAJE – Art & Paysage", "description": "Encadrement d’étudiants en design d’espace, formation professionnelle en paysage et écologie, visites et conférences par Alice Stevens." },
+    "titre": "Enseignement",
+    "accroche": "Transmettre le paysage : encadrement d’étudiants en design d’espace, formation professionnelle, visites et conférences.",
+    "texte": "La transmission accompagne Alice Stevens depuis ses débuts. De 2012 à 2016, elle est conférencière et animatrice de groupes au Potager du Roi et au Château de Versailles, auprès des particuliers, des professionnels et des scolaires. En 2018 et 2019, elle coordonne et assure la formation en paysage, écologie et gestion différenciée d’un BPA Travaux forestiers à FodéOuest, centre de formation professionnelle à Saint-Denis : cours, travaux pratiques, chantiers d’application et suivi des stagiaires.\n\nDepuis 2026, elle intervient à l’École de design Nantes Atlantique, sur le site de Laval, en première année de DN MADE Design d’espace. Elle y encadre des projets d’étudiants autour du paysage, de l’architecture et du design.\n\nUne commune, une association ou une structure culturelle peut proposer un site ou un sujet de projet à ses étudiants : écrivez-lui pour en parler.",
+    "titreComprend": "Interventions possibles",
+    "comprend": [
+      "Encadrement de projets d’étudiants en design d’espace",
+      "Formation professionnelle en paysage, écologie et gestion différenciée",
+      "Chantiers d’application et travaux pratiques",
+      "Visites commentées et conférences pour le public, les professionnels et les scolaires",
+      "Projets d’étudiants sur un site réel, proposé par une commune ou une association"
+    ]
+  },
+  "en": {
+    "seo": { "titre": "Teaching · SAJE – Art & Landscape", "description": "Tutoring spatial design students, vocational training in landscape and ecology, guided tours and talks by Alice Stevens." },
+    "titre": "Teaching",
+    "accroche": "Passing on landscape: tutoring spatial design students, vocational training, guided tours and talks.",
+    "texte": "Teaching has been part of Alice Stevens’s work from the start. From 2012 to 2016 she guided tours and led groups at the Potager du Roi and the Palace of Versailles for the public, professionals and schools. In 2018 and 2019 she coordinated and taught the landscape, ecology and differentiated management modules of a forestry vocational course at FodéOuest, a training centre in Saint-Denis: lectures, practical work, hands-on site projects and trainee support.\n\nSince 2026 she has been teaching at the École de design Nantes Atlantique, Laval campus, in the first year of the DN MADE spatial design course, where she supervises student projects on landscape, architecture and design.\n\nA town, association or cultural organisation can suggest a site or project topic for her students: get in touch to discuss it.",
+    "titreComprend": "What she can offer",
+    "comprend": [
+      "Supervising spatial design student projects",
+      "Vocational training in landscape, ecology and differentiated management",
+      "Hands-on site projects and practical work",
+      "Guided tours and talks for the public, professionals and schools",
+      "Student projects on a real site, proposed by a town or association"
+    ]
+  }
+}

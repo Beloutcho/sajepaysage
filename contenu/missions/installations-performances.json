@@ -1,0 +1,42 @@
+{
+  "slug": "installations-performances",
+  "ordre": 3,
+  "categorie": "art-installations",
+  "image": {
+    "image": "projets/silice/beaulieu-performance-01.jpg",
+    "alt": { "fr": "Performance de Silice sous les arbres d’un parc : peinture sur grand chevalet et musique live", "en": "Silice performance under the trees of a park: painting on a large easel and live music" }
+  },
+  "images": [
+    { "image": "pages/illustration-flutiste.jpg", "alt": { "fr": "Illustration aux encres : une musicienne joue de la flûte au milieu de fleurs roses et vertes", "en": "Ink illustration: a musician plays the flute among pink and green flowers" } },
+    { "image": "pages/alice-peint-au-sol.jpg", "alt": { "fr": "Alice Stevens peint à genoux sur une grande feuille posée au sol", "en": "Alice Stevens kneels to paint on a large sheet laid on the floor" } }
+  ],
+  "anciennesAdresses": ["/installations-et-performance/"],
+  "fr": {
+    "seo": { "titre": "Installations et performances · SAJE – Art & Paysage", "description": "Installations in situ, jardins éphémères, expositions d’encres et le concert dessiné Silice : le travail artistique d’Alice Stevens en Mayenne et ailleurs." },
+    "titre": "Installations et performances",
+    "accroche": "Œuvres in situ, jardins éphémères, expositions et le concert dessiné Silice : l’art au service des lieux.",
+    "texte": "Depuis 2024, Alice Stevens a élargi sa pratique artistique à des installations, des expositions et des créations scéniques. Elle met les arts au service d’un site selon leur pertinence pour le révéler : dessin, peinture, performance, installation, animation, musique, écriture, avec une prédilection pour la peinture aux encres et le chant.\n\nSes objectifs : valoriser la beauté et la poésie des paysages, révéler les singularités des territoires et de leurs habitants, initier les publics à l’art et à l’écologie, et transmettre de la joie et de l’optimisme. Depuis son installation en Mayenne en 2020, ses projets embrassent la richesse historique, culturelle et naturelle du territoire, et les paysages mayennais sont pour elle une source d’inspiration constante.\n\nAvec Lyricx, elle a créé **Silice**, une performance où musique, texte et dessin se construisent en direct, jouée en plein air comme au musée.",
+    "titreComprend": "Ce que la mission comprend",
+    "comprend": [
+      "Installations in situ pour des parcs, des châteaux et des festivals",
+      "Jardins éphémères et réponses à des concours",
+      "Expositions d’encres et d’aquarelles, ventes d’œuvres et de reproductions",
+      "Silice, concert dessiné en duo avec Lyricx",
+      "Résidences d’éducation artistique et culturelle"
+    ]
+  },
+  "en": {
+    "seo": { "titre": "Installations and performances · SAJE – Art & Landscape", "description": "Site-specific installations, temporary gardens, ink exhibitions and the drawn concert Silice: Alice Stevens’s artistic work in Mayenne and beyond." },
+    "titre": "Installations and performances",
+    "accroche": "Site-specific works, temporary gardens, exhibitions and the drawn concert Silice: art in the service of places.",
+    "texte": "Since 2024 Alice Stevens has broadened her artistic practice to include installations, exhibitions and stage work. She uses whichever art best reveals a site: drawing, painting, performance, installation, animation, music or writing, with a preference for ink painting and singing.\n\nHer aims: to bring out the beauty and poetry of landscapes, reveal what makes places and their people unique, introduce audiences to art and ecology, and share joy and optimism. Since settling in Mayenne in 2020, her projects have embraced the region’s historical, cultural and natural wealth, and its landscapes are a constant source of inspiration.\n\nWith Lyricx she created **Silice**, a performance in which music, words and drawing take shape live, performed outdoors as well as in museums.",
+    "titreComprend": "What the service includes",
+    "comprend": [
+      "Site-specific installations for parks, châteaux and festivals",
+      "Temporary gardens and competition entries",
+      "Exhibitions of inks and watercolours, sale of originals and prints",
+      "Silice, a drawn concert performed as a duo with Lyricx",
+      "Arts education residencies"
+    ]
+  }
+}

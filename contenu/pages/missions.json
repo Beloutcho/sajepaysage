@@ -1,0 +1,12 @@
+{
+  "fr": {
+    "seo": { "titre": "Missions · SAJE – Art & Paysage", "description": "Conception d’espaces extérieurs, enseignement, installations et performances, ateliers de médiation, illustration et graphisme : les missions de SAJE." },
+    "titre": "Missions",
+    "intro": "SAJE propose une gamme complète de prestations pour vos projets d’aménagement extérieur et vos projets artistiques : conception sur mesure, conseil, accompagnement pédagogique, assistance à la réalisation, création et médiation. Nous travaillons avec des acteurs engagés pour construire ensemble des paysages porteurs de sens et d’avenir."
+  },
+  "en": {
+    "seo": { "titre": "Services · SAJE – Art & Landscape", "description": "Outdoor space design, teaching, installations and performances, outreach workshops, illustration and graphic design: what SAJE offers." },
+    "titre": "Services",
+    "intro": "SAJE offers a full range of services for outdoor design and art projects: bespoke design, advice, educational support, help during construction, creation and outreach. We work with committed partners to build meaningful landscapes for the future together."
+  }
+}

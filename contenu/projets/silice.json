@@ -1,0 +1,240 @@
+{
+  "slug": "silice",
+  "publie": true,
+  "ordre": 5,
+  "categories": [
+    "art-installations"
+  ],
+  "lieu": "Mayenne (53)",
+  "date": "2024 – 2026",
+  "commanditaire": "",
+  "partenaires": "Lyricx (Social Club) : guitare, basse et son",
+  "missions": [
+    "installations-performances"
+  ],
+  "fr": {
+    "titre": "Silice",
+    "accroche": "Un concert dessiné : pendant que le duo joue, Alice Stevens chante et peint en direct un grand dessin inspiré du lieu.",
+    "intervention": "Création, chant et peinture en direct",
+    "descriptif": "Silice est une performance live où musique, texte et dessin se construisent, se répondent et s’allient. La guitare entêtante de Lyricx et la voix d’Alice Stevens créent ensemble une mélodie qui devient tout un paysage. Les notes se posent comme des taches d’aquarelle, les noms de plantes deviennent percussions vocales, les oiseaux se chamaillent avant de se réconcilier sur le papier.\n\nAutour d’un dessin grand format réalisé le temps d’une performance originale, la musique live du duo emmène le public dans un univers fait de poésie et de lumière. Textes et dessins s’inspirent de l’iconographie mayennaise et des lieux mêmes des représentations.\n\n**Silice en Naïf.** Pour la Nuit des musées, en mai 2025, Silice se transforme et s’imprègne d’art naïf au Musée d’Art Naïf et d’Arts Singuliers de Laval (MANAS). Dans trois salles du musée, chacune avec son thème, des performances de vingt minutes proposent une immersion dans les œuvres et leurs histoires, avec des compositions originales à écouter au casque. Les dessins réalisés à l’encre et aux pastels reprennent des éléments des tableaux et sculptures environnants, comme *La Charmeuse de serpents* du Douanier Rousseau, alors en prêt au musée. Ils sont restés exposés au musée pendant l’été et l’automne 2025.\n\n**Représentations.** Les Entrelassés 2024 (53) ; Bib’n’Roll, festival organisé par le 6 par 4, à Beaulieu-sur-Oudon (53), le 25 avril 2025 ; Nuit des musées 2025 au MANAS, à Laval ; festival des 3 Éléphants, à Laval, en 2026.\n\nExtraits de la première version du spectacle sur [YouTube](https://www.youtube.com/channel/UC83Wo0eofHcMWGaI17ydUzA), vidéos sur Instagram : [@saje.project](https://www.instagram.com/saje.project/) et [@lyricxmusique](https://www.instagram.com/lyricxmusique/)."
+  },
+  "en": {
+    "titre": "Silice",
+    "accroche": "A drawn concert: while the duo plays, Alice Stevens sings and paints a large drawing inspired by the venue, live.",
+    "intervention": "Creation, live singing and painting",
+    "descriptif": "Silice is a live performance in which music, words and drawing are built up together, answering and joining one another. Lyricx’s haunting guitar and Alice Stevens’s voice create a melody that becomes a whole landscape. Notes land like drops of watercolour, plant names turn into vocal percussion, birds squabble before making up on the paper.\n\nAround a large-format drawing made during each original performance, the duo’s live music takes the audience into a world of poetry and light. Lyrics and drawings draw on the imagery of the Mayenne region and on the venues themselves.\n\n**Silice en Naïf.** For the Night of Museums in May 2025, Silice took on the spirit of naïve art at the Musée d’Art Naïf et d’Arts Singuliers in Laval (MANAS). In three rooms of the museum, each with its own theme, twenty-minute performances immersed visitors in the works and their stories, with original compositions heard through headphones. The ink and pastel drawings made during the performances borrow elements from the surrounding paintings and sculptures, such as Henri Rousseau’s *The Snake Charmer*, then on loan to the museum. They remained on display at the museum through the summer and autumn of 2025.\n\n**Performances.** Les Entrelassés 2024 (Mayenne); Bib’n’Roll, a festival organised by Le 6 par 4, Beaulieu-sur-Oudon, 25 April 2025; Night of Museums 2025 at MANAS, Laval; Les 3 Éléphants festival, Laval, 2026.\n\nExcerpts from the first version of the show on [YouTube](https://www.youtube.com/channel/UC83Wo0eofHcMWGaI17ydUzA), videos on Instagram: [@saje.project](https://www.instagram.com/saje.project/) and [@lyricxmusique](https://www.instagram.com/lyricxmusique/)."
+  },
+  "couverture": "1.jpg",
+  "images": [
+    {
+      "fichier": "1.jpg",
+      "alt": {
+        "fr": "Concert de Silice en plein air : le public rassemblé devant le duo, un grand dessin sur chevalet en fond",
+        "en": "Silice open-air concert: the audience gathered in front of the duo, a large drawing on an easel behind"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "visuel-silice.jpg",
+      "alt": {
+        "fr": "Affiche de Silice : une chanteuse peinte dans une végétation luxuriante, « un concert dessiné unique »",
+        "en": "Silice poster: a singer painted among lush vegetation, “a unique drawn concert”"
+      },
+      "legende": {
+        "fr": "Visuel du spectacle",
+        "en": "Show poster"
+      }
+    },
+    {
+      "fichier": "beaulieu-performance-01.jpg",
+      "alt": {
+        "fr": "Performance sous les arbres d’un parc : Alice Stevens peint sur un grand chevalet, Lyricx à la guitare",
+        "en": "Performance under the trees of a park: Alice Stevens paints on a large easel, Lyricx on guitar"
+      },
+      "legende": {
+        "fr": "Bib’n’Roll, Beaulieu-sur-Oudon, 25 avril 2025",
+        "en": "Bib’n’Roll, Beaulieu-sur-Oudon, 25 April 2025"
+      }
+    },
+    {
+      "fichier": "beaulieu-performance-02.jpg",
+      "alt": {
+        "fr": "Le public assis dans l’herbe regarde la performance sous les arbres",
+        "en": "The audience sitting on the grass watches the performance under the trees"
+      },
+      "legende": {
+        "fr": "Bib’n’Roll, Beaulieu-sur-Oudon, 25 avril 2025",
+        "en": "Bib’n’Roll, Beaulieu-sur-Oudon, 25 April 2025"
+      }
+    },
+    {
+      "fichier": "beaulieu-fin-de-concert.jpg",
+      "alt": {
+        "fr": "Fin de concert : le décor peint en bleu est déplié sur l’herbe avec les dessins réalisés",
+        "en": "End of the concert: the blue painted backdrop is unfolded on the grass with the finished drawings"
+      },
+      "legende": {
+        "fr": "Fin de concert, décor déplié et dessins réalisés",
+        "en": "End of the concert, backdrop unfolded and finished drawings"
+      }
+    },
+    {
+      "fichier": "naif-dessin-live.jpg",
+      "alt": {
+        "fr": "Dans une salle de musée, Alice Stevens peint sur un chevalet devant des enfants assis par terre avec des casques",
+        "en": "In a museum room, Alice Stevens paints at an easel in front of children sitting on the floor wearing headphones"
+      },
+      "legende": {
+        "fr": "Silice en Naïf, Nuit des musées 2025, MANAS, Laval",
+        "en": "Silice en Naïf, Night of Museums 2025, MANAS, Laval"
+      }
+    },
+    {
+      "fichier": "naif-chant.jpg",
+      "alt": {
+        "fr": "Alice Stevens chante au micro dans une salle de musée, Lyricx au clavier derrière elle",
+        "en": "Alice Stevens sings into a microphone in a museum room, Lyricx on keyboard behind her"
+      },
+      "legende": {
+        "fr": "Silice en Naïf, salle « Cultes et art fabuleux »",
+        "en": "Silice en Naïf, “Cults and fabulous art” room"
+      }
+    },
+    {
+      "fichier": "naif-salle-cultes.jpg",
+      "alt": {
+        "fr": "Fin de performance dans une salle voûtée : dessin coloré à l’encre et au pastel sur chevalet",
+        "en": "End of performance in a vaulted room: colourful ink and pastel drawing on an easel"
+      },
+      "legende": {
+        "fr": "Dessin à l’encre et au pastel sur papier, 1,5 × 0,75 m",
+        "en": "Ink and pastel on paper, 1.5 × 0.75 m"
+      }
+    },
+    {
+      "fichier": "naif-dessin-charmeuse.jpg",
+      "alt": {
+        "fr": "Dessin aux couleurs vives sur chevalet, dans la salle de La Charmeuse de serpents",
+        "en": "Brightly coloured drawing on an easel, in the room of The Snake Charmer"
+      },
+      "legende": {
+        "fr": "Dessin photographié en fin de spectacle, salle de La Charmeuse de serpents",
+        "en": "Drawing photographed at the end of the show, Snake Charmer room"
+      }
+    },
+    {
+      "fichier": "7.jpg",
+      "alt": {
+        "fr": "Alice Stevens chante au micro à côté de son dessin en cours, face au public",
+        "en": "Alice Stevens sings into the microphone beside her drawing in progress, facing the audience"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "8.jpg",
+      "alt": {
+        "fr": "Alice Stevens peint sur un grand chevalet pendant que Lyricx joue de la guitare",
+        "en": "Alice Stevens paints on a large easel while Lyricx plays guitar"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "10.jpg",
+      "alt": {
+        "fr": "Le public debout dans un jardin arboré, au pied de vieux murs",
+        "en": "The audience standing in a wooded garden at the foot of old walls"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "11.jpg",
+      "alt": {
+        "fr": "Alice Stevens peint au bord d’une haie, le public assis dans l’herbe",
+        "en": "Alice Stevens paints beside a hedge, the audience sitting on the grass"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "12.jpg",
+      "alt": {
+        "fr": "Une spectatrice au chapeau de paille regarde Alice Stevens peindre au loin",
+        "en": "A spectator in a straw hat watches Alice Stevens painting in the distance"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "13.jpg",
+      "alt": {
+        "fr": "Lyricx joue de la guitare sous un arbre, des dessins suspendus à côté de lui",
+        "en": "Lyricx plays guitar under a tree, drawings hanging beside him"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "15.jpg",
+      "alt": {
+        "fr": "Grand dessin aux tons verts et orangés achevé pendant la performance",
+        "en": "Large green and orange drawing completed during the performance"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1723813798007.jpg",
+      "alt": {
+        "fr": "Gros plan sur des mains tachées de peinture verte",
+        "en": "Close-up of hands stained with green paint"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "1723813798035.jpg",
+      "alt": {
+        "fr": "Alice Stevens peint debout devant un chevalet, dans l’herbe",
+        "en": "Alice Stevens painting at an easel, standing on the grass"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    },
+    {
+      "fichier": "img-20240714-wa0017.jpg",
+      "alt": {
+        "fr": "Des spectateurs avec casque audio regardent Alice Stevens peindre dans un jardin",
+        "en": "Spectators wearing headphones watch Alice Stevens paint in a garden"
+      },
+      "legende": {
+        "fr": "",
+        "en": ""
+      }
+    }
+  ],
+  "ancienneAdresse": "/silice/"
+}

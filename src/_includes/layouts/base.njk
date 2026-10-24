@@ -1,0 +1,56 @@
+{%- set t = i18n[lang] -%}
+{%- set site = contenu.site -%}
+{%- set autre = "en" if lang == "fr" else "fr" -%}
+{%- set urlFr = cle | lien("fr", slug) -%}
+{%- set urlEn = cle | lien("en", slug) -%}
+<!doctype html>
+<html lang="{{ lang }}" class="sans-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{{ seo.titre }}</title>
+<meta name="description" content="{{ seo.description }}">
+{%- if noindex %}
+<meta name="robots" content="noindex">
+{%- else %}
+<link rel="canonical" href="{{ (urlFr if lang == 'fr' else urlEn) | absolu(site) }}">
+<link rel="alternate" hreflang="fr" href="{{ urlFr | absolu(site) }}">
+<link rel="alternate" hreflang="en" href="{{ urlEn | absolu(site) }}">
+<link rel="alternate" hreflang="x-default" href="{{ urlFr | absolu(site) }}">
+{%- endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SAJE – {{ site[lang].sousTitre }}">
+<meta property="og:locale" content="{{ 'fr_FR' if lang == 'fr' else 'en_GB' }}">
+<meta property="og:title" content="{{ seo.titre }}">
+<meta property="og:description" content="{{ seo.description }}">
+<meta property="og:url" content="{{ (urlFr if lang == 'fr' else urlEn) | absolu(site) }}">
+{%- if ogImage %}
+<meta property="og:image" content="{{ ogImage | imageUrl(1600) | absolu(site) }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- endif %}
+<link rel="preload" href="/polices/fraunces-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/polices/source-sans-3-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+{%- if preloadImage %}
+<link rel="preload" as="image" imagesrcset="{{ preloadImage.srcset }}" imagesizes="{{ preloadImage.sizes }}" type="image/avif" fetchpriority="high">
+{%- endif %}
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="/js/tete.js"></script>
+<script type="module" src="/js/site.js"></script>
+{%- for module in modules %}
+<script type="module" src="/js/{{ module }}.js"></script>
+{%- endfor %}
+{%- block tete %}{% endblock %}
+</head>
+<body class="page-{{ cle }}" data-lang="{{ lang }}" data-page="{{ cle }}"{% if fichierContenu %} data-fichier="{{ fichierContenu }}"{% endif %} data-base="{{ '/' | url }}">
+<a class="evitement" href="#contenu">{{ t.evitement }}</a>
+{% include "partials/entete.njk" %}
+<main id="contenu" tabindex="-1">
+{% block contenu %}{{ content | safe }}{% endblock %}
+</main>
+{% include "partials/pied.njk" %}
+</body>
+</html>

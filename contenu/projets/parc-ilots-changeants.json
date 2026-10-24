@@ -1,0 +1,85 @@
+{
+  "slug": "parc-ilots-changeants",
+  "publie": true,
+  "ordre": 2,
+  "categories": [
+    "espaces-publics"
+  ],
+  "lieu": "Yzernay (49)",
+  "date": "",
+  "commanditaire": "Mairie d’Yzernay",
+  "partenaires": "Bureau d’études Vic-Ouest, AMO de la commune",
+  "missions": [
+    "conception-espaces-exterieurs"
+  ],
+  "fr": {
+    "titre": "Le parc naturel des Îlots Changeants",
+    "accroche": "Une zone humide destinée à accueillir des bassins d’orage devient un parc naturel de loisirs, où les îlots apparaissent et disparaissent au gré des pluies.",
+    "intervention": "Diagnostic, assistance à maîtrise d’ouvrage, conception",
+    "descriptif": "La commune d’Yzernay a fait appel au bureau d’études Vic-Ouest pour évaluer et valoriser une zone humide existante. Initialement prévue pour accueillir des bassins d’orage, la parcelle a rapidement été envisagée comme une occasion de créer un espace naturel de loisirs et de détente. Alice Stevens intervient pour Vic-Ouest, assistant à maîtrise d’ouvrage de la commune, sur le diagnostic et la conception paysagère.\n\nLe projet met en scène une zone humide dynamique, où les îlots apparaissent et disparaissent au gré des précipitations, offrant un paysage en constante évolution. Cette variation naturelle crée une expérience sensorielle unique pour les visiteurs, qui peuvent observer les transformations de l’eau et de la végétation au fil des saisons.\n\nLa conception paysagère valorise la biodiversité et la pédagogie, avec des sentiers et des points d’observation pour apprécier la faune et la flore locales. Les espaces sont pensés pour sensibiliser le public à la richesse et à la fragilité des milieux humides, tout en offrant un cadre agréable pour la promenade, la détente et la découverte : promenade des îlots au-dessus des bassins, ponton d’observation, théâtre de verdure, halle des pêcheurs et observatoire, terrasses d’accueil pédagogiques, replantation des lisières urbaines.\n\nEntre gestion hydraulique, écologie et loisirs, le projet montre comment un aménagement technique peut devenir un véritable paysage vivant, alliant fonctionnalité et beauté naturelle."
+  },
+  "en": {
+    "titre": "The Shifting Islets Nature Park",
+    "accroche": "A wetland earmarked for storm basins becomes a nature park for leisure, where islets appear and disappear with the rain.",
+    "intervention": "Site analysis, client-side project support, design",
+    "descriptif": "The town of Yzernay asked the Vic-Ouest consultancy to assess and enhance an existing wetland. Originally intended for storm-water basins, the plot was soon seen as an opportunity to create a natural space for leisure and relaxation. Alice Stevens works for Vic-Ouest, the town’s project management adviser, on the site analysis and landscape design.\n\nThe project stages a living wetland where islets appear and disappear with the rainfall, offering a constantly changing landscape. This natural variation gives visitors a unique sensory experience as they watch the water and vegetation change through the seasons.\n\nThe design highlights biodiversity and learning, with trails and viewpoints for observing local wildlife and plants. The spaces are designed to raise awareness of the richness and fragility of wetlands while providing a pleasant setting for walking, relaxing and discovery: an islet walk above the basins, an observation jetty, an open-air theatre, an anglers’ hall and observatory, educational welcome terraces, and replanting of the urban edges.\n\nCombining water management, ecology and leisure, the project shows how a technical facility can become a true living landscape, both functional and beautiful."
+  },
+  "couverture": "plan-vue-aerienne.jpg",
+  "images": [
+    {
+      "fichier": "plan-vue-aerienne.jpg",
+      "alt": {
+        "fr": "Plan d’aménagement sur vue aérienne : bassins en eau, promenade des îlots, ponton et terrasses, numérotés de 1 à 13",
+        "en": "Landscape plan over an aerial view: flooded basins, islet walk, jetty and terraces, numbered 1 to 13"
+      },
+      "legende": {
+        "fr": "Plan d’aménagement",
+        "en": "Landscape plan"
+      }
+    },
+    {
+      "fichier": "plan-amenagement.jpg",
+      "alt": {
+        "fr": "Plan d’aménagement accompagné de sa légende : parkings, bassin de rétention, ponton, terrasses, promenade des îlots, théâtre de verdure, passerelle, halle des pêcheurs",
+        "en": "Landscape plan with its key: car parks, retention basin, jetty, terraces, islet walk, open-air theatre, footbridge, anglers’ hall"
+      },
+      "legende": {
+        "fr": "Plan et légende",
+        "en": "Plan and key"
+      }
+    },
+    {
+      "fichier": "dessin-saut-orage.jpg",
+      "alt": {
+        "fr": "Croquis au crayon : des promeneurs sautent de pierre en pierre dans une zone humide plantée de roseaux",
+        "en": "Pencil sketch: walkers hop from stone to stone across a reed-filled wetland"
+      },
+      "legende": {
+        "fr": "Dessin d’ambiance de la zone humide, les pas japonais",
+        "en": "Wetland mood drawing: the stepping stones"
+      }
+    },
+    {
+      "fichier": "croquis-terrasse-accueil.jpg",
+      "alt": {
+        "fr": "Croquis blanc sur fond noir : terrasse d’accueil avec préau face au bassin d’orage en eau et au ponton d’observation",
+        "en": "White-on-black sketch: welcome terrace with shelter facing the flooded storm basin and observation jetty"
+      },
+      "legende": {
+        "fr": "Croquis d’ambiance depuis la terrasse d’accueil",
+        "en": "Mood sketch from the welcome terrace"
+      }
+    },
+    {
+      "fichier": "coupe-promenade-des-ilots.jpg",
+      "alt": {
+        "fr": "Coupe dessinée d’une passerelle surélevée qui franchit les bassins entre les arbres",
+        "en": "Drawn section of a raised boardwalk crossing the basins between trees"
+      },
+      "legende": {
+        "fr": "Coupe de principe de la promenade des îlots au-dessus des bassins",
+        "en": "Typical section of the islet walk above the basins"
+      }
+    }
+  ]
+}

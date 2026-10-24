@@ -1,0 +1,9 @@
+node_modules/
+_site/
+.cache/
+.DS_Store
+
+# Documents de travail d'Alice (CV, adresse, téléphone) : ne pas publier dans le
+# dépôt public. Les images utiles en ont été extraites dans medias/ (voir
+# outils/extraire-pdf.sh) et le logo copié dans src/img/.
+Sources/

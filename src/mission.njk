@@ -1,0 +1,98 @@
+---
+pagination:
+  data: contenu.pagesMissions
+  size: 1
+  alias: page_
+cle: mission
+permalink: "{{ 'mission' | lien(page_.lang, page_.mission.slug) }}"
+---
+{%- set lang = page_.lang -%}
+{%- set m = page_.mission -%}
+{%- set slug = m.slug -%}
+{%- set F = "missions/" ~ m.slug -%}
+{%- set fichierContenu = F -%}
+{%- set seo = m[lang].seo or m.fr.seo -%}
+{%- set ogImage = m.image.image -%}
+{%- extends "layouts/base.njk" -%}
+
+{%- block contenu %}
+<article class="mission">
+  <header class="mission__entete conteneur">
+    <div class="mission__intro">
+      <p class="surtitre"><a href="{{ 'missions' | lien(lang) }}">{{ t.missions }}</a></p>
+      <h1{{ F | champ("titre", lang, m) | safe }}>{{ m | loc(lang, "titre") }}</h1>
+      <p class="chapo"{{ F | champ("accroche", lang, m) | safe }}>{{ m | loc(lang, "accroche") }}</p>
+    </div>
+    <div class="mission__image" data-champ-image="{{ F }}:image">
+      {{ m.image.image | image(m.image.alt[lang] or m.image.alt.fr, "(min-width: 1000px) 640px, calc(100vw - 32px)", { prioritaire: true }) | safe }}
+    </div>
+  </header>
+
+  <div class="mission__corps conteneur">
+    <div class="texte-riche mission__texte"{{ F | champ("texte", lang, m) | safe }} data-format="markdown">{{ m | loc(lang, "texte") | md | safe }}</div>
+    {%- set comprend = m | loc(lang, "comprend") %}
+    {%- if comprend.length %}
+    <aside class="mission__comprend" aria-labelledby="titre-comprend">
+      <h2 id="titre-comprend"{{ F | champ("titreComprend", lang, m) | safe }}>{{ m | loc(lang, "titreComprend") }}</h2>
+      <ul class="liste-puces">
+        {%- for item in comprend %}
+        <li{{ F | champ("comprend." ~ loop.index0, lang, m) | safe }}>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+    </aside>
+    {%- endif %}
+  </div>
+
+  {%- for section in m | loc(lang, "sections") %}
+  {%- set i = loop.index0 %}
+  <section class="mission__section conteneur apparition" aria-labelledby="section-{{ i }}">
+    <h2 id="section-{{ i }}"{{ F | champ("sections." ~ i ~ ".titre", lang, m) | safe }}>{{ section.titre }}</h2>
+    <p class="mission__section-texte"{{ F | champ("sections." ~ i ~ ".texte", lang, m) | safe }}>{{ section.texte }}</p>
+    {%- if section.etapes %}
+    <ol class="etapes">
+      {%- for e in section.etapes %}
+      <li class="etape">
+        <abbr class="etape__code" title="{{ e.nom }}">{{ e.code }}</abbr>
+        <span class="etape__nom"{{ F | champ("sections." ~ i ~ ".etapes." ~ loop.index0 ~ ".nom", lang, m) | safe }}>{{ e.nom }}</span>
+        <span class="etape__texte"{{ F | champ("sections." ~ i ~ ".etapes." ~ loop.index0 ~ ".texte", lang, m) | safe }}>{{ e.texte }}</span>
+      </li>
+      {%- endfor %}
+    </ol>
+    {%- endif %}
+  </section>
+  {%- endfor %}
+
+  {%- if m.images and m.images.length %}
+  <div class="images-pleine-largeur conteneur apparition">
+    {%- for im in m.images %}
+    <figure data-champ-image="{{ F }}:images.{{ loop.index0 }}">{{ im.image | image(im.alt[lang] or im.alt.fr, "(min-width: 1000px) 400px, calc(100vw - 32px)") | safe }}</figure>
+    {%- endfor %}
+  </div>
+  {%- endif %}
+
+  {%- set lies = contenu.projetsPublies | projetsDeMission(m.slug) %}
+  {%- if lies.length %}
+  <section class="conteneur projets-lies apparition" aria-labelledby="titre-lies">
+    <div class="titre-section">
+      <h2 id="titre-lies">{{ t.projetsLies }}</h2>
+      <a class="lien-fleche" href="{{ 'projets' | lien(lang) }}?categorie={{ m.categorie }}">{{ t.voirProjetsCategorie }} <span aria-hidden="true">→</span></a>
+    </div>
+    <ul class="grille-cartes">
+      {%- for p in lies %}
+      {% include "partials/carte-projet.njk" %}
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+</article>
+
+<section class="bandeau-citron">
+  <div class="bandeau-citron__contenu conteneur">
+    <div>
+      <h2 class="bandeau-citron__titre">{{ t.appelMission }}</h2>
+      <p>{{ t.appelMissionTexte }}</p>
+    </div>
+    <a class="bouton bouton--anthracite" href="{{ 'contact' | lien(lang) }}">{{ t.ecrire }}</a>
+  </div>
+</section>
+{%- endblock %}

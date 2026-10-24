@@ -1,0 +1,36 @@
+{
+  "typesProjet": [
+    { "valeur": "jardin-prive", "fr": "Jardin privé", "en": "Private garden" },
+    { "valeur": "espace-public", "fr": "Espace public", "en": "Public space" },
+    { "valeur": "installation", "fr": "Installation ou performance", "en": "Installation or performance" },
+    { "valeur": "atelier", "fr": "Atelier de médiation", "en": "Outreach workshop" },
+    { "valeur": "enseignement", "fr": "Enseignement", "en": "Teaching" },
+    { "valeur": "illustration", "fr": "Illustration", "en": "Illustration" },
+    { "valeur": "autre", "fr": "Autre", "en": "Other" }
+  ],
+  "budgets": [
+    { "valeur": "moins-5000", "fr": "Moins de 5 000 €", "en": "Less than €5,000" },
+    { "valeur": "5000-15000", "fr": "5 000 à 15 000 €", "en": "€5,000 to €15,000" },
+    { "valeur": "15000-50000", "fr": "15 000 à 50 000 €", "en": "€15,000 to €50,000" },
+    { "valeur": "plus-50000", "fr": "Plus de 50 000 €", "en": "More than €50,000" },
+    { "valeur": "ne-sait-pas", "fr": "Je ne sais pas encore", "en": "I don’t know yet" }
+  ],
+  "fr": {
+    "seo": { "titre": "Contact · SAJE – Art & Paysage", "description": "Écrire à Alice Stevens pour un projet de jardin, d’espace public, d’installation, d’atelier ou d’illustration." },
+    "titre": "Contact",
+    "intro": "Un jardin à repenser, un espace public à concevoir, un atelier ou une collaboration artistique ? Décrivez votre projet en quelques lignes : Alice Stevens vous répond rapidement.",
+    "titreFormulaire": "Décrire votre projet",
+    "aideFormulaire": "Le formulaire prépare un e-mail dans votre messagerie : rien n’est envoyé ni enregistré par ce site. Vous pourrez joindre des photos du lieu en réponse au premier échange.",
+    "titreCoordonnees": "Coordonnées",
+    "titreReseaux": "Suivre le travail d’Alice"
+  },
+  "en": {
+    "seo": { "titre": "Contact · SAJE – Art & Landscape", "description": "Write to Alice Stevens about a garden, public space, installation, workshop or illustration project." },
+    "titre": "Contact",
+    "intro": "A garden to rethink, a public space to design, a workshop or an artistic collaboration? Describe your project in a few lines and Alice Stevens will get back to you shortly.",
+    "titreFormulaire": "Tell us about your project",
+    "aideFormulaire": "The form prepares an email in your own mail app: nothing is sent or stored by this website. You can send photos of the site in reply to the first exchange.",
+    "titreCoordonnees": "Get in touch",
+    "titreReseaux": "Follow Alice’s work"
+  }
+}

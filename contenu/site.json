@@ -1,0 +1,34 @@
+{
+  "nom": "SAJE",
+  "url": "https://sajepaysage.fr",
+  "github": {
+    "depot": "",
+    "branche": "main"
+  },
+  "email": "stevensajf@gmail.com",
+  "telephone": "+33677958386",
+  "telephoneAffiche": "+33 (0)6 77 95 83 86",
+  "afficherTelephone": true,
+  "ville": "Laval, Mayenne",
+  "reseaux": [
+    { "nom": "Instagram", "url": "https://www.instagram.com/saje.project/" },
+    { "nom": "Facebook", "url": "https://www.facebook.com/alice.stevens.581" }
+  ],
+  "categories": [
+    { "slug": "jardins-prives", "fr": "Jardins privés", "en": "Private gardens" },
+    { "slug": "espaces-publics", "fr": "Espaces publics", "en": "Public spaces" },
+    { "slug": "art-installations", "fr": "Art et installations", "en": "Art and installations" },
+    { "slug": "illustration", "fr": "Illustration", "en": "Illustration" },
+    { "slug": "pedagogie", "fr": "Pédagogie", "en": "Education" }
+  ],
+  "fr": {
+    "sousTitre": "Art & Paysage",
+    "metier": "Paysagiste-conceptrice et artiste",
+    "description": "SAJE – Art & Paysage, l’atelier d’Alice Stevens, paysagiste-conceptrice et artiste à Laval : jardins, espaces publics, installations, médiation et illustration."
+  },
+  "en": {
+    "sousTitre": "Art & Landscape",
+    "metier": "Landscape architect and artist",
+    "description": "SAJE – Art & Landscape, the studio of Alice Stevens, landscape architect and artist in Laval, France: gardens, public spaces, installations, outreach and illustration."
+  }
+}

@@ -1,0 +1,128 @@
+---
+permalink: /admin/index.html
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="fr" class="sans-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="robots" content="noindex, nofollow">
+<title>Administration · SAJE</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/admin/admin.css">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<script src="/js/tete.js"></script>
+<script type="module" src="/admin/admin.js"></script>
+</head>
+<body class="admin">
+<header class="admin-entete">
+  <div class="conteneur admin-entete__barre">
+    <a class="admin-entete__logo" href="/">{% set suffixe = "admin" %}{% include "partials/logo-mot.njk" %}<span class="visuellement-cache">Retour au site</span></a>
+    <p class="admin-entete__titre">Administration</p>
+    <button class="bouton bouton--contour admin-deconnexion" type="button" hidden>Se déconnecter</button>
+  </div>
+</header>
+
+<main id="contenu" class="conteneur admin-principal">
+  <noscript><p class="admin-alerte">L’administration nécessite JavaScript.</p></noscript>
+  <div class="admin-message" role="status" aria-live="polite" hidden></div>
+
+  <!-- Connexion -->
+  <section class="admin-connexion" hidden aria-labelledby="titre-connexion">
+    <h1 id="titre-connexion">Connexion</h1>
+    <p>Collez votre clé d’accès GitHub. Elle reste enregistrée dans ce navigateur : vous n’aurez à le faire qu’une fois par appareil. <a href="https://github.com/settings/personal-access-tokens" rel="noopener">Créer ou renouveler une clé</a>.</p>
+    <form class="admin-connexion__formulaire">
+      <div class="champ">
+        <label for="cle">Clé d’accès</label>
+        <input id="cle" name="cle" type="password" autocomplete="off" spellcheck="false" required>
+      </div>
+      <p class="champ__erreur admin-connexion__erreur" hidden></p>
+      <button class="bouton bouton--violet" type="submit">Se connecter</button>
+    </form>
+  </section>
+
+  <!-- Tableau de bord -->
+  <div class="admin-tableau" hidden>
+    <div class="admin-avertissement" hidden></div>
+
+    <section class="admin-carte admin-deploiement" aria-labelledby="titre-deploiement">
+      <h2 id="titre-deploiement">Mise en ligne</h2>
+      <p class="admin-deploiement__etat"><span class="pastille" data-etat="inconnu"></span> <span class="admin-deploiement__texte">Vérification…</span></p>
+    </section>
+
+    <section class="admin-carte" aria-labelledby="titre-contenus">
+      <div class="admin-carte__titre">
+        <h2 id="titre-contenus">Contenus</h2>
+        <button class="bouton bouton--violet admin-nouveau" type="button">Nouveau projet</button>
+      </div>
+      <p class="texte-secondaire">Ouvrez une page puis cliquez sur un texte ou une image pour la modifier. « EN incomplet » signale un texte anglais manquant : la page anglaise affiche alors le français.</p>
+      <div class="admin-liste" data-liste="pages"><h3>Pages</h3><ul></ul></div>
+      <div class="admin-liste" data-liste="missions"><h3>Missions</h3><ul></ul></div>
+      <div class="admin-liste" data-liste="projets"><h3>Projets</h3><ul></ul></div>
+    </section>
+
+    <section class="admin-carte" aria-labelledby="titre-ordre">
+      <div class="admin-carte__titre">
+        <h2 id="titre-ordre">Ordre des projets</h2>
+        <button class="bouton bouton--violet admin-enregistrer-ordre" type="button" disabled>Enregistrer l’ordre</button>
+      </div>
+      <p class="texte-secondaire">Utilisez les flèches (ou glissez-déposez sur ordinateur). Les projets masqués n’apparaissent pas sur le site.</p>
+      <ol class="admin-tri" data-tri="projets"></ol>
+    </section>
+
+    <section class="admin-carte" aria-labelledby="titre-accueil">
+      <div class="admin-carte__titre">
+        <h2 id="titre-accueil">Page d’accueil</h2>
+        <button class="bouton bouton--violet admin-enregistrer-accueil" type="button" disabled>Enregistrer l’accueil</button>
+      </div>
+      <h3>Diaporama</h3>
+      <ol class="admin-tri admin-tri--images" data-tri="diaporama"></ol>
+      <details class="admin-ajout-diapo">
+        <summary>Ajouter une image au diaporama</summary>
+        <div class="admin-ajout-diapo__contenu">
+          <div class="champ">
+            <label for="diapo-projet">Projet</label>
+            <select id="diapo-projet"></select>
+          </div>
+          <div class="admin-choix-images" role="group" aria-label="Choisir une image"></div>
+        </div>
+      </details>
+      <h3>Les trois projets « À la une »</h3>
+      <div class="admin-une">
+        {%- for i in [0, 1, 2] %}
+        <div class="champ"><label for="une-{{ i }}">Projet {{ i + 1 }}</label><select id="une-{{ i }}" data-une="{{ i }}"></select></div>
+        {%- endfor %}
+      </div>
+    </section>
+
+    <section class="admin-carte" aria-labelledby="titre-historique">
+      <h2 id="titre-historique">Historique</h2>
+      <p class="texte-secondaire">Les 20 dernières modifications. Ouvrez-en une pour rétablir un fichier tel qu’il était à ce moment-là.</p>
+      <ol class="admin-historique"></ol>
+    </section>
+  </div>
+</main>
+
+<dialog class="admin-dialogue admin-dialogue-nouveau" aria-labelledby="titre-nouveau">
+  <form method="dialog" class="admin-nouveau__formulaire">
+    <h2 id="titre-nouveau">Nouveau projet</h2>
+    <p class="texte-secondaire">Le projet est créé masqué. Vous pourrez ensuite ajouter textes et images sur sa page, puis le publier.</p>
+    <div class="champ">
+      <label for="nouveau-titre">Titre (en français)</label>
+      <input id="nouveau-titre" name="titre" type="text" required>
+    </div>
+    <fieldset class="admin-categories">
+      <legend>Catégories</legend>
+      <div class="admin-categories__liste"></div>
+    </fieldset>
+    <p class="champ__erreur admin-nouveau__erreur" hidden></p>
+    <div class="admin-dialogue__actions">
+      <button class="bouton bouton--contour" value="annuler" formnovalidate>Annuler</button>
+      <button class="bouton bouton--violet" value="creer">Créer le projet</button>
+    </div>
+  </form>
+</dialog>
+</body>
+</html>

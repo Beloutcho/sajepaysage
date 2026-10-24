@@ -1,0 +1,40 @@
+---
+pagination:
+  data: langues
+  size: 1
+  alias: lang
+langues: ["fr", "en"]
+cle: projets
+modules: ["filtres"]
+permalink: "{{ 'projets' | lien(lang) }}"
+fichierContenu: pages/projets
+---
+{%- set P = contenu.pageProjets -%}
+{%- set seo = P[lang].seo -%}
+{%- set ogImage = "projets/" ~ contenu.projetsPublies[0].slug ~ "/" ~ contenu.projetsPublies[0].couverture -%}
+{%- extends "layouts/base.njk" -%}
+
+{%- block contenu %}
+<div class="conteneur">
+  <header class="entete-page">
+    <h1{{ "pages/projets" | champ("titre", lang, P) | safe }}>{{ P | loc(lang, "titre") }}</h1>
+    <p class="chapo"{{ "pages/projets" | champ("intro", lang, P) | safe }}>{{ P | loc(lang, "intro") }}</p>
+  </header>
+
+  <div class="filtres" role="group" aria-label="{{ t.filtrer }}" hidden>
+    <button type="button" class="filtre" data-filtre="" aria-pressed="true">{{ t.tous }}</button>
+    {%- for c in contenu.site.categories %}
+    <button type="button" class="filtre" data-filtre="{{ c.slug }}" aria-pressed="false">{{ c[lang] }}</button>
+    {%- endfor %}
+  </div>
+  <p class="filtres__etat visuellement-cache" role="status" aria-live="polite"></p>
+
+  <ul class="grille-cartes" data-admin-liste="projets">
+    {%- for p in contenu.projetsPublies %}
+    {% include "partials/carte-projet.njk" %}
+    {%- endfor %}
+  </ul>
+  <p class="grille-vide" hidden>{{ t.aucunProjet }}</p>
+</div>
+{% include "partials/appel.njk" %}
+{%- endblock %}
