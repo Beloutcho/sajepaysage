@@ -428,7 +428,7 @@ Mise à jour du 24 octobre 2026 : les éléments trouvés dans les PDF et le log
 **À fournir avant l'étape indiquée**
 
 - [ ] Compte GitHub et nom du dépôt (étape 1), à reporter dans `contenu/site.json` (`github.depot`)
-- [x] Logo SAJE en SVG : `Sources/logo saje serre couleurs.svg`, découpé par `outils/decouper-logo.mjs` (mot « SAJE Art&Paysage » en ligne dans l'en-tête et le pied de page, serre en icône du site)
+- [x] Logo SAJE en SVG : `Sources/logo saje serre couleurs.svg`, découpé par `outils/decouper-logo.mjs` (mot « SAJE Art&Paysage » en ligne dans l'en-tête et le pied de page, serre dans l'en-tête ; icône du site = lettres SA / JE sur deux lignes, comme le favicon de l'ancien site WordPress)
 - [ ] Photos en haute définition : celles de WordPress suffisent ; à fournir seulement pour les images issues des PDF (300 à 1 200 px : jardin réalisé de Chaumont, Silice au musée, Douceur Power, Bestiaire, Potager du Roi, ateliers de Laigné)
 - [x] Texte du Parc naturel des Îlots Changeants : présentation 2026, p. 8-9
 - [ ] Texte et images du Jardin Laurrière (projet créé masqué)
