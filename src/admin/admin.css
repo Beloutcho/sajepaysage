@@ -137,6 +137,10 @@
 .edition-bouton--discret { border-color: transparent; text-decoration: underline; }
 .edition-dialogue .edition-bouton { border-color: var(--anthracite); color: var(--anthracite); }
 .edition-dialogue .edition-bouton--principal { background: var(--violet); border-color: var(--violet); color: #fff; }
+.edition-dialogue .edition-bouton:disabled { opacity: 0.5; cursor: progress; }
+.edition-ia { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 14px; border-radius: 12px; background: var(--creme-fonce); }
+.edition-ia__etat { flex: 1 1 240px; margin: 0; font-size: 14px; }
+.edition-ia__etat[data-type="erreur"] { color: #A3262A; font-weight: 600; }
 @media (max-width: 720px) {
   .mode-edition { padding-top: 132px; }
   .edition-barre__page { max-width: 18ch; }

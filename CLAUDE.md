@@ -6,7 +6,7 @@ Site statique bilingue d'Alice Stevens, paysagiste-conceptrice et artiste à Lav
 
 - **Voix** : textes à la troisième personne (« Alice Stevens… »), y compris sur la page Démarche. Plus aucun « je » ni « nous ».
 - **Aucune information inventée** : un fait absent des sources (site WordPress, PDF de `Sources/`, Alice) laisse le champ vide. Les doutes vont dans `docs/rapport-migration.md`.
-- **Aucun script ni service tiers** : pas de CDN, pas de Google Fonts, pas de traceur. La Content-Security-Policy (`src/_includes/layouts/base.njk`) n'autorise que le site et `api.github.com`.
+- **Aucun script ni service tiers** : pas de CDN, pas de Google Fonts, pas de traceur. La Content-Security-Policy (`src/_includes/layouts/base.njk`) n'autorise que le site, `api.github.com` et le service d'IA de l'édition (`ia.adresse` de `contenu/site.json`, workflow n8n « SAJE — textes des images » qui propose le texte alternatif des images ; appelé seulement en mode édition).
 - **Contenu uniquement dans `/contenu/`** (JSON) et `/medias/` (images originales, 2 400 px max). Les gabarits ne contiennent que des libellés d'interface (`src/_data/i18n.json`).
 - Tout texte affiché qu'Alice peut modifier porte `data-champ="fichier:chemin"` (filtre `champ`) ; toute image modifiable, `data-champ-image`.
 - Accessibilité WCAG 2.2 AA, « réduire les animations » respecté, JavaScript visiteur < 30 Ko, site lisible sans JavaScript.

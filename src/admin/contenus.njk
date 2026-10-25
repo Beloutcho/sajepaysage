@@ -14,6 +14,7 @@ eleventyExcludeFromCollections: true
 {
   "depot": {{ C.site.github.depot | json | safe }},
   "branche": {{ (C.site.github.branche or "main") | json | safe }},
+  "ia": {{ (C.site.ia.adresse or "") | json | safe }},
   "categories": {{ C.site.categories | json | safe }},
   "pages": [
     {%- for p in pages %}

@@ -282,6 +282,7 @@ Alice n'intervient qu'à la première étape ; tout le reste est automatique.
 - « Ajouter des images » accepte plusieurs fichiers, y compris depuis un téléphone.
 - Avant envoi, le navigateur redimensionne l'image à 2400 px maximum (JPEG qualité 85) et supprime les métadonnées EXIF, dont la position GPS.
 - Le texte alternatif est obligatoire avant enregistrement.
+- À chaque image ajoutée ou remplacée, une IA propose le texte alternatif en français et en anglais, d'après l'image et le titre de la page ; le bouton « Proposer un texte » de la fenêtre « Texte de l'image » corrige, complète et traduit un texte déjà écrit. La légende n'est jamais inventée : l'IA ne fait que relire et traduire celle d'Alice. Alice relit et valide toujours. Le service est un workflow n8n (« SAJE — textes des images », modèle Qwen, Gemma en secours, sur le modèle du workflow Babac), dont l'adresse est `ia.adresse` dans `contenu/site.json` ; il refuse les appels venant d'ailleurs que du site et n'enregistre aucune exécution.
 
 **Enregistrement**
 
@@ -292,7 +293,7 @@ Alice n'intervient qu'à la première étape ; tout le reste est automatique.
 
 **Sécurité**
 
-- Aucun script tiers sur le site ; Content-Security-Policy par balise meta limitant les connexions à `api.github.com`.
+- Aucun script tiers sur le site ; Content-Security-Policy par balise meta limitant les connexions à `api.github.com` et au service d'IA de l'édition (voir Images).
 - Jeton limité à un seul dépôt ; rien de secret dans le dépôt public.
 - Un projet supprimé reste récupérable dans l'historique Git ; le tableau de bord propose d'abord de le masquer.
 

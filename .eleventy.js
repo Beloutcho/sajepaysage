@@ -56,6 +56,7 @@ export default function (config) {
   // Adresses
   config.addFilter("lien", (cle, lang, slug) => lien(cle, lang, slug));
   config.addFilter("absolu", (url, site) => new URL(url, site.url).href);
+  config.addFilter("origine", (url) => (url ? new URL(url).origin : ""));
 
   // Textes localisés : la valeur anglaise manquante est remplacée par le français
   config.addFilter("loc", (objet, lang, cle) => {

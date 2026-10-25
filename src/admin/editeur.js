@@ -4,7 +4,9 @@
 // - Chaque texte modifiable porte data-champ="fichier:chemin" (ex. « projets/silice:fr.titre »).
 // - Chaque image modifiable porte data-champ-image="fichier:chemin".
 // - Toutes les modifications d'une session partent en un seul commit.
+// - À chaque image ajoutée ou remplacée, l'IA (ia.js) propose son texte alternatif.
 import * as gh from "./github.js";
+import * as ia from "./ia.js";
 
 
 const CLE_SESSION = "saje-edition";
@@ -120,6 +122,7 @@ const fichiersTouches = new Set(); // fichiers dont la structure a changé (imag
 const imagesAEnvoyer = new Map(); // "medias/…" -> Blob
 const imagesASupprimer = new Set(); // "medias/…"
 let barre, compteur, etat;
+let contenusSite = null; // /admin/contenus.json : titres des projets, adresse du service d'IA
 
 function nombreModifications() {
   return textesModifies.size + fichiersTouches.size;
@@ -162,6 +165,7 @@ async function activer() {
   if (document.body.dataset.fichier) cles.add(document.body.dataset.fichier);
 
   annoncer("Chargement des contenus…");
+  gh.config().then((c) => { contenusSite = c; }, () => {});
   try {
     await Promise.all([...cles].map(async (fichier) => {
       const { json, sha } = await gh.lireJson(`contenu/${fichier}.json`);
@@ -312,17 +316,41 @@ function afficherBarreTexte(el) {
 
 // ---------- Images ----------
 
+// Ce que l'IA sait de la page : le titre et l'accroche (ou le projet que présente l'image)
+function contexteIA(fichier, valeur) {
+  const lie = valeur?.projet && contenusSite?.projets?.find((p) => p.slug === valeur.projet);
+  if (lie) return { titre: lie.titre, page: "projet" };
+  const json = fichiers.get(fichier)?.json || {};
+  return {
+    titre: json.fr?.titre || $("h1")?.textContent.trim() || document.title,
+    page: fichier.startsWith("projets/") ? "projet" : fichier.startsWith("missions/") ? "mission" : "page",
+    accroche: json.fr?.accroche || "",
+  };
+}
+
+const sourceImage = (conteneur) => {
+  const img = conteneur?.querySelector("img");
+  return img?.currentSrc || img?.src || "";
+};
+
+// image : { source, contexte, proposition? } pour proposer le texte par l'IA ;
+// une « proposition » déjà lancée (promesse) remplit les champs dès l'ouverture.
 const dialogueTexte = (() => {
   let dialogue;
-  return (valeurs, avecLegende) => new Promise((resolve) => {
+  return (valeurs, avecLegende, image) => new Promise((resolve) => {
     dialogue?.remove();
     const champ = (id, libelle, valeur, requis) => element("div", { class: "champ" },
       element("label", { for: id, texte: libelle + (requis ? " (obligatoire)" : "") }),
       element("input", { id, name: id, type: "text", value: valeur || "", required: requis }));
-    dialogue = element("dialog", { class: "edition-dialogue", "aria-labelledby": "edition-dialogue-titre" },
+    const avecIA = Boolean(image?.source && contenusSite?.ia);
+    const etatIA = element("p", { class: "texte-secondaire edition-ia__etat", role: "status", "aria-live": "polite",
+      texte: "L’IA décrit l’image d’après le titre de la page, ou corrige et traduit le texte déjà écrit. Relisez toujours sa proposition." });
+    const boutonIA = element("button", { type: "button", class: "edition-bouton", onclick: () => proposer() }, "Proposer un texte");
+    const courant = dialogue = element("dialog", { class: "edition-dialogue", "aria-labelledby": "edition-dialogue-titre" },
       element("form", { method: "dialog" },
         element("h2", { id: "edition-dialogue-titre", texte: "Texte de l’image" }),
         element("p", { class: "texte-secondaire", texte: "Le texte alternatif décrit l’image pour les personnes qui ne la voient pas (lecteur d’écran, image non chargée)." }),
+        avecIA ? element("div", { class: "edition-ia" }, boutonIA, etatIA) : null,
         champ("alt-fr", "Texte alternatif en français", valeurs.alt?.fr, true),
         champ("alt-en", "Texte alternatif en anglais", valeurs.alt?.en, false),
         avecLegende ? champ("legende-fr", "Légende en français", valeurs.legende?.fr, false) : null,
@@ -330,15 +358,48 @@ const dialogueTexte = (() => {
         element("div", { class: "admin-dialogue__actions" },
           element("button", { class: "edition-bouton", value: "annuler", formnovalidate: true }, "Annuler"),
           element("button", { class: "edition-bouton edition-bouton--principal", value: "ok" }, "Valider"))));
-    document.body.append(dialogue);
-    dialogue.addEventListener("close", () => {
-      if (dialogue.returnValue !== "ok") return resolve(null);
-      const v = (id) => dialogue.querySelector(`#${id}`)?.value.trim() ?? "";
+    const v = (id) => courant.querySelector(`#${id}`)?.value.trim() ?? "";
+    const ids = ["alt-fr", "alt-en", ...(avecLegende ? ["legende-fr", "legende-en"] : [])];
+
+    async function proposer(dejaLancee) {
+      const envoyes = Object.fromEntries(ids.map((id) => [id, v(id)]));
+      boutonIA.disabled = true;
+      delete etatIA.dataset.type;
+      etatIA.textContent = "Proposition en cours…";
+      try {
+        const r = await (dejaLancee || ia.proposer({ source: image.source, ...image.contexte,
+          alt: { fr: envoyes["alt-fr"], en: envoyes["alt-en"] },
+          legende: avecLegende ? { fr: envoyes["legende-fr"], en: envoyes["legende-en"] } : undefined }));
+        if (!courant.open) return;
+        const recus = { "alt-fr": r.alt.fr, "alt-en": r.alt.en, "legende-fr": r.legende?.fr, "legende-en": r.legende?.en };
+        // Un champ modifié pendant l'attente n'est pas écrasé
+        for (const id of ids) if (recus[id] && v(id) === envoyes[id]) courant.querySelector(`#${id}`).value = recus[id];
+        etatIA.textContent = "Proposition de l’IA : relisez-la et corrigez-la si besoin avant de valider.";
+      } catch (e) {
+        etatIA.textContent = e.message;
+        etatIA.dataset.type = "erreur";
+      } finally {
+        boutonIA.disabled = false;
+      }
+    }
+
+    document.body.append(courant);
+    courant.addEventListener("close", () => {
+      if (courant.returnValue !== "ok") return resolve(null);
       resolve({ alt: { fr: v("alt-fr"), en: v("alt-en") }, legende: avecLegende ? { fr: v("legende-fr"), en: v("legende-en") } : undefined });
     });
-    dialogue.showModal();
+    courant.showModal();
+    if (avecIA && image.proposition) proposer(image.proposition);
   });
 })();
+
+// Lance la proposition de l'IA pour une image qui vient d'être choisie (sans attendre la fenêtre)
+function propositionIA(source, contexte, legende) {
+  if (!contenusSite?.ia) return undefined;
+  const p = ia.proposer({ source, ...contexte, legende });
+  p.catch(() => {}); // l'erreur s'affiche dans la fenêtre, à l'ouverture
+  return p;
+}
 
 function choisirFichiers(multiple) {
   return new Promise((resolve) => {
@@ -369,7 +430,7 @@ function ajouterOutilsImageSimple(conteneur) {
   const outils = element("div", { class: "edition-outils-image" },
     element("button", { type: "button", onclick: async () => {
       const valeur = lireChemin(fichiers.get(fichier).json, chemin);
-      const resultat = await dialogueTexte(valeur, false);
+      const resultat = await dialogueTexte(valeur, false, { source: sourceImage(conteneur), contexte: contexteIA(fichier, valeur) });
       if (!resultat) return;
       valeur.alt = resultat.alt;
       conteneur.querySelector("img")?.setAttribute("alt", resultat.alt[document.body.dataset.lang] || resultat.alt.fr);
@@ -381,7 +442,9 @@ function ajouterOutilsImageSimple(conteneur) {
       try {
         const image = await preparerImage(choix);
         const valeur = lireChemin(fichiers.get(fichier).json, chemin);
-        const resultat = await dialogueTexte({ alt: { fr: "", en: "" } }, false);
+        const contexte = contexteIA(fichier, valeur);
+        const resultat = await dialogueTexte({ alt: { fr: "", en: "" } }, false,
+          { source: image.url, contexte, proposition: propositionIA(image.url, contexte) });
         if (!resultat?.alt.fr) return annoncer("Image non remplacée : le texte alternatif est obligatoire.", "erreur");
         valeur.image = `pages/${image.nom}`;
         valeur.alt = resultat.alt;
@@ -460,8 +523,13 @@ function preparerGalerie(cle) {
     signalerTouche(cle);
   };
 
-  const modifierTexte = async (i) => {
-    const resultat = await dialogueTexte(liste[i].image, true);
+  // nouvelle : l'image vient d'être remplacée, son ancien texte alternatif ne la décrit plus
+  const modifierTexte = async (i, nouvelle) => {
+    const source = sourceImage(liste[i].vue);
+    const contexte = contexteIA(cle);
+    const valeurs = nouvelle ? { ...liste[i].image, alt: { fr: "", en: "" } } : liste[i].image;
+    const resultat = await dialogueTexte(valeurs, true,
+      { source, contexte, proposition: nouvelle ? propositionIA(source, contexte, valeurs.legende) : undefined });
     if (!resultat) return;
     Object.assign(liste[i].image, resultat);
     liste[i].vue.querySelector("img")?.setAttribute("alt", resultat.alt.fr);
@@ -490,6 +558,7 @@ function preparerGalerie(cle) {
       redessiner();
       signalerTouche(cle);
       annoncer("Image remplacée. Vérifiez son texte (bouton « Texte »).");
+      await modifierTexte(i, true);
     } catch (e) {
       annoncer(e.message, "erreur");
     }
@@ -506,11 +575,21 @@ function preparerGalerie(cle) {
 
   const ajouter = async () => {
     const choix = await choisirFichiers(true);
-    for (const fichier of choix) {
+    const contexte = contexteIA(cle);
+    // Les images sont préparées l'une après l'autre (mémoire du téléphone), sans attendre
+    // les fenêtres : les textes des suivantes arrivent pendant qu'Alice relit le premier.
+    let file = Promise.resolve();
+    const preparees = choix.map((fichier) => {
+      const p = file.then(() => preparerImage(fichier)).then((nouvelle) => ({ ...nouvelle, proposition: propositionIA(nouvelle.url, contexte) }));
+      file = p.catch(() => {});
+      return p;
+    });
+    for (const [n, fichier] of choix.entries()) {
       try {
         annoncer(`Préparation de « ${fichier.name} »…`);
-        const nouvelle = await preparerImage(fichier);
-        const textes = await dialogueTexte({ alt: { fr: "", en: "" }, legende: { fr: "", en: "" } }, true);
+        const nouvelle = await preparees[n];
+        const textes = await dialogueTexte({ alt: { fr: "", en: "" }, legende: { fr: "", en: "" } }, true,
+          { source: nouvelle.url, contexte, proposition: nouvelle.proposition });
         if (!textes?.alt.fr) {
           annoncer(`« ${fichier.name} » n’a pas été ajoutée : le texte alternatif est obligatoire.`, "erreur");
           continue;

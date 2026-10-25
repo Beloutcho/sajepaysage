@@ -5,6 +5,9 @@
     "depot": "Beloutcho/sajepaysage",
     "branche": "main"
   },
+  "ia": {
+    "adresse": "https://n8n.incubateur.education.gouv.fr/webhook/saje-textes-images"
+  },
   "email": "stevensajf@gmail.com",
   "telephone": "+33677958386",
   "telephoneAffiche": "+33 (0)6 77 95 83 86",

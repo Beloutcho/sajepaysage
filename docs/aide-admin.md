@@ -67,6 +67,8 @@ Sous la galerie, **+ Ajouter des images** accepte plusieurs photos à la fois, y
 
 Le **texte alternatif en français est obligatoire** : décrivez en une phrase ce que montre l'image (« Allée de sable bordée de graminées vers des panneaux blancs »).
 
+Quand vous ajoutez ou remplacez une photo, une IA propose ce texte en français et en anglais, d'après la photo et le titre de la page : la fenêtre « Texte de l'image » s'ouvre avec la proposition déjà écrite. **Relisez-la toujours** : corrigez un détail faux, ajoutez un nom ou un lieu que la photo ne dit pas. Le bouton **Proposer un texte** relance l'IA à tout moment ; si vous avez déjà écrit quelque chose, même en vrac, elle le corrige, le complète et le traduit sans rien retirer. Elle ne rédige jamais de légende : si vous en écrivez une, elle la relit et la traduit.
+
 ## 5. Ajouter un projet
 
 1. Dans le tableau de bord, cliquez sur **Nouveau projet**.
