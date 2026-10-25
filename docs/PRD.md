@@ -25,7 +25,7 @@ Ce document décrit le nouveau site de SAJE – Art & Paysage, la structure d'Al
 | Administration | Page de connexion, puis édition directe sur la page en cliquant sur le texte ; impossible sans connexion |
 | Contact | Formulaire qui prépare un e-mail (mailto) vers stevensajf@gmail.com |
 | Direction graphique | Version B « Atelier » du canevas de maquettes, palette crème, anthracite, vert citron, violet |
-| Voix | Troisième personne (Alice Stevens), sauf la page Démarche qui reste en « nous » ; plus aucun « je » |
+| Voix | Troisième personne (Alice Stevens), y compris la page Démarche (texte remplacé en octobre 2026) ; plus aucun « je » ni « nous » |
 | Témoignages | Supprimés |
 | Animations | Très discrètes |
 
@@ -103,7 +103,7 @@ Tout le texte du site actuel est repris, réécrit à la troisième personne là
 | Accueil : accroches Démarche, Projets, Prestations | Accueil (encart du diaporama, bandeau violet) |
 | Accueil : « À propos de moi » (biographie) | Démarche, section « Alice Stevens » avec portrait, à la troisième personne |
 | Accueil : trois témoignages | Supprimés |
-| Démarche (texte en « nous ») | Démarche, texte conservé tel quel |
+| Démarche (texte en « nous ») | Remplacé par le texte à la troisième personne « Le paysage comme récit, le vivant comme matière » |
 | Projets : introduction | Liste des projets |
 | Prestations : introduction et six pages | Cinq missions (tableau suivant) |
 | Contact : coordonnées, réseaux, formulaire | Contact |

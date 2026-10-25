@@ -18,11 +18,13 @@ permalink: "{{ 'demarche' | lien(lang) }}"
 <article class="page-texte">
   <header class="page-texte__entete conteneur conteneur--lecture">
     <h1{{ F | champ("titre", lang, D) | safe }}>{{ D | loc(lang, "titre") }}</h1>
-    <p class="chapo"{{ F | champ("chapo", lang, D) | safe }}>{{ D | loc(lang, "chapo") }}</p>
   </header>
-  <div class="conteneur conteneur--lecture texte-riche"{{ F | champ("texte", lang, D) | safe }} data-format="markdown">
-    {{ D | loc(lang, "texte") | md | safe }}
-  </div>
+  <section class="recit apparition" aria-labelledby="titre-recit">
+    <div class="conteneur conteneur--lecture">
+      <h2 id="titre-recit"{{ F | champ("recit.titre", lang, D) | safe }}>{{ D | loc(lang, "recit.titre") }}</h2>
+      <div class="texte-riche"{{ F | champ("recit.texte", lang, D) | safe }} data-format="markdown-page">{{ D | loc(lang, "recit.texte") | mdPage | safe }}</div>
+    </div>
+  </section>
 
   <section class="portrait conteneur apparition" aria-labelledby="titre-alice">
     <div class="portrait__image" data-champ-image="pages/demarche:portrait">
@@ -31,13 +33,6 @@ permalink: "{{ 'demarche' | lien(lang) }}"
     <div class="portrait__texte">
       <h2 id="titre-alice"{{ F | champ("alice.titre", lang, D) | safe }}>{{ D | loc(lang, "alice.titre") }}</h2>
       <div class="texte-riche"{{ F | champ("alice.texte", lang, D) | safe }} data-format="markdown">{{ D | loc(lang, "alice.texte") | md | safe }}</div>
-    </div>
-  </section>
-
-  <section class="recit apparition" aria-labelledby="titre-recit">
-    <div class="conteneur conteneur--lecture">
-      <h2 id="titre-recit"{{ F | champ("recit.titre", lang, D) | safe }}>{{ D | loc(lang, "recit.titre") }}</h2>
-      <div class="texte-riche"{{ F | champ("recit.texte", lang, D) | safe }} data-format="markdown-page">{{ D | loc(lang, "recit.texte") | mdPage | safe }}</div>
     </div>
   </section>
 

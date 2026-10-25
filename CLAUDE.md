@@ -4,7 +4,7 @@ Site statique bilingue d'Alice Stevens, paysagiste-conceptrice et artiste à Lav
 
 ## Règles
 
-- **Voix** : textes à la troisième personne (« Alice Stevens… »), sauf la page Démarche qui reste en « nous ». Plus aucun « je ».
+- **Voix** : textes à la troisième personne (« Alice Stevens… »), y compris sur la page Démarche. Plus aucun « je » ni « nous ».
 - **Aucune information inventée** : un fait absent des sources (site WordPress, PDF de `Sources/`, Alice) laisse le champ vide. Les doutes vont dans `docs/rapport-migration.md`.
 - **Aucun script ni service tiers** : pas de CDN, pas de Google Fonts, pas de traceur. La Content-Security-Policy (`src/_includes/layouts/base.njk`) n'autorise que le site et `api.github.com`.
 - **Contenu uniquement dans `/contenu/`** (JSON) et `/medias/` (images originales, 2 400 px max). Les gabarits ne contiennent que des libellés d'interface (`src/_data/i18n.json`).
