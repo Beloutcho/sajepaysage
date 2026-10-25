@@ -44,6 +44,36 @@ Le dossier `Sources/` est exclu du dépôt (`.gitignore`) : les PDF contiennent 
 - Les témoignages ont été supprimés, comme prévu.
 - Deux photos de visite portant le logo du CAUE de la Mayenne ne sont rattachées à aucun projet (le lieu n'est pas identifiable) ; l'une illustre la mission Médiation.
 
+## Images en meilleure définition (25 octobre 2026)
+
+Alice a fourni le dossier de travail du site (`Sources/Source  Site internet/`, 2,2 Go, non publié) avec ses fichiers d'origine. Chaque image de `medias/` y a été recherchée par empreinte visuelle, image entière ou zone recadrée, puis vérifiée à l'œil avant remplacement. Les noms de fichiers ne changent pas, les JSON non plus. Traitement identique à la migration : 2 400 px au plus, JPEG qualité 85, profil converti en sRGB, métadonnées supprimées.
+
+**Remplacées : 98 images.**
+
+- 89 images entières, reprises de l'original au lieu de la copie WordPress compressée deux fois. La plupart restent à 2 400 px mais gagnent en netteté. Parmi elles, les trois premières images du diaporama d'accueil (Chaumont, Jardin Madda, Prairie ludique). Deux images issues du portfolio gagnent aussi en taille : Alice peignant au sol (723 → 2 040 px) et dans l'atelier (574 → 1 530 px).
+- 9 recadrages du PDF de présentation ou du portfolio, refaits dans l'original au même cadrage. Concernés : le bloc Démarche de l'accueil (`ombres-feuillages`, 830 → 1 698 × 2 400), la tente et ses quatre détails (Château des Arcis, 368 → 2 400 px), deux vues du jardin de Chaumont et une photo d'atelier de la cour d'école Galan. L'allée de Chaumont (`jardin-allee`) est plus sombre que la version du PDF, qui avait été éclaircie : c'est la photo d'origine.
+
+**Laissées telles quelles**
+
+- Les sept bannières WordPress (`pages/banniere-*.jpg`) : elles ne sont affichées nulle part sur le nouveau site, et leurs originaux sont en CMJN sans profil, ce qui fausserait les couleurs.
+- Les images dont l'original n'est pas plus grand (Festival Casc, Silice, Campaneta en 2 048 px, photos de formation en 1 080 px…), et quatre plans et dessins de Chaumont déjà tirés de leur original.
+- Le croquis et le plan d'Yzernay : la version du site porte des annotations ou des numéros absents des originaux. Les plans d'Yzernay et de la cour Galan, rendus à 300 dpi depuis le PDF vectoriel, sont déjà plus fins que les fichiers fournis.
+- Les images des PDF dont aucun original n'a été trouvé : Douceur Power, Bestiaire, Potager du Roi, Silice (Beaulieu, MANAS), portrait, illustration de la flûtiste, trois photos d'ateliers de la cour Galan, et les photos Château des Arcis venues de WordPress.
+
+**Le favicon** est déjà celui de `favico 1.png` (les lettres SA/JE), produit depuis le logo vectoriel par `outils/decouper-logo.mjs`.
+
+**Absent du site** (le dossier a été supprimé de la copie locale après usage ; ces fichiers restent chez Alice, à ajouter depuis l'administration si elle le souhaite) :
+
+- Château des Arcis : 8 photos (juin et juillet 2025) ;
+- Jardin Eve : 6 photos (juin 2025 à janvier 2026) ;
+- Jardin Laurrière, projet masqué en attente d'images : 3 croquis de terrasse et une photo ;
+- Chaumont : 9 photos, dont 4 en 8 368 px ;
+- cour Galan : 3 photos d'ateliers, un plan d'enfant et 4 rendus générés par ChatGPT (mai 2026) ;
+- Médiation : 3 photos de juin 2025 ;
+- divers : 2 photos du dossier « Jardin » sans projet indiqué, `aquarell1.jpg`, `serres.png`, deux bannières Chaumont, deux variantes du logo et `favico 2.png` (favicon avec la serre).
+
+Le dossier contenait aussi les fichiers maîtres (PSD, AI, PDF de concours, carte de visite). Il contenait enfin `Texte site internet a propos et demarche.odt`, l'ancien texte Démarche à la première personne du pluriel, avec une liste de partenaires absente du site : L'échappée verte (Jean-Christophe Ravaux), Odyssée Paysage (Adrien Hecquet et Théophile Lenglet), CAUE de la Mayenne (Carole Dauphin), CFP la Futaie (Olivier Delepine).
+
 ## Points à faire vérifier par Alice
 
 Rien n'a été inventé : chaque fait vient d'une des sources ci-dessus. Les points suivants sont des interprétations ou des contradictions entre sources.
