@@ -3,7 +3,7 @@
   "publie": true,
   "ordre": 18,
   "categories": [
-    "espaces-publics"
+    "jardins-prives"
   ],
   "lieu": "",
   "date": "",
@@ -24,7 +24,7 @@
     "intervention": "",
     "descriptif": ""
   },
-  "couverture": "jardin-public1-modif.jpg",
+  "couverture": "chateaudelaroche-25-1400702507.jpg",
   "images": [
     {
       "fichier": "jardin-public1-modif.jpg",
@@ -38,10 +38,10 @@
       }
     },
     {
-      "fichier": "chateaudelaroche-25-1400702507.jpg",
+      "fichier": "panorama-entree-travaille.jpg",
       "alt": {
-        "fr": "Château et vignes au premier plan",
-        "en": "Château with vines in the foreground"
+        "fr": "Panorama retouché de l’entrée du site",
+        "en": "Edited panorama of the site entrance"
       },
       "legende": {
         "fr": "",
@@ -49,10 +49,10 @@
       }
     },
     {
-      "fichier": "panorama-entree-travaille.jpg",
+      "fichier": "chateaudelaroche-25-1400702507.jpg",
       "alt": {
-        "fr": "Panorama retouché de l’entrée du site",
-        "en": "Edited panorama of the site entrance"
+        "fr": "Château et vignes au premier plan",
+        "en": "Château with vines in the foreground"
       },
       "legende": {
         "fr": "",
